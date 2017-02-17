@@ -1,0 +1,130 @@
+html {
+
+}
+
+
+
+body {
+background-color: lightyellow;
+}
+
+h2 {
+    color: #165634;
+}
+
+p {
+    color: grey;
+}
+
+
+
+.page{
+    margin:0;
+    padding:0;
+    background: url("fond.jpg") no-repeat center fixed;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    background-color: #cccccc;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+.titreBillet {
+    color: #337ab7;
+}
+
+.titreBillet2 {
+    color: #165634;
+}
+.img-responsive {
+    display: block;
+    width: 100% \9;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.sorting_1{
+    background-color: lightyellow !important;
+}
+
+
+
+#texte {
+    margin-left: 2%;
+    color: #0d382f;
+    margin-right: 2%;
+}
+
+#auteur{
+    float: left;
+    margin-right : 10px;
+    width: 100px;
+}
+
+#contenu {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#example_info{
+    display: none;
+}
+#example_filter{
+    display: none;
+}
+
+
+#signature {
+text-align: right;
+    margin-right: 20px;
+}
+
+
+#footer {
+    background-color: lightgrey;
+    padding: 5px;
+    margin-right: -20px;
+    margin-left: -20px;
+    text-align: center;
+    position: relative;
+}
+
+#liste{
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+
+
+
+.sorting_desc {
+    color: grey;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    #contenu {
+
+    }
+
+    #tableau {
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    #texte {
+
+    }
+
+}

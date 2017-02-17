@@ -1,0 +1,76 @@
+<?php
+
+require_once 'ControleurAccueil.php';
+require_once 'ControleurBillet.php';
+//require_once 'ControleurAuthentification.php';
+
+require_once 'Vue/Vue.php';
+
+class Routeur {
+
+    private $ctrlAccueil;
+    private $ctrlBillet;
+    //private $ctrlAuth;
+
+    public function __construct() {
+        $this->ctrlAccueil = new ControleurAccueil();
+        $this->ctrlBillet = new ControleurBillet();
+        //$this->ctrlAuth = new ControleurAuthentification();
+    }
+
+    // Route une requête entrante : exécution l'action associée
+    public function routerRequete() {
+        try {
+            if (isset($_GET['action'])) {
+                if ($_GET['action'] == 'billet') {
+                    $idBillet = intval($this->getParametre($_GET, 'id'));
+                    if ($idBillet != 0) {
+                        $this->ctrlBillet->billet($idBillet);
+                    }
+                    else
+                        throw new Exception("Identifiant de billet non valide");
+                }
+                else if ($_GET['action'] == 'commenter') {
+                    $auteur = $this->getParametre($_POST, 'auteur');
+                    $contenu = $this->getParametre($_POST, 'contenu');
+                    $idBillet = $this->getParametre($_POST, 'id');
+                    $this->ctrlBillet->commenter($auteur, $contenu, $idBillet);
+                }
+                /*ajout Ben
+                else if ($_GET['action'] == 'connexion'){
+                    $username = $this->getParametre($_POST, 'username');
+                    $password = $this->getParametre($_POST, 'password');
+                   // $this->ctrlAuth->connexion($username, $password);
+
+                }
+
+                */
+
+                else
+                    throw new Exception("Action non valide");
+            }
+            else {  // aucune action définie : affichage de l'accueil
+                $this->ctrlAccueil->accueil();
+            }
+        }
+        catch (Exception $e) {
+            $this->erreur($e->getMessage());
+        }
+    }
+
+    // Affiche une erreur
+    private function erreur($msgErreur) {
+        $vue = new Vue("Erreur");
+        $vue->generer(array('msgErreur' => $msgErreur));
+    }
+
+    // Recherche un paramètre dans un tableau
+    private function getParametre($tableau, $nom) {
+        if (isset($tableau[$nom])) {
+            return $tableau[$nom];
+        }
+        else
+            throw new Exception("Paramètre '$nom' absent");
+    }
+
+}
