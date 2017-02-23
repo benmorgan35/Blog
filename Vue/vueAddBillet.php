@@ -3,10 +3,32 @@
 ?>
 <!DOCTYPE html>
 <html>
-<head> <!-- Entête HTML -->
+<head>
     <meta charset="utf-8" />
     <title></title>
     <!-- Feuille de style -->
     <link href="" rel="stylesheet" type="text/css" />
+    <script src="../assets/js/tinymce/themes/tinymce.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        tinyMCE.init({
+            mode : "textareas",
+            language : "fr",
+            theme : "advanced",
+            plugins : "table, fullpage",
+            theme_advanced_buttons3_add : "fullpage, tablecontrols"
+        });
+    </script>
 </head>
-<body>
+
+<header>
+    <h3 id="adBillet">Ajouter un épisode </h3>
+</header>
+
+<form action="vueAddBillet.php" method="post"> <textarea style="width: 100%;" name="content">&lt;br /&gt; </textarea>
+    <input name="send" type="submit" value="Envoyer" />
+</form>
+
+
+
+
+</html>

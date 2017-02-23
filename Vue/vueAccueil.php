@@ -1,4 +1,4 @@
-<?php $this->titre = "Mon Blog"; ?>
+<?php $this->titre = "Billet simple pour l'Alaska - Accueil"; ?>
 
 
 <article>
@@ -6,8 +6,8 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <h2 id="accueil">Accueil</h2>
-                <p><b>Bienvenue sur mon blog.</b></p>
+                <h2 id="accueil">Accueil</h2> <hr />
+                <p><b>Bienvenue sur le blog de Jean Forteroche.</b></p>
                 <br/>
                 <img src="assets/image/jean.jpg" alt="J Forteroche" id="auteur"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc lectus, mollis sed sem at,
@@ -27,12 +27,13 @@
 
 
                 <div class='row'>
-                    <h2 id="liste_episodes">Liste des épisodes</h2>
+                    <h2 id="liste_episodes">Liste des épisodes</h2> <hr />
                     <table id="example" class="display" cellspacing="0" width="100%">
 
 
                         <thead>
                         <tr>
+                            <th>Date de publication</th>
                             <th><h3>Episodes</h3></th>
                         </tr>
                         </thead>
@@ -41,10 +42,12 @@
                         <?php foreach ($billets as $billet):?>
                             <tr>
                                 <td>
+                                    <time style="color:grey; font-size: 0.8em"><i><?= $billet['dateFR'] ?></i></time>
+                                </td>
+                                <td>
                                     <a href="<?= "index.php?action=billet&id=" . $billet['id'] ?>">
                                         <p class="titreBillet"><?= $billet['titre'] ?><br />
                                     </a>
-                                    <time style="color:grey; font-size: 0.8em"><i> publié le <?= $billet['dateFR'] ?></i></time></a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

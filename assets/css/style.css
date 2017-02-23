@@ -109,22 +109,4 @@ text-align: right;
     color: grey;
 }
 
-@media screen and (max-width: 768px) {
-
-
-    #contenu {
-
-    }
-
-    #tableau {
-
-    }
-
-}
-
-@media screen and (max-width: 1200px) {
-    #texte {
-
-    }
-
-}
+@med

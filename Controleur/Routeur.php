@@ -2,7 +2,7 @@
 
 require_once 'ControleurAccueil.php';
 require_once 'ControleurBillet.php';
-//require_once 'ControleurAuthentification.php';
+require_once 'ControleurAuthentification.php';
 
 require_once 'Vue/Vue.php';
 
@@ -10,12 +10,12 @@ class Routeur {
 
     private $ctrlAccueil;
     private $ctrlBillet;
-    //private $ctrlAuth;
+    private $ctrlAuth;
 
     public function __construct() {
         $this->ctrlAccueil = new ControleurAccueil();
         $this->ctrlBillet = new ControleurBillet();
-        //$this->ctrlAuth = new ControleurAuthentification();
+        $this->ctrlAuth = new ControleurAuthentification();
     }
 
     // Route une requête entrante : exécution l'action associée
@@ -36,15 +36,34 @@ class Routeur {
                     $idBillet = $this->getParametre($_POST, 'id');
                     $this->ctrlBillet->commenter($auteur, $contenu, $idBillet);
                 }
-                /*ajout Ben
+/*
+                else if($_GET['action'] == 'repondre') {
+                    $auteur = $this->getParametre($_POST, 'auteur');
+                    $contenu = $this->getParametre($_POST, 'contenu');
+                    $idBillet = $this->getParametre($_POST, 'id');
+                    $idCommentaire = $this->getParametre($_POST, 'id');
+                    $this->ctrlBillet->repondre($auteur, $contenu, $idBillet, $idCommentaire);
+                }
+*/
+
+                else if ($_GET['action'] == 'authentification') {
+                $this->ctrlAuth->authentification();
+                }
+
+
                 else if ($_GET['action'] == 'connexion'){
                     $username = $this->getParametre($_POST, 'username');
                     $password = $this->getParametre($_POST, 'password');
-                   // $this->ctrlAuth->connexion($username, $password);
-
+                   $this->ctrlAuth->connexion($username, $password);
                 }
 
-                */
+                else if ($_GET['action'] == 'deconnexion'){
+                   //$this->ctrlAuth->deconnexion();
+                }
+
+
+
+
 
                 else
                     throw new Exception("Action non valide");
@@ -52,6 +71,10 @@ class Routeur {
             else {  // aucune action définie : affichage de l'accueil
                 $this->ctrlAccueil->accueil();
             }
+
+            if (isset($_GET['user'])) {
+            }
+
         }
         catch (Exception $e) {
             $this->erreur($e->getMessage());

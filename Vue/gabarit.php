@@ -1,3 +1,7 @@
+<?php
+session_start();?>
+
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -23,6 +27,9 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.php">Accueil</a></li>
                 <li><a href="index.php#liste_episodes">Liste des épisodes</a></li>
+                <!-- if loginok : li backend -->
+                <!-- if loginok : li deconnexion -->
+
             </ul>
         </nav>
 
@@ -53,7 +60,7 @@
         <div class="row">
             <div class="col-lg-12" id="footer">
                 <p>Copyright © 2017 Jean Forteroche | Tous droits réservés |
-                    <a href="vueAuthentification.php">Administrateur</a>
+                    <a href="index.php?action=authentification">Administrateur</a>
             </div>
         </div>
 
@@ -73,11 +80,14 @@
 <script>
     $(document).ready(function() {
         $('#example').DataTable( {
-            scrollY:        '50vh',
-            scrollCollapse: true,
-            paging:         false
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.10.13/i18n/French.json"
+            }
         } );
     } );
+
+
+
 
 
 
