@@ -7,7 +7,7 @@
            required /><br /><br />
     <textarea id="txtCommentaire" name="contenu" rows="4" class="form-control"
               placeholder="Votre commentaire" required></textarea><br />
-    <input type="hidden" name="id" value="<?= $billet['id'] ?>" />
+    <input type="hidden" name="idB" value="<?= $billet['idB'] ?>" />
     <input type="submit" class="btn btn-primary" value="Valider" />
 </form>
 <hr />

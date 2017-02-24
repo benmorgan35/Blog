@@ -5,7 +5,7 @@ $this->titre = "Mon Blog - " . $billet['titre']; ?>
 <article>
     <header>
         <h2 class="titreBillet2"><?= $billet['titre'] ?></h2>
-        <time style="color:grey"><i>Publié le <?= $billet['dateFR'] ?></i></time>
+        <time style="color:grey"><i>Publié le <?= $billet['dateCrea'] ?></i></time>
         <hr />
     </header>
 
@@ -19,9 +19,9 @@ $this->titre = "Mon Blog - " . $billet['titre']; ?>
 
 <?php foreach ($commentaires as $commentaire): ?>
 
-<p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateFR'] ?></p>
-<p><?= $commentaire['contenu'] ?>
-    <input type="button" value="Répondre">
+<p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateCrea'] ?></p>
+    <p><?= $commentaire['contenu'] ?></p>
+   <a href="<?= "index.php?action=formulaireReponse&idB=" . $billet['idB'] .  "&idC=" . $commentaire['idC']?>">Répondre</a>
 
     <hr />
 

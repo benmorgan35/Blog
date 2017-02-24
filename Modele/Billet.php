@@ -10,9 +10,7 @@ class Billet extends Modele {
      * @return PDOStatement La liste des billets
      */
     public function getBillets() {
-        $sql = 'SELECT BIL_ID AS id, DATE_FORMAT(BIL_DATE, \'%d/%m/%Y  %Hh%imin%ss\') AS dateFR,'
-                . ' BIL_TITRE AS titre, BIL_CONTENU AS contenu FROM T_BILLET'
-                . ' ORDER BY BIL_ID DESC';
+        $sql = 'SELECT idB, dateCrea, titre, contenu FROM tBillets ORDER BY idB DESC';
         $billets = $this->executerRequete($sql);
         return $billets;
     }
@@ -24,9 +22,7 @@ class Billet extends Modele {
      * @throws Exception Si l'identifiant du billet est inconnu
      */
     public function getBillet($idBillet) {
-        $sql = 'SELECT BIL_ID AS id, DATE_FORMAT(BIL_DATE, \'%d/%m/%Y\') AS dateFR,'
-                . ' BIL_TITRE AS titre, BIL_CONTENU AS contenu FROM T_BILLET'
-                . ' WHERE BIL_ID=?';
+        $sql = 'SELECT idB, dateCrea, titre, contenu FROM tBillets WHERE idB=?';
         $billet = $this->executerRequete($sql, array($idBillet));
         if ($billet->rowCount() > 0)
             return $billet->fetch();  // Accès à la première ligne de résultat
@@ -44,7 +40,7 @@ class Billet extends Modele {
     }
     */
     // Mise à jour de billet BEN
-    public function updateBillet(){
+    public function updateBillet($idBillet){
         //$sql = 'UPDATE FROM T_BILLET WHERE BIL_ID=?';
         //$this->executerRequete($sql);
     }

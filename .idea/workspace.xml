@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26811735-4fb8-4d9b-97d1-c3525ea51b5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/composerJson.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controleur/ControleurUser.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vue/vueAdministrateur.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Modele/authentification.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue/vueBillet.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Controleur/ControleurAutentification.php" afterPath="$PROJECT_DIR$/Controleur/ControleurAuthentification.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Vue/vueAutentification.php" afterPath="$PROJECT_DIR$/Vue/vueAuthentification.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vue/vueFormulaireReponse.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controleur/ControleurBillet.php" afterPath="$PROJECT_DIR$/Controleur/ControleurBillet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controleur/ControleurUser.php" afterPath="$PROJECT_DIR$/Controleur/ControleurUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controleur/Routeur.php" afterPath="$PROJECT_DIR$/Controleur/Routeur.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/Billet.php" afterPath="$PROJECT_DIR$/Modele/Billet.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/Commentaire.php" afterPath="$PROJECT_DIR$/Modele/Commentaire.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/User.php" afterPath="$PROJECT_DIR$/Modele/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/form.php" afterPath="$PROJECT_DIR$/Vue/form.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/gabarit.php" afterPath="$PROJECT_DIR$/Vue/gabarit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueAccueil.php" afterPath="$PROJECT_DIR$/Vue/vueAccueil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueAddBillet.php" afterPath="$PROJECT_DIR$/Vue/vueAddBillet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueErreur.php" afterPath="$PROJECT_DIR$/Vue/vueErreur.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueAdministrateur.php" afterPath="$PROJECT_DIR$/Vue/vueAdministrateur.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueBillet.php" afterPath="$PROJECT_DIR$/Vue/vueBillet.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,31 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Routeur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controleur/Routeur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vueAccueil.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vue/vueAccueil.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ControleurAccueil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controleur/ControleurAccueil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,11 +54,27 @@
       <file leaf-file-name="Billet.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modele/Billet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-43">
-              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="36" />
+            <state relative-caret-position="405">
+              <caret line="27" column="78" lean-forward="false" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
               <folding>
-                <marker date="1487786592000" expanded="true" signature="1371:1458" ph="INSERT INTO T_BILLET... " />
-                <marker date="1487786592000" expanded="true" signature="1888:1923" ph="DELETE FROM " />
+                <marker date="1487873770000" expanded="true" signature="228:296" ph="SELECT idB, tBillets" />
+                <marker date="1487873770000" expanded="true" signature="235:270" ph="SELECT idBil... tBillets" />
+                <marker date="1487873770000" expanded="true" signature="235:296" ph="SELECT idBil... tBillets" />
+                <marker date="1487873770000" expanded="true" signature="643:705" ph="SELECT idB, tBillets" />
+                <marker date="1487873770000" expanded="true" signature="1120:1207" ph="INSERT INTO T_BILLET... " />
+                <marker date="1487873770000" expanded="true" signature="1646:1681" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <marker date="1487873817000" expanded="true" signature="130:451" ph="..." />
               </folding>
             </state>
           </provider>
@@ -92,29 +83,29 @@
       <file leaf-file-name="vueBillet.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vue/vueBillet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="405">
+              <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gabarit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vue/gabarit.php">
+      <file leaf-file-name="Commentaire.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modele/Commentaire.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControleurUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controleur/ControleurUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="69" lean-forward="false" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
-              <folding />
+            <state relative-caret-position="600">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <marker date="1487891101000" expanded="true" signature="277:367" ph="SELECT idC, tCommentairesWHERE" />
+                <marker date="1487891101000" expanded="true" signature="287:342" ph="SELECT idCom... tcommentaires" />
+                <marker date="1487891101000" expanded="true" signature="287:367" ph="SELECT idCom... tcommentaires" />
+                <marker date="1487891101000" expanded="true" signature="651:694" ph="SELECT idCom... T_COMMENTAIRE" />
+                <marker date="1487891101000" expanded="true" signature="651:707" ph="SELECT idC, tCommentaires" />
+                <marker date="1487891101000" expanded="true" signature="651:719" ph="SELECT idCom... T_COMMENTAIRE" />
+                <marker date="1487891101000" expanded="true" signature="1523:1599" ph="INSERT INTO tCommentaires... " />
+                <marker date="1487891101000" expanded="true" signature="1840:1918" ph="SELECT idC, tCommentaires" />
+                <marker date="1487891101000" expanded="true" signature="2215:2319" ph="INSERT INTO tCommentaires... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,16 +120,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Commentaire.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Modele/Commentaire.php">
+      <file leaf-file-name="Modele.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modele/Modele.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <marker date="1487860708000" expanded="true" signature="1241:1382" ph="INSERT into T_COMMENTAIRE... " />
-                <marker date="1487860708000" expanded="true" signature="1247:1382" ph="insert into T_COMMENTAIRE... " />
-                <marker date="1487860708000" expanded="true" signature="1703:1794" ph="INSERT INTO T_COMMENTAIRE... " />
-              </folding>
+            <state relative-caret-position="690">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,8 +133,28 @@
       <file leaf-file-name="ControleurBillet.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controleur/ControleurBillet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vue.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vue/Vue.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vueFormulaireReponse.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/vueFormulaireReponse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -175,9 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vue/VueFooter.php" />
-        <option value="$PROJECT_DIR$/vue/VueMenu.php" />
-        <option value="$PROJECT_DIR$/vue/vueEntete.php" />
         <option value="$PROJECT_DIR$/vue/vueAccueil.php" />
         <option value="$PROJECT_DIR$/vue/vueMenu.php" />
         <option value="$PROJECT_DIR$/vue/Index.php" />
@@ -203,29 +207,32 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Vue/vueLogin.php" />
         <option value="$PROJECT_DIR$/Modele/comment.php" />
-        <option value="$PROJECT_DIR$/Vue/form.php" />
         <option value="$PROJECT_DIR$/Vue/vueAutentification.php" />
         <option value="$PROJECT_DIR$/Controleur/ControleurAutentification.php" />
         <option value="$PROJECT_DIR$/Modele/authentification.php" />
         <option value="$PROJECT_DIR$/Vue/vueBilletd.php" />
         <option value="$PROJECT_DIR$/Vue/Vue.php" />
-        <option value="$PROJECT_DIR$/Vue/vueAddBillet.php" />
         <option value="$PROJECT_DIR$/Vue/vueErreur.php" />
         <option value="$PROJECT_DIR$/Vue/vueAuthentification.php" />
-        <option value="$PROJECT_DIR$/Vue/vueAdministrateur.php" />
         <option value="$PROJECT_DIR$/Modele/Modele.php" />
-        <option value="$PROJECT_DIR$/Modele/User.php" />
         <option value="$PROJECT_DIR$/Controleur/ControleurAuthentification.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/Vue/vueAccueil.php" />
-        <option value="$PROJECT_DIR$/Controleur/ControleurUser.php" />
         <option value="$PROJECT_DIR$/BD/MonBlog.sql" />
+        <option value="$PROJECT_DIR$/Vue/vueAccueil.php" />
+        <option value="$PROJECT_DIR$/Vue/vueAdministrateur.php" />
         <option value="$PROJECT_DIR$/Modele/Billet.php" />
-        <option value="$PROJECT_DIR$/Controleur/Routeur.php" />
-        <option value="$PROJECT_DIR$/Controleur/ControleurBillet.php" />
+        <option value="$PROJECT_DIR$/Vue/form.php" />
+        <option value="$PROJECT_DIR$/Vue/reponseCommentaire.php" />
+        <option value="$PROJECT_DIR$/Controleur/ControleurUser.php" />
+        <option value="$PROJECT_DIR$/Vue/formulaireReponse.php" />
         <option value="$PROJECT_DIR$/Vue/gabarit.php" />
+        <option value="$PROJECT_DIR$/Vue/vueAddBillet.php" />
+        <option value="$PROJECT_DIR$/Modele/User.php" />
+        <option value="$PROJECT_DIR$/Controleur/ControleurBillet.php" />
+        <option value="$PROJECT_DIR$/Controleur/Routeur.php" />
         <option value="$PROJECT_DIR$/Vue/vueBillet.php" />
         <option value="$PROJECT_DIR$/Modele/Commentaire.php" />
+        <option value="$PROJECT_DIR$/Vue/vueFormulaireReponse.php" />
       </list>
     </option>
   </component>
@@ -242,10 +249,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="184" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1712" />
-    <option name="height" value="920" />
+    <option name="x" value="-476" />
+    <option name="y" value="-802" />
+    <option name="width" value="1865" />
+    <option name="height" value="1022" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,7 +270,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,7 +413,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -524,11 +531,13 @@
       <workItem from="1487671241617" duration="17324000" />
       <workItem from="1487758975400" duration="15428000" />
       <workItem from="1487841906318" duration="10764000" />
+      <workItem from="1487864206257" duration="19286000" />
+      <workItem from="1487930864407" duration="443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237194000" />
+    <option name="totallyTimeSpent" value="256923000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -540,16 +549,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="184" y="-1057" width="1712" height="920" extended-state="0" />
-    <editor active="false" />
+    <frame x="-476" y="-802" width="1865" height="1022" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.49483204" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1870543" sideWeight="0.49483204" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.50610584" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35788113" sideWeight="0.49389416" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23297492" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3042394" sideWeight="0.49342683" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.043141592" sideWeight="0.49342683" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22455902" sideWeight="0.50516796" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -608,8 +617,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue/Menu.php" />
-    <entry file="file://$PROJECT_DIR$/controler/ControleurBillet.php" />
     <entry file="file://$PROJECT_DIR$/controler/ControleurCommentaire.php" />
     <entry file="file://$PROJECT_DIR$/controler/ControleurUser.php" />
     <entry file="file://$PROJECT_DIR$/modele/Billet.class.php" />
@@ -643,16 +650,6 @@
     <entry file="file://$PROJECT_DIR$/Modele/authentification.php" />
     <entry file="file://$PROJECT_DIR$/Vue/Billet.php" />
     <entry file="file://$PROJECT_DIR$/Vue/Billet.php" />
-    <entry file="file://$PROJECT_DIR$/Vue/form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="9" />
-          <folding>
-            <marker date="1487282089000" expanded="true" signature="130:450" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/tinymce/jquery.tinymce.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -667,16 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modele/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <marker date="1487694504000" expanded="true" signature="625:676" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BD/MonBlog.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -684,30 +671,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/Vue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueAddBillet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueAdministrateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Modele/CommentaireManager.php" />
     <entry file="file://$PROJECT_DIR$/Vue/vueAuthentification.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -728,42 +692,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueAdministrateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modele/Modele.php">
+    <entry file="file://$PROJECT_DIR$/Vue/gabarit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="25" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueAccueil.php">
+    <entry file="file://$PROJECT_DIR$/Vue/vueAddBillet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="495">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controleur/ControleurUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="69" lean-forward="false" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modele/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <marker date="1487886889000" expanded="true" signature="625:677" ph="SELECT * FRO... users" />
+            <marker date="1487886889000" expanded="true" signature="983:1029" ph="insert into tBillets... " />
+            <marker date="1487886889000" expanded="true" signature="983:1045" ph="insert into tBillets... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controleur/Routeur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueAccueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="32" lean-forward="false" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controleur/ControleurAccueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="17" selection-end-column="52" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -776,58 +776,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/ControleurBillet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/Routeur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="68" lean-forward="false" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modele/Billet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="36" />
+        <state relative-caret-position="405">
+          <caret line="27" column="78" lean-forward="false" selection-start-line="27" selection-start-column="78" selection-end-line="27" selection-end-column="78" />
           <folding>
-            <marker date="1487786592000" expanded="true" signature="1371:1458" ph="INSERT INTO T_BILLET... " />
-            <marker date="1487786592000" expanded="true" signature="1888:1923" ph="DELETE FROM " />
+            <marker date="1487873770000" expanded="true" signature="228:296" ph="SELECT idB, tBillets" />
+            <marker date="1487873770000" expanded="true" signature="235:270" ph="SELECT idBil... tBillets" />
+            <marker date="1487873770000" expanded="true" signature="235:296" ph="SELECT idBil... tBillets" />
+            <marker date="1487873770000" expanded="true" signature="643:705" ph="SELECT idB, tBillets" />
+            <marker date="1487873770000" expanded="true" signature="1120:1207" ph="INSERT INTO T_BILLET... " />
+            <marker date="1487873770000" expanded="true" signature="1646:1681" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/gabarit.php">
+    <entry file="file://$PROJECT_DIR$/Modele/Modele.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueBillet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="690">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modele/Commentaire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <marker date="1487860708000" expanded="true" signature="1241:1382" ph="INSERT into T_COMMENTAIRE... " />
-            <marker date="1487860708000" expanded="true" signature="1247:1382" ph="insert into T_COMMENTAIRE... " />
-            <marker date="1487860708000" expanded="true" signature="1703:1794" ph="INSERT INTO T_COMMENTAIRE... " />
+            <marker date="1487891101000" expanded="true" signature="277:367" ph="SELECT idC, tCommentairesWHERE" />
+            <marker date="1487891101000" expanded="true" signature="287:342" ph="SELECT idCom... tcommentaires" />
+            <marker date="1487891101000" expanded="true" signature="287:367" ph="SELECT idCom... tcommentaires" />
+            <marker date="1487891101000" expanded="true" signature="651:694" ph="SELECT idCom... T_COMMENTAIRE" />
+            <marker date="1487891101000" expanded="true" signature="651:707" ph="SELECT idC, tCommentaires" />
+            <marker date="1487891101000" expanded="true" signature="651:719" ph="SELECT idCom... T_COMMENTAIRE" />
+            <marker date="1487891101000" expanded="true" signature="1523:1599" ph="INSERT INTO tCommentaires... " />
+            <marker date="1487891101000" expanded="true" signature="1840:1918" ph="SELECT idC, tCommentaires" />
+            <marker date="1487891101000" expanded="true" signature="2215:2319" ph="INSERT INTO tCommentaires... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueFormulaireReponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1487873817000" expanded="true" signature="130:451" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueBillet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controleur/ControleurBillet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/Vue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="62" lean-forward="true" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>

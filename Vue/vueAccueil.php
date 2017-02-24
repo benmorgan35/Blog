@@ -42,10 +42,10 @@
                         <?php foreach ($billets as $billet):?>
                             <tr>
                                 <td>
-                                    <time style="color:grey; font-size: 0.8em"><i><?= $billet['dateFR'] ?></i></time>
+                                    <time style="color:grey; font-size: 0.8em"><i><?= $billet['dateCrea'] ?></i></time>
                                 </td>
                                 <td>
-                                    <a href="<?= "index.php?action=billet&id=" . $billet['id'] ?>">
+                                    <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>">
                                         <p class="titreBillet"><?= $billet['titre'] ?><br />
                                     </a>
                                 </td>

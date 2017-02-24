@@ -29,7 +29,7 @@ Class User extends  Modele {
 
     public function getuser($username, $password)
     {
-        $sql = 'SELECT * FROM users WHERE username=? AND password=?';
+        $sql = 'SELECT * FROM tusers WHERE username=? AND password=?';
         $user = $this->executerRequete($sql, array($username, $password));
         if ($user->rowCount() > 0)
             return $user->fetch();  // Accès à la première ligne de résultat
@@ -39,7 +39,9 @@ Class User extends  Modele {
 
 
     public function add(Billets $billet){
-
+        $sql = 'insert into tBillets(dateCrea, titre, contenu) values(?, ?, ?)';
+        $date = date(DATE_W3C);  // Récupère la date courante
+        $this->executerRequete($sql, array($date, $titre, $contenu));
     }
 
     public function save(Billet $billets){

@@ -1,5 +1,5 @@
 <?php
-session_start()
+//session_start()
 
 require_once 'Modele/Billet.php';
 require_once 'Modele/Commentaire.php';
@@ -29,8 +29,7 @@ class ControleurUser
         $user = $this->user->getUser($username, $password);
         //var_dump($user);
         //$this->$Session->setFlash(__('Bonjour Jean, vous êtes maintenant connecté');
-        header ('Location: index.php?action=billet&id=' . $idBillet);
-
+        header ('Location: index.php?action=billet&idBillet=' . $idBillet);
     }
 
     public function deconnexion()

@@ -24,8 +24,13 @@
     <h3 id="adBillet">Ajouter un épisode </h3>
 </header>
 
-<form action="vueAddBillet.php" method="post"> <textarea style="width: 100%;" name="content">&lt;br /&gt; </textarea>
-    <input name="send" type="submit" value="Envoyer" />
+<form method="post" action="index.php?action=addBillet">
+    <input id="titreBillet" name="titreBillet" type="text" placeholder="titre du billet"
+           required /><br />
+    <textarea id="txtBillet" name="contenu" rows="4"
+              placeholder="Votre billet" required></textarea><br />
+
+    <input type="submit" value="Créer un billet" />
 </form>
 
 

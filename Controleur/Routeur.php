@@ -23,7 +23,7 @@ class Routeur {
         try {
             if (isset($_GET['action'])) {
                 if ($_GET['action'] == 'billet') {
-                    $idBillet = intval($this->getParametre($_GET, 'id'));
+                    $idBillet = intval($this->getParametre($_GET, 'idB'));
                     if ($idBillet != 0) {
                         $this->ctrlBillet->billet($idBillet);
                     }
@@ -33,19 +33,21 @@ class Routeur {
                 else if ($_GET['action'] == 'commenter') {
                     $auteur = $this->getParametre($_POST, 'auteur');
                     $contenu = $this->getParametre($_POST, 'contenu');
-                    $idBillet = $this->getParametre($_POST, 'id');
+                    $idBillet = $this->getParametre($_POST, 'idB');
                     $this->ctrlBillet->commenter($auteur, $contenu, $idBillet);
                 }
-/*
+                else if ($_GET['action'] == 'formulaireReponse') {
+                    $idBillet = $this->getParametre($_GET, 'idB');
+                    $idCommentaire = $this->getParametre($_GET, 'idC');
+                    $this->ctrlBillet->formulaireReponse($idBillet, $idCommentaire);
+                }
                 else if($_GET['action'] == 'repondre') {
                     $auteur = $this->getParametre($_POST, 'auteur');
                     $contenu = $this->getParametre($_POST, 'contenu');
-                    $idBillet = $this->getParametre($_POST, 'id');
-                    $idCommentaire = $this->getParametre($_POST, 'id');
+                    $idBillet = $this->getParametre($_POST, 'idB');
+                    $idCommentaire = $this->getParametre($_POST, 'idC');
                     $this->ctrlBillet->repondre($auteur, $contenu, $idBillet, $idCommentaire);
                 }
-*/
-
                 else if ($_GET['action'] == 'authentification') {
                 $this->ctrlAuth->authentification();
                 }
