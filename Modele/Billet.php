@@ -10,7 +10,7 @@ class Billet extends Modele {
      * @return PDOStatement La liste des billets
      */
     public function getBillets() {
-        $sql = 'SELECT idB, dateCrea, titre, contenu FROM tBillets ORDER BY idB DESC';
+        $sql = 'SELECT * FROM tBillets ORDER BY idB DESC';
         $billets = $this->executerRequete($sql);
         return $billets;
     }
@@ -22,7 +22,7 @@ class Billet extends Modele {
      * @throws Exception Si l'identifiant du billet est inconnu
      */
     public function getBillet($idBillet) {
-        $sql = 'SELECT idB, dateCrea, titre, contenu FROM tBillets WHERE idB=?';
+        $sql = 'SELECT * FROM tBillets WHERE idB=?';
         $billet = $this->executerRequete($sql, array($idBillet));
         if ($billet->rowCount() > 0)
             return $billet->fetch();  // Accès à la première ligne de résultat
@@ -30,15 +30,6 @@ class Billet extends Modele {
             throw new Exception("Aucun billet ne correspond à l'identifiant '$idBillet'");
     }
 
-    // Créer un billet  BEN
-    /*
-    public function addBillet($BIL_TITRE, $BIL_DATE, $BIL_CONTENU){
-        $sql = 'INSERT INTO T_BILLET(BIL_TITRE, BIL_DATE, BIL_CONTENU)'
-            . ' values(?, ?, ?)';
-        $BIL_DATE = date(DATE_W3C);  // Récupère la date courante
-        $this->executerRequete($sql, array($BIL_TITRE, $BIL_DATE, $BIL_CONTENU));
-    }
-    */
     // Mise à jour de billet BEN
     public function updateBillet($idBillet){
         //$sql = 'UPDATE FROM T_BILLET WHERE BIL_ID=?';

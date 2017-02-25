@@ -3,6 +3,7 @@
 require_once 'ControleurAccueil.php';
 require_once 'ControleurBillet.php';
 require_once 'ControleurAuthentification.php';
+require_once 'ControleurCommentaire.php';
 
 require_once 'Vue/Vue.php';
 
@@ -11,11 +12,13 @@ class Routeur {
     private $ctrlAccueil;
     private $ctrlBillet;
     private $ctrlAuth;
+    private $ctrlCommentaire;
 
     public function __construct() {
         $this->ctrlAccueil = new ControleurAccueil();
         $this->ctrlBillet = new ControleurBillet();
         $this->ctrlAuth = new ControleurAuthentification();
+        $this->ctrlCommentaire = new ControleurCommentaire();
     }
 
     // Route une requête entrante : exécution l'action associée
@@ -36,35 +39,33 @@ class Routeur {
                     $idBillet = $this->getParametre($_POST, 'idB');
                     $this->ctrlBillet->commenter($auteur, $contenu, $idBillet);
                 }
-                else if ($_GET['action'] == 'formulaireReponse') {
-                    $idBillet = $this->getParametre($_GET, 'idB');
-                    $idCommentaire = $this->getParametre($_GET, 'idC');
-                    $this->ctrlBillet->formulaireReponse($idBillet, $idCommentaire);
+
+                else if ($_GET['action'] == 'commentaire') {
+                    $idCommentaire = intval($this->getParametre($_GET, 'idC'));
+                    if ($idCommentaire != 0) {
+                        $this->ctrlCommentaire->commentaire($idCommentaire);
+                    }
+                    else
+                        throw new Exception("Identifiant de commentaire non valide");
                 }
                 else if($_GET['action'] == 'repondre') {
                     $auteur = $this->getParametre($_POST, 'auteur');
                     $contenu = $this->getParametre($_POST, 'contenu');
                     $idBillet = $this->getParametre($_POST, 'idB');
-                    $idCommentaire = $this->getParametre($_POST, 'idC');
-                    $this->ctrlBillet->repondre($auteur, $contenu, $idBillet, $idCommentaire);
+                    $idParent = $this->getParametre($_POST, 'idParent');
+                    $this->ctrlCommentaire->repondre($auteur, $contenu, $idBillet, $idParent);
                 }
                 else if ($_GET['action'] == 'authentification') {
                 $this->ctrlAuth->authentification();
                 }
-
-
                 else if ($_GET['action'] == 'connexion'){
                     $username = $this->getParametre($_POST, 'username');
                     $password = $this->getParametre($_POST, 'password');
                    $this->ctrlAuth->connexion($username, $password);
                 }
-
                 else if ($_GET['action'] == 'deconnexion'){
                    //$this->ctrlAuth->deconnexion();
                 }
-
-
-
 
 
                 else

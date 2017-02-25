@@ -21,7 +21,7 @@ $this->titre = "Mon Blog - " . $billet['titre']; ?>
 
 <p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateCrea'] ?></p>
     <p><?= $commentaire['contenu'] ?></p>
-   <a href="<?= "index.php?action=formulaireReponse&idB=" . $billet['idB'] .  "&idC=" . $commentaire['idC']?>">Répondre</a>
+   <a href="<?= "index.php?action=commentaire&idB=" . $commentaire['idB'] . "&idC=" . $commentaire['idC']?>">Répondre</a>
 
     <hr />
 

@@ -39,9 +39,9 @@ Class User extends  Modele {
 
 
     public function add(Billets $billet){
-        $sql = 'insert into tBillets(dateCrea, titre, contenu) values(?, ?, ?)';
+        $sql = 'insert into tBillets(titre, dateCrea, contenu) values(?, ?, ?)';
         $date = date(DATE_W3C);  // Récupère la date courante
-        $this->executerRequete($sql, array($date, $titre, $contenu));
+        $this->executerRequete($sql, array($titre, $dateCrea, $contenu));
     }
 
     public function save(Billet $billets){
