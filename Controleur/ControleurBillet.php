@@ -5,19 +5,22 @@ require_once 'Modele/Commentaire.php';
 require_once 'Vue/Vue.php';
 
 
-class ControleurBillet {
+class ControleurBillet
+{
 
     private $billet;
     private $commentaire;
 
 
-    public function __construct() {
+    public function __construct()
+    {
         $this->billet = new Billet();
         $this->commentaire = new Commentaire();
     }
 
     // Affiche les détails sur un billet
-    public function billet($idBillet) {
+    public function billet($idBillet)
+    {
         $billet = $this->billet->getBillet($idBillet);
         $commentaires = $this->commentaire->getCommentaires($idBillet);
 
@@ -25,15 +28,35 @@ class ControleurBillet {
         $vue->generer(array('billet' => $billet, 'commentaires' => $commentaires));
     }
 
+    //affiche les détails d'un commentaire
+    public function commentaire($idCommentaire)
+    {
+        $commentaire = $this->commentaire->getCommentaire($idCommentaire);
+        $vue = new Vue("Commentaire");
+        $vue->generer(array('commentaire' => $commentaire));
+    }
+
     // Ajoute un commentaire à un billet
-    public function commenter($auteur, $contenu, $idBillet) {
+    public function commenter($auteur, $contenu, $idBillet)
+    {
         // Sauvegarde du commentaire
         $this->commentaire->ajouterCommentaire($auteur, $contenu, $idBillet);
         // Actualisation de l'affichage du billet
         // ajouter message flash
-        header ('Location: index.php?action=billet&idB=' . $idBillet);
+        header('Location: index.php?action=billet&idB=' . $idBillet);
     }
 
+
+
+    //répondre à un commentaire
+    public function repondre($auteur, $contenu, $idBillet, $idCommentaire)
+    {
+        // Sauvegarde du commentaire
+        $this->commentaire->repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire);
+        // Actualisation de l'affichage du billet
+        // ajouter message flash
+        header('Location: index.php?action=billet&idB=' . $idBillet);
+    }
 
 
 }

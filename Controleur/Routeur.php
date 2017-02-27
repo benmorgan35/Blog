@@ -41,6 +41,7 @@ class Routeur {
                 }
 
                 else if ($_GET['action'] == 'commentaire') {
+                    //$idBillet = intval($this->getParametre($_GET, 'idB'));
                     $idCommentaire = intval($this->getParametre($_GET, 'idC'));
                     if ($idCommentaire != 0) {
                         $this->ctrlCommentaire->commentaire($idCommentaire);
@@ -52,8 +53,9 @@ class Routeur {
                     $auteur = $this->getParametre($_POST, 'auteur');
                     $contenu = $this->getParametre($_POST, 'contenu');
                     $idBillet = $this->getParametre($_POST, 'idB');
-                    $idParent = $this->getParametre($_POST, 'idParent');
-                    $this->ctrlCommentaire->repondre($auteur, $contenu, $idBillet, $idParent);
+                    $idParent = $this->getParametre($_POST, 'idC');
+                    $profondeur = $this->getParametre($_POST, 'profondeur');
+                    $this->ctrlCommentaire->repondre($auteur, $contenu, $idBillet, $idParent, $profondeur);
                 }
                 else if ($_GET['action'] == 'authentification') {
                 $this->ctrlAuth->authentification();

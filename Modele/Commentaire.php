@@ -11,13 +11,26 @@ class Commentaire extends Modele
 {
 
 
-
     // Renvoie la liste des commentaires associés à un billet
     public function getCommentaires($idBillet)
     {
-        $sql = 'SELECT * FROM tCommentaires WHERE idB=?';// rajouter idC ??
+        $sql = 'SELECT * FROM tCommentaires WHERE idB=? ORDER BY idC ASC';// rajouter idC ??
         $commentaires = $this->executerRequete($sql, array($idBillet));
         return $commentaires;
+    }
+
+
+
+
+// Renvoie les informations sur un commentaire
+    public function getCommentaire($idCommentaire)
+    {
+        $sql = 'SELECT * FROM tCommentaires WHERE idC=?';
+        $commentaire = $this->executerRequete($sql, array($idCommentaire));
+        if ($commentaire->rowCount() > 0)
+            return $commentaire->fetch();  // Accès à la première ligne de résultat
+        else
+            throw new Exception("Aucun commentaire ne correspond à l'identifiant '$idCommentaire'");
     }
 
     // Ajoute un commentaire à un billet dans la base
@@ -26,16 +39,6 @@ class Commentaire extends Modele
         $sql = 'INSERT INTO tCommentaires(dateCrea, auteur, contenu, idB, idParent, profondeur) values(?, ?, ?, ?, NULL , 0)';
         $date = date(DATE_W3C);  // Récupère la date courante
         $this->executerRequete($sql, array($date, $auteur, $contenu, $idBillet));
-    }
-
-    // Renvoie les informations sur un commentaire
-    public function getCommentaire($idCommentaire) {
-        $sql = 'SELECT * FROM tCommentaires WHERE idC=?';
-        $commentaire = $this->executerRequete($sql, array($idCommentaire));
-        if ($commentaire->rowCount() > 0)
-            return $commentaire->fetch();  // Accès à la première ligne de résultat
-        else
-            throw new Exception("Aucun commentaire ne correspond à l'identifiant '$idCommentaire'");
     }
 
 
@@ -49,18 +52,7 @@ class Commentaire extends Modele
 
     }
 
-    /*
-           //rajout Ben
-           // Renvoie la liste de réponses associées à un commentaire
-           /*
-           public function getReponses($idCommentaire)
-           {
-               $sql = 'SELECT COM_ID AS id, DATE_FORMAT(COM_DATE, \'%d/%m/%Y à %Hh%imin%ss\') AS dateFR, COM_AUTEUR AS auteur, COM_CONTENU AS contenu FROM T_COMMENTAIRE WHERE BIL_ID=? AND COM_ID=?' AND GAUCHE - DROITE >1;
-               $reponses = $this->executerRequete($sql, array($idCommentaire));
-               return $reponses;
-           }
 
-       */
 
 
 // supprime un commentaire

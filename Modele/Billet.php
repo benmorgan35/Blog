@@ -38,7 +38,7 @@ class Billet extends Modele {
 
     // Supprimer un billet BEN
     public function deleteBillet($idBillet){
-        //$sql = 'DELETE FROM T_BILLET WHERE BIL_ID=?';
+        //$sql = 'DELETE FROM tBillets WHERE idB=$_GET["idB”]}';
         //$this->executerRequete($sql);
     }
 }

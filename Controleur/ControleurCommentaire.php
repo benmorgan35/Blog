@@ -18,9 +18,11 @@ class ControleurCommentaire
         $this->commentaire = new Commentaire();
     }
 
+
     // Affiche les détails d'un commentaire
     public function commentaire($idCommentaire)
     {
+
         $commentaire = $this->commentaire->getCommentaire($idCommentaire);
         $vue = new Vue("Commentaire");
         $vue->generer(array('commentaire' => $commentaire));
@@ -34,7 +36,7 @@ class ControleurCommentaire
         $this->commentaire->repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire);
         // Actualisation de l'affichage du billet
         // ajouter message flash
-        header('Location: index.php?action=billet&idB=' . $idBillet);
+        header ('Location: index.php?action=billet&idB=' . $idBillet);
     }
 
 }

@@ -16,7 +16,11 @@ p {
     color: grey;
 }
 
-
+.comment1{
+    margin-left: 100px;
+}.comment2{
+    margin-left: 200px;
+}
 
 .page{
     margin:0;
