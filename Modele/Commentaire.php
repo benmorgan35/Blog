@@ -11,16 +11,28 @@ class Commentaire extends Modele
 {
 
 
-    // Renvoie la liste des commentaires associés à un billet
+    // Renvoie la liste des commentaires de profondeur 0 associés à un billet
     public function getCommentaires($idBillet)
     {
-        $sql = 'SELECT * FROM tCommentaires WHERE idB=? ORDER BY idC ASC';// rajouter idC ??
+        $sql = 'SELECT * FROM tCommentaires WHERE idB=? AND profondeur=0 ORDER BY idC ASC';// rajouter idC ??
         $commentaires = $this->executerRequete($sql, array($idBillet));
         return $commentaires;
     }
 
+    //Renvoie la liste des commentaires enfants associés à un commentaire
+    public function getCommentairesChilds($idBillet)
+    {
+        $sql = 'SELECT * FROM tCommentaires WHERE idB=? AND profondeur=1 ORDER BY idC ASC';
+        $reponses = $this->executerRequete($sql, array($idBillet));
+        return $reponses;
 
-
+    } //Renvoie la liste des commentaires enfants associés à une réponse
+    public function getReponsesChilds($idBillet)
+    {
+        $sql = 'SELECT * FROM tCommentaires WHERE idB=? AND profondeur=2 ORDER BY idC ASC';
+        $reponses = $this->executerRequete($sql, array($idBillet));
+        return $reponses;
+    }
 
 // Renvoie les informations sur un commentaire
     public function getCommentaire($idCommentaire)

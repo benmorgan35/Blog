@@ -7,7 +7,7 @@
         <hr/>
     </header>
 
-    <form method="post" action="index.php?action=connexion">
+    <form method="post" action="<?="index.php?action=connexion"?>">
 
         <input id="username" name="username" type="text" placeholder="Identifiant" required/><br /><br />
 

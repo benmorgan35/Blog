@@ -19,39 +19,44 @@ $this->titre = "Mon Blog - " . $billet['titre']; ?>
 
 
 <?php foreach ($commentaires as $commentaire) : ?>
+    <div class="foreach1">
 
-    <?php if ($commentaire['profondeur'] >= 0) : ?>
-        <p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateCrea'] ?></p>
-        <p><?= $commentaire['contenu'] ?></p>
-        <a href="<?= "index.php?action=commentaire&idB=" . $commentaire['idB'] . "&idC=" . $commentaire['idC'] ?>">Répondre</a>
+    <p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateCrea'] ?><br />
+        <?= $commentaire['contenu'] ?></p>
+    <a class="btn btn-primary" style="font-size: 10px;" href="<?= "index.php?action=commentaire&idB=" . $commentaire['idB'] . "&idC=" . $commentaire['idC'] ?>">Répondre</a>
+        <a class="btn btn-primary" style="font-size: 10px; background: darkgrey; border-color: grey; width: 70px;" href="<?= "index.php?action=signaler&idB=" . $commentaire['idB'] . "&idC=" . $commentaire['idC'] ?>">Signaler</a>
 
 
-        <?php foreach ($commentaires as $commentaire) : ?>
-            <?php if ($commentaire['profondeur'] != 0) : ?>
+    <?php foreach ($reponsesCommentaire as $commentaire) : ?>
+    <div class="foreach2">
+        <div class="comment1">
 
-                <div class="comment1">
-                    <p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateCrea'] ?></p>
-                    <p><?= $commentaire['contenu'] ?></p>
-                    <a href="<?= "index.php?action=commentaire&idB=" . $commentaire['idB'] . "&idC=" . $commentaire['idC'] ?>">Répondre</a>
-                </div>
+            <p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateCrea'] ?><br />
+            <?= $commentaire['contenu'] ?></p>
+            <a class="btn btn-primary" style="font-size: 10px;" href="<?= "index.php?action=commentaire&idB=" . $commentaire['idB'] . "&idC=" . $commentaire['idC'] ?>">Répondre</a>
+            <a class="btn btn-primary" style="font-size: 10px; background: darkgrey; border-color: grey;width: 70px;"   href="<?= "index.php?action=signaler&idB=" . $commentaire['idB'] . "&idC=" . $commentaire['idC'] ?>">Signaler</a>
+        </div>
 
-                <?php foreach ($commentaires as $commentaire): ?>
-                    <?php if ($commentaire['profondeur'] == 2) : ?>
 
-                        <div class="comment2">
-                            <p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateCrea'] ?></p>
-                            <p><?= $commentaire['contenu'] ?></p>
-                        </div>
-                    <?php endif; ?>
-                <?php endforeach; ?>
+        <?php foreach ($reponsesReponse as $commentaire) : ?>
+            <div class="foreach3">
+            <div class="comment2">
 
-            <?php endif; ?>
+                <p><b> <?= $commentaire['auteur'] ?></b> - le <?= $commentaire['dateCrea'] ?><br />
+                <?= $commentaire['contenu'] ?></p>
+                <a class="btn btn-primary" style="font-size: 10px; background: darkgrey; border-color: grey;width: 70px;" href="<?= "index.php?action=signaler&idB=" . $commentaire['idB'] . "&idC=" . $commentaire['idC'] ?>">Signaler</a>
+            </div>
+
+            </div>
         <?php endforeach; ?>
 
-    <?php endif; ?>
-    <hr/>
-<?php endforeach; ?>
+        </div>
+    <?php endforeach; ?>
 
+    </div>
+<?php endforeach; ?> <br/>
+
+<br />
 
 
 

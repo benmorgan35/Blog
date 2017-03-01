@@ -22,7 +22,6 @@ class ControleurCommentaire
     // Affiche les détails d'un commentaire
     public function commentaire($idCommentaire)
     {
-
         $commentaire = $this->commentaire->getCommentaire($idCommentaire);
         $vue = new Vue("Commentaire");
         $vue->generer(array('commentaire' => $commentaire));
@@ -30,10 +29,10 @@ class ControleurCommentaire
 
 
     //répondre à un commentaire
-    public function repondre($auteur, $contenu, $idBillet, $idCommentaire)
+    public function repondre($auteur, $contenu, $idBillet, $idCommentaire, $idParent)
     {
         // Sauvegarde du commentaire
-        $this->commentaire->repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire);
+        $this->commentaire->repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire, $idParent);
         // Actualisation de l'affichage du billet
         // ajouter message flash
         header ('Location: index.php?action=billet&idB=' . $idBillet);

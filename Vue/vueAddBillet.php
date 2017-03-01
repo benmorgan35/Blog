@@ -19,21 +19,40 @@
         });
     </script>
 </head>
-
 <header>
-    <h3 id="adBillet">Ajouter un épisode </h3>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand"><b>Espace Administrateur</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a href="<?= "index.php?action=adminAccueil" ?>">Episodes</a></li>
+        <li><a href="<?= "index.php?action=adminCommentaires" ?>">Commentaires</a></li>
+        <li><a href="<?= "index.php?action=deconnexion" ?>">Déconnexion</a></li>
+        <!
+    </ul>
+</nav>
+
 </header>
 
-<form method="post" action="index.php?action=addBillet">
-    <input id="titreBillet" name="titreBillet" type="text" placeholder="titre du billet"
-           required /><br />
-    <textarea id="txtBillet" name="contenu" rows="4"
-              placeholder="Votre billet" required></textarea><br />
 
-    <input type="submit" value="Créer un billet" />
+<div class="row">
+    <div class="col-xs-12">
+        <h2 id="admin">Ajouter un épisode</h2> <hr />
+
+
+
+<form method="post" action="<?="index.php?action=addBillet"?>">
+    <input id="titreBillet" name="titreBillet" type="text" class="form-control" placeholder="titre de l'épisode"
+           required ><br />
+    <textarea id="txtBillet" name="contenu" rows="10" class="form-control"
+              placeholder="Texte" required></textarea><br />
+    <input class="btn btn-primary" style="float: left" type="submit" value="Enregistrer en tant que brouillon" />
+    <input class="btn btn-primary" style="margin-left:50px; float: right" type="submit" value="Publier" />
 </form>
 
+    </div>
+</div>
 
-
+<br /><br />
 
 </html>

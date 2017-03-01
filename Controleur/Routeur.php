@@ -4,6 +4,7 @@ require_once 'ControleurAccueil.php';
 require_once 'ControleurBillet.php';
 require_once 'ControleurAuthentification.php';
 require_once 'ControleurCommentaire.php';
+require_once 'ControleurAdmin.php';
 
 require_once 'Vue/Vue.php';
 
@@ -13,12 +14,14 @@ class Routeur {
     private $ctrlBillet;
     private $ctrlAuth;
     private $ctrlCommentaire;
+    private $ctrlAdmin;
 
     public function __construct() {
         $this->ctrlAccueil = new ControleurAccueil();
         $this->ctrlBillet = new ControleurBillet();
         $this->ctrlAuth = new ControleurAuthentification();
         $this->ctrlCommentaire = new ControleurCommentaire();
+        $this->ctrlAdmin = new ControleurAdmin();
     }
 
     // Route une requête entrante : exécution l'action associée
@@ -27,12 +30,29 @@ class Routeur {
             if (isset($_GET['action'])) {
                 if ($_GET['action'] == 'billet') {
                     $idBillet = intval($this->getParametre($_GET, 'idB'));
+                    //$idCommentaire = intval($this->getParametre($_GET, 'idC'));
+                    //$idCommentaire = intval($this->getParametre($_POST, 'idC'));
+                   // $idParent = intval($this->getParametre($_GET, 'idC'));
+                    //$idParent = $this->getParametre($_POST, 'idC');
+
                     if ($idBillet != 0) {
                         $this->ctrlBillet->billet($idBillet);
+                        //$this->ctrlCommentaire->commentaire($idCommentaire);
+
                     }
                     else
                         throw new Exception("Identifiant de billet non valide");
                 }
+
+                else if ($_GET['action'] == 'adminAccueil') {
+                    $this->ctrlAdmin->adminAccueil();
+                }
+                else if ($_GET['action'] == 'addBillet') {
+                    $this->ctrlAdmin->addBillet();
+                }
+
+
+
                 else if ($_GET['action'] == 'commenter') {
                     $auteur = $this->getParametre($_POST, 'auteur');
                     $contenu = $this->getParametre($_POST, 'contenu');
@@ -43,8 +63,9 @@ class Routeur {
                 else if ($_GET['action'] == 'commentaire') {
                     //$idBillet = intval($this->getParametre($_GET, 'idB'));
                     $idCommentaire = intval($this->getParametre($_GET, 'idC'));
+                    $idParent = intval($this->getParametre($_GET, 'idParent'));
                     if ($idCommentaire != 0) {
-                        $this->ctrlCommentaire->commentaire($idCommentaire);
+                        $this->ctrlCommentaire->commentaire($idCommentaire, $idParent);
                     }
                     else
                         throw new Exception("Identifiant de commentaire non valide");

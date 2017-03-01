@@ -17,9 +17,9 @@ p {
 }
 
 .comment1{
-    margin-left: 100px;
+    margin-left: 5px;
 }.comment2{
-    margin-left: 200px;
+    margin-left: 5px;
 }
 
 .page{
@@ -30,8 +30,8 @@ p {
     background-size: cover; /* version standardisée */
     background-color: #cccccc;
     margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 
 
 }
@@ -60,7 +60,32 @@ p {
     background-color: lightyellow !important;
 }
 
+.repondre{
+    background-color: blue;
 
+}
+
+.signaler{
+    margin-left: 30px;
+
+}
+.foreach1{
+    border:1px solid lightyellow;
+    padding: 10px;
+    margin-top : 10px;
+}
+.foreach2{
+     border:1px solid lightyellow;
+     padding: 10px;
+    margin-left: 60px;
+    margin-top : 10px;
+}
+.foreach3{
+      border:1px solid lightyellow;
+      padding: 10px;
+    margin-left: 60px;
+    margin-top : 10px;
+}
 
 #texte {
     margin-left: 2%;
@@ -75,8 +100,8 @@ p {
 }
 
 #contenu {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #example_info{

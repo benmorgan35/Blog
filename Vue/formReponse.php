@@ -1,7 +1,7 @@
 <header>
 
 </header>
-<form method="post" action="index.php?action=repondre">
+<form method="post" action=" <?="index.php?action=repondre"?>">
     <input id="auteur" name="auteur" type="text" placeholder="  Votre pseudo"
            required /><br /><br />
     <textarea id="txtCommentaire" name="contenu" rows="4" class="form-control"

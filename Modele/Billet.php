@@ -30,9 +30,20 @@ class Billet extends Modele {
             throw new Exception("Aucun billet ne correspond à l'identifiant '$idBillet'");
     }
 
-    // Mise à jour de billet BEN
+    // Ajouter un billet
+
+        public function ajouterBillet($titre, $contenu)
+        {
+            $sql = 'INSERT INTO tBillets(dateCrea, titre, contenu) values(?, ?, ?)';
+            $date = date(DATE_W3C);  // Récupère la date courante
+            $this->executerRequete($sql, array($date, $titre, $contenu, $idB));
+        }
+
+
+
+    // modifier billet BEN
     public function updateBillet($idBillet){
-        //$sql = 'UPDATE FROM T_BILLET WHERE BIL_ID=?';
+        //$sql = 'UPDATE FROM tBillets WHERE idB=?';
         //$this->executerRequete($sql);
     }
 

@@ -24,8 +24,8 @@
                 <a class="navbar-brand"><b>Blog de Jean Forteroche</b></a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Accueil</a></li>
-                <li><a href="index.php#liste_episodes">Liste des épisodes</a></li>
+                <li class="active"><a href=" <?="index.php"?>">Accueil</a></li>
+                <li><a href="<?="index.php#liste_episodes"?>">Liste des épisodes</a></li>
                 <!-- if loginok : li backend -->
                 <!-- if loginok : li deconnexion -->
 
@@ -59,7 +59,8 @@
         <div class="row">
             <div class="col-lg-12" id="footer">
                 <p>Copyright © 2017 Jean Forteroche | Tous droits réservés |
-                    <a href="index.php?action=authentification">Administrateur</a>
+                    <a href="<?="index.php?action=authentification"?>">Connexion Admin</a></p>
+                    <p><a href="<?="index.php?action=adminAccueil"?>">Page d'accueil Admin</a></p>
             </div>
         </div>
 
