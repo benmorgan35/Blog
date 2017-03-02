@@ -20,46 +20,45 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <h2 id="admin">Administration des épisodes</h2> <hr />
+            <h2 id="admin">Administration des commentaires</h2> <hr />
 
-            <h3>Ajouter un épisode
-
-
-                <a class="btn btn-primary" style="float: right; margin-right: 2%; width:90px;" href="<?= "index.php?action=addBillet" ?>">Valider</a></h3>
         </div>
     </div>
     <hr />
     <div class='row'>
         <div class="col-xs-12">
-            <h3>Modifier ou supprimer un épisode existant</h3> <hr />
+
             <table class="table table-hover" cellspacing="0" width="100%">
 
 
                 <thead>
                 <tr>
+                    <th>Etat</th>
                     <th>Date de publication</th>
-                    <th>Episodes</th>
-                    <th>Modifier</th>
-                    <th>Supprimer</th>
+                    <th>contenu</th>
+                    <th></th>
                 </tr>
                 </thead>
 
                 <tbody>
-                <?php foreach ($commentaire as $commentaire):?>
+                <?php foreach ($adminCommentaires as $commentaire):?>
                     <tr>
+
+                        <td>
+                            <?php if($commentaire['signalement'] == 1){echo ' <div style="color: orangered;"> signalé </div>';} else {echo '<div style="color: green;"> OK </div>';} ?>
+                        </td>
+
                         <td>
                             <time style="color:grey; font-size: 0.8em"><i><?= $commentaire['dateCrea'] ?></i></time>
                         </td>
                         <td>
-                            <a href="<?= "index.php?action=billet&idB=" . $commentaire['idC'] ?>">
+                            <!-- <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>"> -->
                                 <p class="contenuCommentaire"><?= $commentaire['contenu'] ?><br />
-                            </a>
+                          <!--  </a> -->
                         </td>
+
                         <td>
-                            <a class="btn btn-primary" style="font-size: 14px; width: 90px;" href="<?= "index.php?action=modifierBiller&idB=" . $billet['idB'] ?>">Signalé</a>
-                        </td>
-                        <td>
-                            <a class="btn btn-primary" style="font-size: 14px;width: 90px;" href="<?= "index.php?action=supprimerBillet&idB=" . $billet['idB'] ?>">Supprimer</a>
+                            <a class="btn btn-primary" style="font-size: 14px;width: 90px;" href="<?= "index.php?action=supprimerCommentaire&idC=" . $commentaire['idC'] ?>">Supprimer</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

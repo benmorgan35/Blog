@@ -38,13 +38,14 @@
 <div class="row">
     <div class="col-xs-12">
         <h2 id="admin">Ajouter un épisode</h2> <hr />
+        <h2 id="admin">Ajouter un épisode</h2> <hr />
 
 
 
 <form method="post" action="<?="index.php?action=addBillet"?>">
     <input id="titreBillet" name="titreBillet" type="text" class="form-control" placeholder="titre de l'épisode"
            required ><br />
-    <textarea id="txtBillet" name="contenu" rows="10" class="form-control"
+    <textarea id="txtBillet" name="contenu" rows="30" class="form-control"
               placeholder="Texte" required></textarea><br />
     <input class="btn btn-primary" style="float: left" type="submit" value="Enregistrer en tant que brouillon" />
     <input class="btn btn-primary" style="margin-left:50px; float: right" type="submit" value="Publier" />

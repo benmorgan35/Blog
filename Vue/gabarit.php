@@ -1,6 +1,3 @@
-
-
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -15,17 +12,17 @@
 <body>
 
 <div class="container-fluid">
-    <div class="page">
+
 
     <header>
 
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-header">
-                <a class="navbar-brand"><b>Blog de Jean Forteroche</b></a>
+                <p class="navbar-brand"><b>Blog de Jean Forteroche</b></p>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href=" <?="index.php"?>">Accueil</a></li>
-                <li><a href="<?="index.php#liste_episodes"?>">Liste des épisodes</a></li>
+                <li class="active"><a href=" <?= "index.php" ?>">Accueil</a></li>
+                <li><a href="<?= "index.php#liste_episodes" ?>">Liste des épisodes</a></li>
                 <!-- if loginok : li backend -->
                 <!-- if loginok : li deconnexion -->
 
@@ -33,39 +30,34 @@
         </nav>
 
 
-        <div class="row">
-            <div class="col-xs-12">
-                <img src="assets/image/header.jpg" alt="image header" class="img-responsive" id="header"/>
-
-            </div>
-        </div>
-
-        <div class="row" id="texte">
-            <h1 id="titreBlog">Billet simple pour l'Alaska</h1>
-            <p>Roman en ligne</p>
-            <hr/>
+        <img src="assets/image/header.jpg" alt="image header" class="img-responsive" id="header"/>
 
     </header>
+    <div class="page">
+            <div class="row" id="texte">
+                <h1 id="titreBlog">Billet simple pour l'Alaska</h1>
+                <p>Roman en ligne</p>
+                <hr/>
+            </div>
+
 
     <div id="contenu">
         <?= $contenu ?>
     </div> <!-- #contenu -->
-    </div>
-    <br />
-    <br />
-    <br />
-
-    <footer id="footer">
-        <div class="row">
-            <div class="col-lg-12" id="footer">
-                <p>Copyright © 2017 Jean Forteroche | Tous droits réservés |
-                    <a href="<?="index.php?action=authentification"?>">Connexion Admin</a></p>
-                    <p><a href="<?="index.php?action=adminAccueil"?>">Page d'accueil Admin</a></p>
-            </div>
-        </div>
-
-    </footer>
 </div>
+<br/>
+<br/>
+
+</div>
+<footer id="footer" style="background: black">
+
+    <p>Copyright © 2017 Jean Forteroche | Tous droits réservés |
+        <a href="<?= "index.php?action=authentification" ?>">Connexion Admin</a></p>
+    <p><a href="<?= "index.php?action=adminAccueil" ?>">Page d'accueil Admin</a></p>
+
+
+</footer>
+
 <!-- #global -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -78,18 +70,13 @@
 <script src="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"></script>
 
 <script>
-    $(document).ready(function() {
-        $('#example').DataTable( {
+    $(document).ready(function () {
+        $('#example').DataTable({
             "language": {
                 "url": "//cdn.datatables.net/plug-ins/1.10.13/i18n/French.json"
             }
-        } );
-    } );
-
-
-
-
-
+        });
+    });
 
 
 </script>

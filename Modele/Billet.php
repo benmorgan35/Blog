@@ -5,22 +5,15 @@ require_once 'Modele.php';
 
 class Billet extends Modele {
 
-    /** Renvoie la liste des billets du blog
-     * 
-     * @return PDOStatement La liste des billets
-     */
+    // Renvoie la liste des billets du blog
+
     public function getBillets() {
         $sql = 'SELECT * FROM tBillets ORDER BY idB DESC';
         $billets = $this->executerRequete($sql);
         return $billets;
     }
 
-    /** Renvoie les informations sur un billet
-     * 
-     * @param int $id L'identifiant du billet
-     * @return array Le billet
-     * @throws Exception Si l'identifiant du billet est inconnu
-     */
+    // Renvoie les informations sur un billet
     public function getBillet($idBillet) {
         $sql = 'SELECT * FROM tBillets WHERE idB=?';
         $billet = $this->executerRequete($sql, array($idBillet));
@@ -31,15 +24,12 @@ class Billet extends Modele {
     }
 
     // Ajouter un billet
-
-        public function ajouterBillet($titre, $contenu)
-        {
-            $sql = 'INSERT INTO tBillets(dateCrea, titre, contenu) values(?, ?, ?)';
-            $date = date(DATE_W3C);  // Récupère la date courante
-            $this->executerRequete($sql, array($date, $titre, $contenu, $idB));
-        }
-
-
+    public function ajouterBillet($titre, $contenu)
+    {
+        $sql = 'INSERT INTO tBillets(dateCrea, titre, contenu) values(?, ?, ?)';
+        $date = date(DATE_W3C);  // Récupère la date courante
+        $this->executerRequete($sql, array($date, $titre, $contenu, $idB));
+    }
 
     // modifier billet BEN
     public function updateBillet($idBillet){
@@ -50,6 +40,7 @@ class Billet extends Modele {
     // Supprimer un billet BEN
     public function deleteBillet($idBillet){
         //$sql = 'DELETE FROM tBillets WHERE idB=$_GET["idB”]}';
+        //$sql = 'DELETE FROM tCommentaires WHERE idB=$_GET["idB”]}';
         //$this->executerRequete($sql);
     }
 }

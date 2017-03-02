@@ -47,10 +47,19 @@ class Routeur {
                 else if ($_GET['action'] == 'adminAccueil') {
                     $this->ctrlAdmin->adminAccueil();
                 }
+                else if ($_GET['action'] == 'adminCommentaires') {
+
+                    $this->ctrlAdmin->adminCommentaires();
+                }
                 else if ($_GET['action'] == 'addBillet') {
                     $this->ctrlAdmin->addBillet();
                 }
-
+                else if ($_GET['action'] == 'updateBillet') {
+                    $idBillet = intval($this->getParametre($_GET, 'idB'));
+                    //$titre = intval($this->getParametre($_GET, 'titre'));
+                    //$contenu = intval($this->getParametre($_GET, 'contenu'));
+                    $this->ctrlAdmin->updateBillet($idBillet/*, $titre, $contenu*/);
+                }
 
 
                 else if ($_GET['action'] == 'commenter') {

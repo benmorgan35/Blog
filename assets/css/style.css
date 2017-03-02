@@ -5,7 +5,7 @@ html {
 
 
 body {
-background-color: lightyellow;
+background-color: #ffffff;
 }
 
 h2 {
@@ -16,6 +16,14 @@ p {
     color: grey;
 }
 
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 .comment1{
     margin-left: 5px;
 }.comment2{
@@ -25,11 +33,8 @@ p {
 .page{
     margin:0;
     padding:0;
-    background: url("fond.jpg") no-repeat center fixed;
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
-    background-color: #cccccc;
-    margin-top: 100px;
+    background-color: #FFF9E8;
+    margin-top: 60px;
     margin-left: 5%;
     margin-right: 5%;
 
@@ -44,8 +49,8 @@ p {
 }
 .img-responsive {
     display: block;
-    width: 100% \9;
-    max-width: 100%;
+    width: 100%;
+margin-top: 30px;
     height: auto;
 }
 
@@ -121,8 +126,7 @@ text-align: right;
 #footer {
     background-color: lightgrey;
     padding: 5px;
-    margin-right: -20px;
-    margin-left: -20px;
+
     text-align: center;
     position: relative;
 }
@@ -137,5 +141,3 @@ text-align: right;
 .sorting_desc {
     color: grey;
 }
-
-@med

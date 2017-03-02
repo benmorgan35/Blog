@@ -8,9 +8,9 @@
                 <a class="navbar-brand"><b>Espace Administrateur</b></a>
             </div>
             <ul class="nav navbar-nav">
-                <li><a href=" <?= "index.php?action=adminAccueil" ?>"> Episodes</a></li>
-                <li><a href=" <?= "index.php?action=adminCommentaires" ?>">Commentaires</a></li>
-                <li><a href=" <?= "index.php?action=deconnexion" ?>">Déconnexion</a></li>
+                <li ><a style="padding-left: 50px; width: 20%;" href=" <?= "index.php?action=adminAccueil" ?>"> Episodes</a></li>
+                <li><a style="padding-left: 50px; width: 20%;" href=" <?= "index.php?action=adminCommentaires" ?>">Commentaires</a></li>
+                <li><a style="padding-left: 50px; width: 20%;" href=" <?= "index.php?action=deconnexion" ?>">Déconnexion</a></li>
                 <!
             </ul>
         </nav>
@@ -56,7 +56,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a class="btn btn-primary" style="font-size: 14px; width: 90px;" href="<?= "index.php?action=modifierBiller&idB=" . $billet['idB'] ?>">Modifier</a>
+                                    <a class="btn btn-primary" style="font-size: 14px; width: 90px;" href="<?= "index.php?action=updateBillet&idB=" . $billet['idB'] ?>">Modifier</a>
                                 </td>
                                 <td>
                                     <a class="btn btn-primary" style="font-size: 14px;width: 90px;" href="<?= "index.php?action=supprimerBillet&idB=" . $billet['idB'] ?>">Supprimer</a>

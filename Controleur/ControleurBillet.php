@@ -50,6 +50,7 @@ class ControleurBillet
         // Actualisation de l'affichage du billet
         // ajouter message flash
         header('Location: index.php?action=billet&idB=' . $idBillet);
+
     }
 
 
