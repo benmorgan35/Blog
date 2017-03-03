@@ -29,12 +29,18 @@ class ControleurCommentaire
 
 
     //répondre à un commentaire
-    public function repondre($auteur, $contenu, $idBillet, $idCommentaire, $idParent)
+    public function repondre($auteur, $contenu, $idBillet, $idCommentaire)
     {
         // Sauvegarde du commentaire
-        $this->commentaire->repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire, $idParent);
+        $this->commentaire->repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire);
         // Actualisation de l'affichage du billet
         // ajouter message flash
+        header ('Location: index.php?action=billet&idB=' . $idBillet);
+    }
+
+    public function signalerCommentaire($idBillet){
+        $this->commentaire->signalerCommentaire();
+
         header ('Location: index.php?action=billet&idB=' . $idBillet);
     }
 

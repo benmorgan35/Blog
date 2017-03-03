@@ -50,6 +50,16 @@ class Commentaire extends Modele
             throw new Exception("Aucun commentaire ne correspond à l'identifiant '$idCommentaire'");
     }
 
+    // Renvoie le nombres de commentaires signalés
+    public function getNbSignalements()
+    {
+      $sql = 'SELECT COUNT(*) as total FROM tCommentaires WHERE signalement>0';
+      $result = $this->executerRequete($sql);
+      $nb = $result->fetch();
+      $nbSignalements = $nb['total'];
+      return $nbSignalements;
+    }
+
     // Ajoute un commentaire à un billet dans la base
     public function ajouterCommentaire($auteur, $contenu, $idBillet)
     {
@@ -69,18 +79,17 @@ class Commentaire extends Modele
     }
 
     // supprime un commentaire
-    public function supprimerCommentaire($idCommentaire, $idParent)
+    public function supprimerCommentaire()
     {
-        //$sql = 'DELETE FROM tcommentaires WHERE idC=$_GET["idC"] AND idParent=$_GET["idC"}';
-        //$this->executerRequete($sql);
+        $sql = 'DELETE FROM tcommentaires WHERE idC=?';
+        $this->executerRequete($sql);
     }
 
-    // signaler un commentaire
+    // signaler un commentairesignalement
     public function signalerCommentaire()
     {
         $sql = 'UPDATE tcommentaires SET signalement = 1 WHERE idC=?';
         $this->executerRequete($sql);
-        echo "Ce commentaire a été signalé à l'administrateur.";
     }
 
 }

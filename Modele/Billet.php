@@ -24,17 +24,17 @@ class Billet extends Modele {
     }
 
     // Ajouter un billet
-    public function ajouterBillet($titre, $contenu)
+    public function addBillet($titre, $contenu)
     {
-        $sql = 'INSERT INTO tBillets(dateCrea, titre, contenu) values(?, ?, ?)';
+        $sql = 'INSERT INTO tBillets(titre, dateCrea, contenu) values(?, ?, ?)';
         $date = date(DATE_W3C);  // Récupère la date courante
-        $this->executerRequete($sql, array($date, $titre, $contenu, $idB));
+        $this->executerRequete($sql, array($titre, $date, $contenu));
     }
 
     // modifier billet BEN
-    public function updateBillet($idBillet){
+    public function updateBillet($titre, $contenu){
         //$sql = 'UPDATE FROM tBillets WHERE idB=?';
-        //$this->executerRequete($sql);
+        //$this->executerRequete(array($titre, $contenu));
     }
 
     // Supprimer un billet BEN

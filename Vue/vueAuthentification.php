@@ -1,11 +1,20 @@
 <?php $this->titre = "Connexion administrateur"; ?>
 
-<article>
-    <header>
-        <h2> Connexion Administrateur</h2>
-
+<section>
+    <div class="titre">
+        <h2>Connexion Administrateur</h2>
         <hr/>
-    </header>
+    </div>
+    <br />
+    <br />
+    <br />
+
+</section>
+
+
+<div class="page">
+
+    <div class="row">
 
     <form method="post" action="<?="index.php?action=connexion"?>">
 
@@ -15,4 +24,9 @@
         <input type="submit" class="btn btn-primary" value="Valider"/>
     </form>
     <br/>
-    <br/>
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+</div>

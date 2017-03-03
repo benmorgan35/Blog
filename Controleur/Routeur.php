@@ -30,51 +30,46 @@ class Routeur {
             if (isset($_GET['action'])) {
                 if ($_GET['action'] == 'billet') {
                     $idBillet = intval($this->getParametre($_GET, 'idB'));
-                    //$idCommentaire = intval($this->getParametre($_GET, 'idC'));
-                    //$idCommentaire = intval($this->getParametre($_POST, 'idC'));
-                   // $idParent = intval($this->getParametre($_GET, 'idC'));
-                    //$idParent = $this->getParametre($_POST, 'idC');
-
                     if ($idBillet != 0) {
                         $this->ctrlBillet->billet($idBillet);
                         //$this->ctrlCommentaire->commentaire($idCommentaire);
-
                     }
                     else
                         throw new Exception("Identifiant de billet non valide");
                 }
-
                 else if ($_GET['action'] == 'adminAccueil') {
                     $this->ctrlAdmin->adminAccueil();
                 }
                 else if ($_GET['action'] == 'adminCommentaires') {
-
-                    $this->ctrlAdmin->adminCommentaires();
+                    //$idBillet = intval($this->getParametre($_GET, 'idB'));
+                    $this->ctrlAdmin->adminCommentaires(/*$idBillet*/);
                 }
-                else if ($_GET['action'] == 'addBillet') {
-                    $this->ctrlAdmin->addBillet();
+                else if ($_GET['action'] == 'ajouterBillet') {
+                    $this->ctrlAdmin->ajouterBillet();
+
+                } else if ($_GET['action'] == 'addBillet') {
+                    $titre = $this->getParametre($_POST, 'titre');
+                    $contenu = $this->getParametre($_POST, 'contenu');
+                    $this->ctrlAdmin->addBillet($titre, $contenu);
                 }
                 else if ($_GET['action'] == 'updateBillet') {
-                    $idBillet = intval($this->getParametre($_GET, 'idB'));
+                    //$idBillet = intval($this->getParametre($_GET, 'idB'));
                     //$titre = intval($this->getParametre($_GET, 'titre'));
                     //$contenu = intval($this->getParametre($_GET, 'contenu'));
-                    $this->ctrlAdmin->updateBillet($idBillet/*, $titre, $contenu*/);
+                    //$this->ctrlAdmin->updateBillet($idBillet/*, $titre, $contenu*/);
                 }
-
-
                 else if ($_GET['action'] == 'commenter') {
                     $auteur = $this->getParametre($_POST, 'auteur');
                     $contenu = $this->getParametre($_POST, 'contenu');
                     $idBillet = $this->getParametre($_POST, 'idB');
                     $this->ctrlBillet->commenter($auteur, $contenu, $idBillet);
                 }
-
                 else if ($_GET['action'] == 'commentaire') {
                     //$idBillet = intval($this->getParametre($_GET, 'idB'));
                     $idCommentaire = intval($this->getParametre($_GET, 'idC'));
-                    $idParent = intval($this->getParametre($_GET, 'idParent'));
+
                     if ($idCommentaire != 0) {
-                        $this->ctrlCommentaire->commentaire($idCommentaire, $idParent);
+                        $this->ctrlCommentaire->commentaire($idCommentaire);
                     }
                     else
                         throw new Exception("Identifiant de commentaire non valide");
@@ -83,9 +78,9 @@ class Routeur {
                     $auteur = $this->getParametre($_POST, 'auteur');
                     $contenu = $this->getParametre($_POST, 'contenu');
                     $idBillet = $this->getParametre($_POST, 'idB');
-                    $idParent = $this->getParametre($_POST, 'idC');
-                    $profondeur = $this->getParametre($_POST, 'profondeur');
-                    $this->ctrlCommentaire->repondre($auteur, $contenu, $idBillet, $idParent, $profondeur);
+                    $idCommentaire = $this->getParametre($_POST, 'idC');
+
+                    $this->ctrlCommentaire->repondre($auteur, $contenu, $idBillet, $idCommentaire);
                 }
                 else if ($_GET['action'] == 'authentification') {
                 $this->ctrlAuth->authentification();
@@ -98,7 +93,13 @@ class Routeur {
                 else if ($_GET['action'] == 'deconnexion'){
                    //$this->ctrlAuth->deconnexion();
                 }
-
+                else if ($_GET['action'] == 'signalerCommentaire'){
+                    $this->ctrlCommentaire->signalerCommentaire();
+                }
+                else if ($_GET['action'] == 'supprimerCommentaire'){
+                    //$idCommentaire = intval($this->getParametre($_GET, 'idC'));
+                    //$this->ctrlAdmin->supprimerCommentaire($idCommentaire);
+                }
 
                 else
                     throw new Exception("Action non valide");

@@ -1,14 +1,31 @@
 <?php $this->titre = "Billet simple pour l'Alaska - Accueil"; ?>
 
 
-<article>
-    <header>
+<header>
 
+    <img src="assets/image/header2.jpg" alt="image header" class="img-responsive" id="header"/>
+    <br/>
+</header>
+
+
+<section>
+    <div class="titre">
         <div class="row">
             <div class="col-xs-12">
-                <h2 id="accueil">Accueil</h2> <hr />
+                <h2 id="accueil">Accueil</h2>
                 <p><b>Bienvenue sur le blog de Jean Forteroche.</b></p>
+                <hr/>
                 <br/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="page">
+
+    <section>
+        <div class="row">
+            <div class="col-xs-12">
                 <img src="assets/image/jean.jpg" alt="J Forteroche" id="auteur"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc lectus, mollis sed sem at,
                     tincidunt efficitur quam. Donec ut libero sodales ligula dapibus pellentesque. Aliquam at massa
@@ -24,42 +41,43 @@
                     Duis scelerisque arcu facilisis libero semper, eget molestie ipsum blandit. </p>
                 <p id="signature">Jean Forteroche</p>
                 <hr/>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class='row'>
+            <div class="col-xs-12">
+                <h2 id="liste_episodes">Liste des épisodes</h2>
+                <hr/>
+                <table id="example" class="display" cellspacing="0" width="100%">
 
-                <div class='row'>
-                    <h2 id="liste_episodes">Liste des épisodes</h2> <hr />
-                    <table id="example" class="display" cellspacing="0" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Date de publication</th>
+                        <th>Episodes</th>
+                    </tr>
+                    </thead>
 
-
-                        <thead>
+                    <tbody>
+                    <?php foreach ($billets as $billet): ?>
                         <tr>
-                            <th>Date de publication</th>
-                            <th><h3>Episodes</h3></th>
+                            <td>
+                                <time style="color:grey; font-size: 0.8em"><i><?= $billet['dateCrea'] ?></i></time>
+                            </td>
+                            <td>
+                                <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>">
+                                    <p class="titreBillet"><?= $billet['titre'] ?>
+                                </a>
+                            </td>
                         </tr>
-                        </thead>
+                    <?php endforeach; ?>
+                    </tbody>
 
-                        <tbody>
-                        <?php foreach ($billets as $billet):?>
-                            <tr>
-                                <td>
-                                    <time style="color:grey; font-size: 0.8em"><i><?= $billet['dateCrea'] ?></i></time>
-                                </td>
-                                <td>
-                                    <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>">
-                                        <p class="titreBillet"><?= $billet['titre'] ?><br />
-                                    </a>
-                                </td>
-                            </tr>
-                        <?php endforeach; ?>
-                        </tbody>
+                </table>
+                <br/>
+            </div>
+        </div>
 
-                    </table>
-                    <br /><br /><br/>
-                </div>
-
-
-    </header>
-
-</article>
-<hr/>
-
+    </section>
+</div>
