@@ -1,11 +1,17 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"/>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
+
 
     <title><?= $titre ?></title>
 </head>
@@ -31,6 +37,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href=" <?= "index.php" ?>">Accueil</a></li>
                         <li><a href="<?= "index.php#liste_episodes" ?>">Liste des épisodes</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -43,15 +50,14 @@
             <?= $contenu ?>
         </div>
 
-    <br/>
-    <br/>
+
 
 </div>
 <footer id="footer" style="background: black">
 
     <p>Copyright © 2017 Jean Forteroche | Tous droits réservés |
-        <a href="<?= "index.php?action=authentification" ?>">Connexion Admin</a></p>
-    <p><a href="<?= "index.php?action=adminAccueil" ?>">Page d'accueil Admin</a></p>
+        <a href="<?= "index.php?action=authentification" ?>">Espace Administrateur</a></p>
+    <a href="<?= "index.php?action=adminAccueil" ?>">Admintemporaire</a></p>
 
 </footer>
 

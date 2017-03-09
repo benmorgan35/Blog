@@ -3,30 +3,21 @@
 require_once 'Modele.php';
 
 Class User extends  Modele {
-    private $_prenom;
-    private $_username;
-    private $_password;
+    protected $_prenom;
+    protected $_nom;
+    protected $_username;
+    protected $_password;
 
-    public function getPrenom(){
-        return ucfirst($this->_prenom);
+
+
+    // Renvoie la liste des membres
+    public function getusers() {
+        $sql = 'SELECT * FROM tusers ORDER BY idU ASC';
+        $users = $this->executerRequete($sql);
+        return $users;
     }
 
-    public function getUsername(){
-        return ucfirst($this->_username);
-    }
-
-    public function getPassword(){
-        return ucfirst($this->_password);
-    }
-
-    public function setPrenom($prenom){
-        $this->_prenom = $prenom;
-    }
-
-    public function setPassword($password){
-        $this->_password = $password;
-    }
-
+    // Renvoie les infos d'un membre
     public function getuser($username, $password)
     {
         $sql = 'SELECT * FROM tusers WHERE username=? AND password=?';
@@ -37,29 +28,17 @@ Class User extends  Modele {
             throw new Exception("");
     }
 
-
-    public function add(Billets $billet){
-        $sql = 'insert into tBillets(titre, dateCrea, contenu) values(?, ?, ?)';
+    // inscrire un nouveau membre
+    public function inscription($prenom, $nom, $username, $password){
+        //$password_hashe = sha1($_POST['password']);
+        $sql = 'INSERT INTO tusers(dateCrea, prenom, nom, username, password) values(?, ?, ?, ?, ?)';
         $date = date(DATE_W3C);  // Récupère la date courante
-        $this->executerRequete($sql, array($titre, $dateCrea, $contenu));
+        $this->executerRequete($sql, array($date, $prenom, $nom, $username, $password /*$password_hashe*/));
+   }
+
+    // Désinscrire un membre
+    public function deleteUser($idU){
+        $sql = 'DELETE FROM tUsers WHERE idU=?';
+        $this->executerRequete($sql, array($idU));
     }
-
-    public function save(Billet $billets){
-
-    }
-
-    public function count(){
-
-    }
-
-    public function delete(){
-
-    }
-
-    public function update(){}
-
-
-
-    //Implementer les methodes de l'interface'
-    //public function methode1();
 }

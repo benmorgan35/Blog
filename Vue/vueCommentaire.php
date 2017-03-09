@@ -1,4 +1,3 @@
-
 <section>
     <div class="titre">
         <div class="row">
@@ -14,19 +13,20 @@
 <div class="page">
 
     <section>
-<div class="row">
-    <h3 id="titreReponse">Commentaire </h3>
+        <div class="row">
+            <h3 id="titreReponse">Commentaire </h3>
 
-    <p><time style="color:grey"><i>Publié le <?= $commentaire['dateCrea'] ?></i></time>
-    par <?= $commentaire['auteur'] ?>
-    <p><?= $commentaire['contenu'] ?></p>
+            <p>
+                <time style="color:grey"><i>Publié le <?= $commentaire['dateCrea'] ?></i></time>
+                par <?= htmlspecialchars($commentaire['auteur']) ?>
+            <p><?= htmlspecialchars($commentaire['contenu']) ?></p>
 
-    <hr/>
-    <h3 id="titreReponse">Votre réponse </h3>
-    <br />
-<?php require 'formReponse.php'; ?>
+            <hr/>
+            <h3 id="titreReponse">Votre réponse </h3>
+            <br/>
+            <?php require 'formReponse.php'; ?>
+        </div>
+    </section>
+    <br/><br/>
 </div>
-        </section>
-    <br /><br />
-    </div>
 

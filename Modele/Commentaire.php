@@ -23,21 +23,15 @@ class Commentaire extends Modele
         return $commentaires;
     }
 
-    //Renvoie la liste des commentaires de profondeur 1 associés à un commentaire
-    public function getCommentairesChilds($idBillet)
+    //Renvoie la liste des sous commentaire
+    public function getCommentaireChilds($idCommentaire)
     {
-        $sql = 'SELECT * FROM tCommentaires WHERE idB=? AND profondeur=1 ORDER BY idC ASC';
-        $reponses = $this->executerRequete($sql, array($idBillet));
+        $sql = 'SELECT * FROM tCommentaires WHERE idParent=? ORDER BY idC ASC';
+        $reponses = $this->executerRequete($sql, array($idCommentaire));
         return $reponses;
     }
 
-    //Renvoie la liste des commentaires de profondeur 2 associés à une réponse
-    public function getReponsesChilds($idBillet)
-    {
-        $sql = 'SELECT * FROM tCommentaires WHERE idB=? AND profondeur=2 ORDER BY idC ASC';
-        $reponses = $this->executerRequete($sql, array($idBillet));
-        return $reponses;
-    }
+
 
     // Renvoie les informations sur un commentaire
     public function getCommentaire($idCommentaire)
@@ -78,18 +72,38 @@ class Commentaire extends Modele
         $this->executerRequete($sql, array($date, $auteur, $contenu, $idBillet, $commentaireParent['idC'], $commentaireParent['profondeur'] + 1));
     }
 
-    // supprime un commentaire
-    public function supprimerCommentaire()
+
+    //test afficher page d'un billet associé à un commentaire
+    public function getBilletDuCommentaire($idBillet)
     {
-        $sql = 'DELETE FROM tcommentaires WHERE idC=?';
-        $this->executerRequete($sql);
+        //$billet = $this->getBillet($idBillet);
+        //$sql = 'SELECT * FROM tbillets WHERE idB=?';
+        //$this->executerRequete($sql, array($billet['idB']));
     }
 
-    // signaler un commentairesignalement
-    public function signalerCommentaire()
+
+    // supprime un commentaire
+    public function deleteCommentaire($idCommentaire)
     {
-        $sql = 'UPDATE tcommentaires SET signalement = 1 WHERE idC=?';
-        $this->executerRequete($sql);
+        $sql = 'UPDATE tCommentaires SET auteur = \'Modérateur\', contenu = \'(Commentaire supprimé) \', is_deleted = 1 WHERE idC=?';
+        $this->executerRequete($sql, array($idCommentaire));
     }
+
+
+    // signaler un commentairesignalement
+    public function signalerCommentaire($idCommentaire)
+    {
+        $sql = 'UPDATE tCommentaires SET signalement = 1 WHERE idC=?';
+        $this->executerRequete($sql, array($idCommentaire));
+    }
+
+    // Annule un signalement
+    public function annulerSignalement($idCommentaire)
+    {
+        $sql = 'UPDATE tCommentaires SET signalement = 0 WHERE idC=?';
+        $this->executerRequete($sql, array($idCommentaire));
+    }
+
+
 
 }

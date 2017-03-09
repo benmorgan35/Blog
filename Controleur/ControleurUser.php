@@ -1,49 +1,51 @@
 <?php
 //session_start()
 
-require_once 'Modele/Billet.php';
-require_once 'Modele/Commentaire.php';
 require_once 'Modele/User.php';
 require_once 'Vue/Vue.php';
 
 class ControleurUser
 {
 
-    private $username;
-    private $password;
+    private $user;
+
+// Déclarations des constantes en rapport avec la force.
+
+    //const CONNECT = 1;
+    //const DECONNECT = 2;
 
     public function __construct()
     {
         $this->user = new User();
     }
 
-
-    public function authentification()
+    // Affiche la liste des membres
+    public function users()
     {
-        $vue = new Vue("Authentification");
-        $vue->generer(array());
+        $users = $this->user->getusers();
+        $vue = new Vue("Membres");
+        $vue->generer(array('users' => $users));
     }
 
-    public function connexion($username, $password)
+    //Inscrire un membre
+    public function inscription($prenom, $nom, $username, $password /*$password_hashe*/)
     {
-        $user = $this->user->getUser($username, $password);
-        //var_dump($user);
-        //$this->$Session->setFlash(__('Bonjour Jean, vous êtes maintenant connecté');
-        header ('Location: index.php?action=billet&idBillet=' . $idBillet);
-    }
+        $this->user->inscription($prenom, $nom, $username, $password /*$password_hashe*/);
 
-    public function deconnexion()
-    {
-            //session_destroy();
-            //header('Location: index.php');
+        header ('Location: index.php?action=membres');
     }
 
 
-    public function register()
-    {
 
+
+    // désinscrire un membre
+    public function deleteUser($idUser)
+    {
+        $this->user->deleteUser($idUser);
+        $users = $this->user->getUsers();
+        $vue = new Vue("Membres");
+        $vue->generer(array('users' => $users));
     }
 
-    // fonction deconnexion
 
 }

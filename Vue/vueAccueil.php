@@ -26,7 +26,7 @@
     <section>
         <div class="row">
             <div class="col-xs-12">
-                <img src="assets/image/jean.jpg" alt="J Forteroche" id="auteur"/>
+                <img src="assets/image/jean.jpg" alt="J Forteroche" id="Jean"/>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nunc lectus, mollis sed sem at,
                     tincidunt efficitur quam. Donec ut libero sodales ligula dapibus pellentesque. Aliquam at massa
                     feugiat, imperdiet ipsum dapibus, blandit purus. Etiam a consequat urna. Duis blandit diam non massa
@@ -48,7 +48,7 @@
     <section>
         <div class='row'>
             <div class="col-xs-12">
-                <h2 id="liste_episodes">Liste des épisodes</h2>
+                <h3 id="liste_episodes">Liste des épisodes</h3>
                 <hr/>
                 <table id="example" class="display" cellspacing="0" width="100%">
 
@@ -67,7 +67,7 @@
                             </td>
                             <td>
                                 <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>">
-                                    <p class="titreBillet"><?= $billet['titre'] ?>
+                                    <p class="titreBillet"><?= htmlspecialchars($billet['titre']) ?>
                                 </a>
                             </td>
                         </tr>

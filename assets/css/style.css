@@ -8,8 +8,10 @@ body {
 background-color: #edf0f2;
 }
 
-h2 {
+h2{
     color: #165634;
+}h3{
+    color: #14914f;
 }
 
 p {
@@ -72,23 +74,19 @@ p {
     margin-left: 30px;
 
 }
-.foreach1{
-    border:3px solid #edf0f2;
+.indent{
+    border: 1px solid #cfd7dd;
     padding: 10px;
-    margin-top : 10px;
+    margin-top : 20px;
+    margin-bottom : 3px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgba(207, 215, 221, 0.2);
 }
-.foreach2{
-     border:2px solid #edf0f2;
-     padding: 10px;
-    margin-left: 60px;
-    margin-top : 10px;
-}
-.foreach3{
-      border:2px solid #edf0f2;
-      padding: 10px;
-    margin-left: 60px;
-    margin-top : 10px;
-}
+
+#example_length{
+margin-bottom: 20px;
+margin-top: 20px;}
 
 #texte {
     margin-left: 2%;
@@ -96,10 +94,57 @@ p {
     margin-right: 2%;
 }
 
+#Jean{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 110px;
+}
+
+
 #auteur{
+
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+#prenom{
+
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}#nom{
+
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+#username{
+
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}#password{
     float: left;
     margin-right : 10px;
-    width: 100px;
+    margin-bottom: 20px;
+    width: 200px;
+}#identifiant{
+
+    margin-right : 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}#mdp{
+
+    margin-right : 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+#membre{
+    float: left;
+    margin-right : 10px;
+    width: 200px;
 }
 
 #contenu {
@@ -107,6 +152,7 @@ p {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 80px;
+    margin-bottom : 60px;
 }
 
 #example_info{
@@ -125,7 +171,7 @@ text-align: right;
 
 #footer {
     background-color: lightgrey;
-    padding: 5px;
+    padding: 15px;
 
     text-align: center;
     position: relative;
@@ -140,4 +186,42 @@ text-align: right;
 
 .sorting_desc {
     color: grey;
+}
+
+@media all and (max-width: 1024px)
+{
+    #contenu {
+        margin-bottom : 40px;
+    }
+
+    .page {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .indent{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+@media only screen and (max-device-width:980px) {
+
+    #contenu {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .page {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 20px;
+    }
+
+    .indent {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
 }

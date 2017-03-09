@@ -19,12 +19,23 @@ class ControleurCommentaire
     }
 
 
-    // Affiche les détails d'un commentaire
+    // Affiche les détails d'un commentaire sur une nouvelle page
     public function commentaire($idCommentaire)
     {
         $commentaire = $this->commentaire->getCommentaire($idCommentaire);
         $vue = new Vue("Commentaire");
         $vue->generer(array('commentaire' => $commentaire));
+    }
+
+    // Ajoute un commentaire à un billet
+    public function commenter($auteur, $contenu, $idBillet)
+    {
+        // Sauvegarde du commentaire
+        $this->commentaire->ajouterCommentaire($auteur, $contenu, $idBillet);
+        // Actualisation de l'affichage du billet
+        // ajouter message flash/////////////////////////////////////////////////////////////////////////////////////
+        header('Location: index.php?action=billet&idB=' . $idBillet);
+
     }
 
 
@@ -38,10 +49,12 @@ class ControleurCommentaire
         header ('Location: index.php?action=billet&idB=' . $idBillet);
     }
 
-    public function signalerCommentaire($idBillet){
-        $this->commentaire->signalerCommentaire();
-
-        header ('Location: index.php?action=billet&idB=' . $idBillet);
+    //Signaler un commentaire
+    public function signalerCommentaire($idCommentaire){
+        $this->commentaire->signalerCommentaire($idCommentaire);
+        $commentaire = $this->commentaire->getCommentaire($idCommentaire);
+        header ('Location: index.php?action=billet&idB=' . $commentaire['idB']);
     }
+
 
 }
