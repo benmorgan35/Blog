@@ -2,597 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26811735-4fb8-4d9b-97d1-c3525ea51b5e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Controleur/ControleurSession.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vue/menuAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vue/vueMembres.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Image/fond.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Image/header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/Image/image1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/fond.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/fond1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/AddOnManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/Compat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/DragDropOverrides.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/Editor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/EditorCommands.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/EditorManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/EditorObservable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/EditorUpload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/EnterKey.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/Env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ErrorReporter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/FocusManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ForceBlocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/Formatter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/InsertContent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/InsertList.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/LegacyInput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/Mode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/NodeChange.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/NotificationManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/Register.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/SelectionOverrides.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/Shortcuts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/UndoManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/WindowManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/CaretBookmark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/CaretCandidate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/CaretContainer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/CaretPosition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/CaretUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/CaretWalker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/FakeCaret.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/LineUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/caret/LineWalker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/content/LinkTargets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/data/Binding.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/data/ObservableArray.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/data/ObservableObject.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/BookmarkManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/ControlSelection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/DOMUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/Dimensions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/DomQuery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/ElementUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/EventUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/MousePosition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/NodePath.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/NodeType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/Range.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/RangeUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/ScriptLoader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/Selection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/Serializer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/Sizzle.jQuery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/Sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/StyleSheetLoader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/TreeWalker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/dom/TridentSelection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/file/BlobCache.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/file/Conversions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/file/ImageScanner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/file/UploadStatus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/file/Uploader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/fmt/FontInfo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/fmt/Hooks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/fmt/Preview.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/geom/ClientRect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/geom/Rect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/html/DomParser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/html/Entities.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/html/Node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/html/SaxParser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/html/Schema.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/html/Serializer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/html/Styles.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/html/Writer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/jquery.tinymce.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/text/ExtendingChar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/text/Zwsp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/AbsoluteLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/BoxUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ButtonGroup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Checkbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ClassList.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Collection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ColorBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ColorButton.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ColorPicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ComboBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Container.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Control.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/DomUtils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/DragHelper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ElementPath.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Factory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/FieldSet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/FilePicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/FitLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/FlexLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/FloatPanel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/FlowLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/FormItem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/FormatControls.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/GridLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Iframe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/InfoBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/KeyboardNavigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Label.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Layout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ListBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Menu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/MenuBar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/MenuButton.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/MenuItem.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/MessageBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Movable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Notification.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Panel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/PanelButton.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Path.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Progress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Radio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ReflowQueue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Resizable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/ResizeHandle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Scrollable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/SelectBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Selector.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Sidebar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Slider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Spacer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/SplitButton.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/StackLayout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/TabPanel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/TextBox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Throbber.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Widget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/ui/Window.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/undo/Diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/undo/Fragments.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/undo/Levels.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Color.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Delay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/EventDispatcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Fun.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/I18n.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/JSON.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/JSONP.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/JSONRequest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/LocalStorage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Observable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Private.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Promise.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Quirks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Tools.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/URI.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/Uuid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/VK.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/classes/util/XHR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/jquery.tinymce.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/langs/fr_FR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/langs/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/license.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/advlist/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/advlist/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/anchor/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/anchor/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/autolink/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/autolink/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/autoresize/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/autoresize/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/autosave/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/autosave/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/bbcode/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/bbcode/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/charmap/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/charmap/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/code/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/code/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/codesample/classes/Dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/codesample/classes/Plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/codesample/classes/Prism.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/codesample/classes/Utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/codesample/css/prism.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/codesample/plugin.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/codesample/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/codesample/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/colorpicker/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/colorpicker/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/css/dialog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/img/buttons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/img/icons.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/img/items.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/img/menu_arrow.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/img/menu_check.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/img/progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/img/tabs.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/tiny_mce_popup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/utils/editable_selects.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/utils/form_utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/utils/mctabs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/compat3x/utils/validate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/contextmenu/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/contextmenu/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/directionality/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/directionality/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-cool.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-cry.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-frown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-smile.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-wink.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/img/smiley-yell.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/emoticons/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/example/dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/example/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/example/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/example_dependency/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/example_dependency/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/fullpage/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/fullpage/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/fullscreen/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/fullscreen/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/hr/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/hr/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/image/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/image/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/config/bolt/atomic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/config/bolt/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/config/bolt/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/config/bolt/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/demo/html/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/demo/js/Demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/main/js/CropRect.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/main/js/Dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/main/js/ImagePanel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/main/js/ImageSize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/main/js/Plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/main/js/Proxy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/main/js/UndoStack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/imagetools/src/main/js/Utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/importcss/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/importcss/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/insertdatetime/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/insertdatetime/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/legacyoutput/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/legacyoutput/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/link/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/link/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/config/bolt/atomic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/config/bolt/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/config/bolt/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/config/bolt/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/demo/html/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/demo/js/tinymce/lists/Demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/Plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/actions/Indent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/actions/Outdent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/actions/ToggleList.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/core/Bookmark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/core/Delete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/core/NodeType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/core/NormalizeLists.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/core/Range.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/core/Selection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/core/SplitList.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/main/js/tinymce/lists/core/TextBlock.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/browser/ApplyDlTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/browser/ApplyTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/browser/BackspaceDeleteInlineTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/browser/BackspaceDeleteTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/browser/IndentTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/browser/InlineTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/browser/OutdentTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/browser/RemoveTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/lists/src/test/js/module/tinymce/lists/test/LegacyUnit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/config/bolt/atomic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/config/bolt/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/config/bolt/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/config/bolt/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/demo/html/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/demo/js/tinymce/media/Demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/Plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/DataToHtml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/HtmlToData.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Mime.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Nodes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/Size.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/UpdateHtml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/UrlPatterns.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/core/VideoScript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/ui/Dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/main/js/tinymce/media/ui/SizeManager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/atomic/HtmlToDataTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/DataAttributeTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/DataToHtmlTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/DimensionsControlTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/EphoxEmbedTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/MediaEmbedTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/PlaceholderTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/PluginTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/ReopenResizeTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/browser/SubmitTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/media/src/test/js/module/tinymce/media/test/Utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/nonbreaking/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/nonbreaking/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/noneditable/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/noneditable/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/pagebreak/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/pagebreak/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/classes/Clipboard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/classes/Plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/classes/Quirks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/classes/SmartPaste.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/classes/Utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/classes/WordFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/plugin.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/paste/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/preview/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/preview/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/print/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/print/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/save/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/save/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/searchreplace/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/searchreplace/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/spellchecker/classes/DomTextMatcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/spellchecker/classes/Plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/spellchecker/plugin.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/spellchecker/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/spellchecker/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/tabfocus/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/tabfocus/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/classes/CellSelection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/classes/Dialogs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/classes/Plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/classes/Quirks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/classes/ResizeBars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/classes/SplitCols.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/classes/TableGrid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/classes/Utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/plugin.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/table/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/template/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/template/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/textcolor/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/textcolor/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/textpattern/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/textpattern/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/toc/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/toc/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/css/visualblocks.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/address.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/article.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/aside.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/blockquote.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/div.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/dl.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/figure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/h1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/h2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/h3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/h4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/h5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/h6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/hgroup.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/ol.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/p.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/pre.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/section.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/img/ul.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualblocks/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualchars/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/visualchars/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/config/bolt/atomic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/config/bolt/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/config/bolt/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/config/bolt/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/plugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/demo/html/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/demo/js/tinymce/wordcount/Demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/Plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/alien/Arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/text/StringMapper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/text/UnicodeData.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/text/WordBoundary.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/main/js/tinymce/wordcount/text/WordGetter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/test/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/test/js/atomic/core/IsWordBoundaryTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/test/js/atomic/core/StringMapperTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/test/js/atomic/core/WordGetterTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/plugins/wordcount/src/test/js/browser/core/PluginTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/AbsoluteLayout.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Arrows.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Button.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ButtonGroup.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Checkbox.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ColorBox.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ColorButton.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ColorPicker.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ComboBox.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Container.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Content.Inline.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Content.Objects.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Content.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/CropRect.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/FieldSet.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/FitLayout.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/FloatPanel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/FlowLayout.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Icons.Ie7.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Iframe.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ImagePanel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/InfoBox.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Label.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ListBox.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Menu.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/MenuBar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/MenuButton.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/MenuItem.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Notification.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Panel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Progress.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Radio.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Reset.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ResizeHandle.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Scrollable.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/SelectBox.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Sidebar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Slider.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Spacer.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/SplitButton.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/StackLayout.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/TabPanel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/TextBox.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Throbber.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/TinyMCE.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/ToolTip.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/Window.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/content.inline.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/content.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce-small.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/fonts/tinymce.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/img/anchor.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/img/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/img/object.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/img/trans.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/skin.dev.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/skin.ie7.dev.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/skin.ie7.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/skin.ie7.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/skin.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/skins/lightgray/skin.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/config/bolt/atomic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/config/bolt/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/config/bolt/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/config/bolt/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/demo/css/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/demo/html/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/demo/js/tinymce/inlite/Demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/Theme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Arr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Bookmark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/EditorSettings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Unlink.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/alien/Uuid.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Convert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/ElementMatcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Layout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Matcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/Measure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/PredicateId.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/SelectionMatcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/SkinLoader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/core/UrlType.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/file/Conversions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/file/Picker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Forms.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Panel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/main/js/tinymce/inlite/ui/Toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/atomic/alien/ArrTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/atomic/alien/TypeTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/atomic/alien/UuidTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/atomic/core/ConvertTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/atomic/core/MatcherTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/atomic/core/UrlTypeTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/AutoCompleteTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/ThemeTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/alien/BookmarkTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/alien/EditorSettingsTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/alien/UnlinkTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/core/ActionsTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/core/ElementMatcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/core/LayoutTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/core/MeasureTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/core/PredicateIdTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/core/SelectionMatcherTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/file/ConversionsTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/browser/file/SelectionMatcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/src/test/js/module/tinymce/inlite/test/Toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/theme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/inlite/theme.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/config/bolt/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/config/bolt/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/config/bolt/prod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/demo/html/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/demo/js/tinymce/modern/Demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/Theme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/modes/Iframe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/modes/Inline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/A11y.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/ContextToolbars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/Menubar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/ProgressState.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/Resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/Sidebar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/SkinLoaded.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/main/js/tinymce/modern/ui/Toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/test/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/src/test/browser/SidebarTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/theme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/themes/modern/theme.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/tinymce.dev.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/tinymce.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/tinymce/tinymce.min.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Vue/vueUpdateBillet.php" afterPath="$PROJECT_DIR$/Vue/vueModifierBillet.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BD/MonBlog.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Contenu/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Controleur/ControleurSession.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controleur/ControleurAccueil.php" afterPath="$PROJECT_DIR$/Controleur/ControleurAccueil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controleur/ControleurAdmin.php" afterPath="$PROJECT_DIR$/Controleur/ControleurAdmin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controleur/ControleurAuthentification.php" afterPath="$PROJECT_DIR$/Controleur/ControleurAuthentification.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controleur/ControleurBillet.php" afterPath="$PROJECT_DIR$/Controleur/ControleurBillet.php" />
@@ -603,9 +17,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/Commentaire.php" afterPath="$PROJECT_DIR$/Modele/Commentaire.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/Modele.php" afterPath="$PROJECT_DIR$/Modele/Modele.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/User.php" afterPath="$PROJECT_DIR$/Modele/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/form.php" afterPath="$PROJECT_DIR$/Vue/form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/Vue.php" afterPath="$PROJECT_DIR$/Vue/Vue.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/formReponse.php" afterPath="$PROJECT_DIR$/Vue/formReponse.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/gabarit.php" afterPath="$PROJECT_DIR$/Vue/gabarit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/menuAdmin.php" afterPath="$PROJECT_DIR$/Vue/menuAdmin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueAccueil.php" afterPath="$PROJECT_DIR$/Vue/vueAccueil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueAdminAccueil.php" afterPath="$PROJECT_DIR$/Vue/vueAdminAccueil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueAdminCommentaires.php" afterPath="$PROJECT_DIR$/Vue/vueAdminCommentaires.php" />
@@ -613,7 +28,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueAuthentification.php" afterPath="$PROJECT_DIR$/Vue/vueAuthentification.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueBillet.php" afterPath="$PROJECT_DIR$/Vue/vueBillet.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueCommentaire.php" afterPath="$PROJECT_DIR$/Vue/vueCommentaire.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueMembres.php" afterPath="$PROJECT_DIR$/Vue/vueMembres.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueModifierBillet.php" afterPath="$PROJECT_DIR$/Vue/vueModifierBillet.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -639,66 +57,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Routeur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controleur/Routeur.php">
+      <file leaf-file-name="vueBillet.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/vueBillet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vueAdminAccueil.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vue/vueAdminAccueil.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="990">
+              <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
               <folding>
-                <marker date="1489079994000" expanded="true" signature="218:241" ph="..." />
-                <marker date="1489079994000" expanded="true" signature="594:596" ph="..." />
-                <marker date="1489079994000" expanded="true" signature="1023:1047" ph="..." />
-                <marker date="1489079994000" expanded="true" signature="2489:2524" ph="..." />
-                <marker date="1489079994000" expanded="true" signature="2761:2795" ph="..." />
-                <marker date="1489079994000" expanded="true" signature="3030:3063" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControleurAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controleur/ControleurAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
-              <caret line="83" column="46" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Commentaire.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Modele/Commentaire.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="80" column="62" lean-forward="true" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
-              <folding>
-                <marker date="1489080176000" expanded="true" signature="186:249" ph="SELECT * FRO... tCommentaires" />
-                <marker date="1489080176000" expanded="true" signature="501:515" ph="SELECT idCom... T_COMMENTAIRE" />
-                <marker date="1489080176000" expanded="true" signature="501:528" ph="SELECT idC, tCommentaires" />
-                <marker date="1489080176000" expanded="true" signature="501:540" ph="SELECT * FRO... tCommentaires" />
-                <marker date="1489080176000" expanded="true" signature="501:574" ph="SELECT * FRO... tCommentaires" />
-                <marker date="1489080176000" expanded="true" signature="809:852" ph="SELECT * FRO... tCommentaires" />
-                <marker date="1489080176000" expanded="true" signature="809:870" ph="SELECT * FRO... tCommentaires" />
-                <marker date="1489080176000" expanded="true" signature="1105:1144" ph="SELECT * FRO... tCommentaires" />
-                <marker date="1489080176000" expanded="true" signature="1581:1644" ph="SELECT COUNT... tCommentaires" />
-                <marker date="1489080176000" expanded="true" signature="1943:2051" ph="INSERT INTO tCommentaires... " />
-                <marker date="1489080176000" expanded="true" signature="2415:2519" ph="INSERT INTO tCommentaires... " />
-                <marker date="1489080176000" expanded="true" signature="2928:2962" ph="SELECT * FRO... tbillets" />
-                <marker date="1489080176000" expanded="true" signature="2934:2950" ph="INSERT INTO tCommentaires... " />
-                <marker date="1489080176000" expanded="true" signature="3143:3258" ph="UPDATE tComm... " />
-                <marker date="1489080176000" expanded="true" signature="3149:3258" ph="DELETE FROM " />
-                <marker date="1489080176000" expanded="true" signature="3450:3502" ph="UPDATE tcomm... " />
-                <marker date="1489080176000" expanded="true" signature="3679:3731" ph="UPDATE tComm... " />
+                <marker date="1489411126000" expanded="true" signature="989:1029" ph="..." />
               </folding>
             </state>
           </provider>
@@ -707,38 +72,40 @@
       <file leaf-file-name="menuAdmin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vue/menuAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="45">
+              <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControleurCommentaire.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controleur/ControleurCommentaire.php">
+      <file leaf-file-name="vueModifierBillet.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/vueModifierBillet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="660">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControleurSession.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controleur/ControleurSession.php">
+      <file leaf-file-name="gabarit.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vue/gabarit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <marker date="1489412737000" expanded="true" signature="2581:2655" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControleurUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controleur/ControleurUser.php">
+      <file leaf-file-name="ControleurAccueil.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controleur/ControleurAccueil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -747,18 +114,48 @@
       <file leaf-file-name="ControleurAuthentification.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controleur/ControleurAuthentification.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="62" column="14" lean-forward="false" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+            <state relative-caret-position="810">
+              <caret line="54" column="26" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControleurAccueil.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controleur/ControleurAccueil.php">
+      <file leaf-file-name="ControleurBillet.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controleur/ControleurBillet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="360">
+              <caret line="24" column="71" lean-forward="false" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControleurCommentaire.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controleur/ControleurCommentaire.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vueAjouterBillet.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vue/vueAjouterBillet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControleurUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controleur/ControleurUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="74" lean-forward="true" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -768,9 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>livre</find>
-      <find>idco</find>
-      <find>fonts</find>
       <find>getBillets</find>
       <find>top</find>
       <find>intro</find>
@@ -790,6 +184,17 @@
       <find>refre</find>
       <find>adminA</find>
       <find>erreur</find>
+      <find>SESSION</find>
+      <find>header</find>
+      <find>modele</find>
+      <find>session</find>
+      <find>pwd</find>
+      <find>liste</find>
+      <find>titre</find>
+      <find>comment</find>
+      <find>commment1</find>
+      <find>comment1</find>
+      <find>titrebill</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -801,14 +206,12 @@
         <option value="$PROJECT_DIR$/vue/Entete.php" />
         <option value="$PROJECT_DIR$/controler/Routeur.php" />
         <option value="$PROJECT_DIR$/modele/BilletsManager.class.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Vue/vueLogin.php" />
         <option value="$PROJECT_DIR$/Modele/comment.php" />
         <option value="$PROJECT_DIR$/Vue/vueAutentification.php" />
         <option value="$PROJECT_DIR$/Controleur/ControleurAutentification.php" />
         <option value="$PROJECT_DIR$/Modele/authentification.php" />
         <option value="$PROJECT_DIR$/Vue/vueBilletd.php" />
-        <option value="$PROJECT_DIR$/Vue/Vue.php" />
         <option value="$PROJECT_DIR$/Vue/vueErreur.php" />
         <option value="$PROJECT_DIR$/Vue/reponseCommentaire.php" />
         <option value="$PROJECT_DIR$/Vue/formulaireReponse.php" />
@@ -817,38 +220,40 @@
         <option value="$PROJECT_DIR$/Controleur/ControleurFormulaireReponse.php" />
         <option value="$PROJECT_DIR$/Vue/vueFormulaireReponse.php" />
         <option value="$PROJECT_DIR$/Controleur/ControleurReponse.php" />
-        <option value="$PROJECT_DIR$/Controleur/ControleurAccueil.php" />
         <option value="$PROJECT_DIR$/Vue/vueAdministrateur.php" />
         <option value="$PROJECT_DIR$/Contenu/style.css" />
         <option value="$PROJECT_DIR$/Vue/vueAddBillet.php" />
         <option value="$PROJECT_DIR$/Vue/vueUpdateBillet.php" />
         <option value="$PROJECT_DIR$/Modele/Admin.php" />
-        <option value="$PROJECT_DIR$/Modele/Modele.php" />
         <option value="$PROJECT_DIR$/Vue/vueNouveauMembre.php" />
+        <option value="$PROJECT_DIR$/Controleur/ControleurSession.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Vue/Vue.php" />
+        <option value="$PROJECT_DIR$/Controleur/ControleurAccueil.php" />
         <option value="$PROJECT_DIR$/Vue/menuAdmin.php" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/Vue/vueAccueil.php" />
+        <option value="$PROJECT_DIR$/Controleur/ControleurAuthentification.php" />
         <option value="$PROJECT_DIR$/Controleur/ControleurBillet.php" />
         <option value="$PROJECT_DIR$/Controleur/ControleurCommentaire.php" />
+        <option value="$PROJECT_DIR$/Controleur/ControleurUser.php" />
+        <option value="$PROJECT_DIR$/Controleur/Routeur.php" />
+        <option value="$PROJECT_DIR$/Modele/Modele.php" />
         <option value="$PROJECT_DIR$/Vue/form.php" />
         <option value="$PROJECT_DIR$/Vue/formReponse.php" />
-        <option value="$PROJECT_DIR$/Vue/vueAuthentification.php" />
-        <option value="$PROJECT_DIR$/Modele/Billet.php" />
-        <option value="$PROJECT_DIR$/Controleur/ControleurAdmin.php" />
-        <option value="$PROJECT_DIR$/Vue/vueAjouterBillet.php" />
-        <option value="$PROJECT_DIR$/Vue/vueAccueil.php" />
-        <option value="$PROJECT_DIR$/Vue/vueBillet.php" />
-        <option value="$PROJECT_DIR$/Vue/vueAdminCommentaires.php" />
-        <option value="$PROJECT_DIR$/Vue/vueCommentaire.php" />
-        <option value="$PROJECT_DIR$/Vue/vueModifierBillet.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/Vue/vueMembres.php" />
-        <option value="$PROJECT_DIR$/Controleur/ControleurSession.php" />
-        <option value="$PROJECT_DIR$/Controleur/Routeur.php" />
-        <option value="$PROJECT_DIR$/Modele/User.php" />
-        <option value="$PROJECT_DIR$/Controleur/ControleurUser.php" />
-        <option value="$PROJECT_DIR$/Vue/gabarit.php" />
-        <option value="$PROJECT_DIR$/Controleur/ControleurAuthentification.php" />
         <option value="$PROJECT_DIR$/Vue/vueAdminAccueil.php" />
+        <option value="$PROJECT_DIR$/Vue/vueAdminCommentaires.php" />
+        <option value="$PROJECT_DIR$/Vue/vueAjouterBillet.php" />
+        <option value="$PROJECT_DIR$/Vue/vueAuthentification.php" />
+        <option value="$PROJECT_DIR$/Vue/vueBillet.php" />
+        <option value="$PROJECT_DIR$/Vue/vueCommentaire.php" />
+        <option value="$PROJECT_DIR$/Vue/vueMembres.php" />
+        <option value="$PROJECT_DIR$/Vue/vueModifierBillet.php" />
+        <option value="$PROJECT_DIR$/Vue/gabarit.php" />
+        <option value="$PROJECT_DIR$/Modele/Billet.php" />
         <option value="$PROJECT_DIR$/Modele/Commentaire.php" />
+        <option value="$PROJECT_DIR$/Modele/User.php" />
+        <option value="$PROJECT_DIR$/Controleur/ControleurAdmin.php" />
       </list>
     </option>
   </component>
@@ -865,10 +270,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-447" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1290" />
-    <option name="height" value="932" />
+    <option name="x" value="-600" />
+    <option name="y" value="-1027" />
+    <option name="width" value="1880" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -995,34 +400,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controleur" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Contenu" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BD" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -1167,12 +544,19 @@
       <workItem from="1488893249000" duration="25640000" />
       <workItem from="1488962582381" duration="22016000" />
       <workItem from="1489000035217" duration="11466000" />
-      <workItem from="1489045488608" duration="21870000" />
+      <workItem from="1489045488608" duration="24130000" />
+      <workItem from="1489137255572" duration="7617000" />
+      <workItem from="1489170073216" duration="1515000" />
+      <workItem from="1489177260106" duration="1268000" />
+      <workItem from="1489239338035" duration="20525000" />
+      <workItem from="1489394153834" duration="554000" />
+      <workItem from="1489396934747" duration="9751000" />
+      <workItem from="1489431594123" duration="51000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="565545000" />
+    <option name="totallyTimeSpent" value="609086000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1184,16 +568,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-447" y="-1057" width="1290" height="932" extended-state="0" />
-    <editor active="true" />
+    <frame x="-600" y="-1027" width="1880" height="1027" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23717949" sideWeight="0.49483204" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17845485" sideWeight="0.49483204" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20930232" sideWeight="0.49561885" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13513513" sideWeight="0.5352564" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18151815" sideWeight="0.5533188" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35697675" sideWeight="0.49178532" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23297492" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13513513" sideWeight="0.46474358" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23250689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18151815" sideWeight="0.44668117" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22455902" sideWeight="0.50516796" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1201,7 +585,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32743362" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21672167" sideWeight="0.497351" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1252,20 +636,8 @@
     <entry file="file://$PROJECT_DIR$/Vue/Billet.php" />
     <entry file="file://$PROJECT_DIR$/assets/js/tinymce/jquery.tinymce.min.js" />
     <entry file="file://$PROJECT_DIR$/Modele/CommentaireManager.php" />
-    <entry file="file://$PROJECT_DIR$/BD/MonBlog.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Contenu/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="72" lean-forward="true" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/BD/MonBlog.sql" />
+    <entry file="file://$PROJECT_DIR$/Contenu/style.css" />
     <entry file="file://$USER_HOME$/Downloads/mutli-plateforme/exemple.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1287,15 +659,22 @@
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controleur/ControleurSession.php" />
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="106" lean-forward="false" selection-start-line="6" selection-start-column="106" selection-end-line="6" selection-end-column="106" />
           <folding>
             <marker date="1489008595000" expanded="true" signature="127:417" ph="..." />
           </folding>
@@ -1304,136 +683,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/formReponse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/Vue.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="240">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vueAccueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="76" column="24" lean-forward="true" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+        <state relative-caret-position="-225">
+          <caret line="30" column="115" lean-forward="false" selection-start-line="30" selection-start-column="115" selection-end-line="30" selection-end-column="115" />
           <folding>
-            <marker date="1489055020000" expanded="true" signature="2854:2895" ph="..." />
+            <marker date="1489402315000" expanded="true" signature="2830:2871" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vueAdminCommentaires.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="61" column="86" lean-forward="false" selection-start-line="61" selection-start-column="86" selection-end-line="61" selection-end-column="86" />
+        <state relative-caret-position="240">
+          <caret line="74" column="80" lean-forward="false" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
           <folding>
-            <marker date="1489055393000" expanded="true" signature="1237:1297" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="1379:1396" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="1519:1532" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="1899:1937" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueBillet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding>
-            <marker date="1489055393000" expanded="true" signature="717:738" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="717:751" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="717:752" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="717:756" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="717:785" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="717:811" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="717:849" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="1007:1047" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="1341:1357" ph="..." />
-            <marker date="1489055393000" expanded="true" signature="1583:1673" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueCommentaire.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueAjouterBillet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="123" column="23" lean-forward="true" selection-start-line="123" selection-start-column="23" selection-end-line="123" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueMembres.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueModifierBillet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="56" column="18" lean-forward="true" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modele/Modele.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modele/Billet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="50" column="57" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="69" />
-          <folding>
-            <marker date="1489048347000" expanded="true" signature="163:225" ph="SELECT idB, tBillets" />
-            <marker date="1489048347000" expanded="true" signature="449:489" ph="SELECT * FRO... tBillets" />
-            <marker date="1489048347000" expanded="true" signature="688:722" ph="SELECT * FRO... tBillets" />
-            <marker date="1489048347000" expanded="true" signature="1817:1895" ph="INSERT INTO tBillets... " />
-            <marker date="1489048347000" expanded="true" signature="2136:2214" ph="INSERT INTO tBillets... " />
-            <marker date="1489048347000" expanded="true" signature="2485:2623" ph="UPDATE tBill... " />
-            <marker date="1489048347000" expanded="true" signature="2861:2999" ph="UPDATE tBill... " />
-            <marker date="1489048347000" expanded="true" signature="3175:3220" ph="UPDATE tBill... " />
+            <marker date="1489411126000" expanded="true" signature="1458:1518" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="1600:1617" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="1740:1753" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="2119:2120" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vueAuthentification.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="37" column="71" lean-forward="true" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="71" />
+        <state relative-caret-position="555">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <marker date="1489008874000" expanded="true" signature="870:888" ph="..." />
-            <marker date="1489008874000" expanded="true" signature="940:979" ph="..." />
-            <marker date="1489008874000" expanded="true" signature="1170:1178" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="906:935" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="988:1039" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="1295:1303" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueCommentaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1445,138 +748,188 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modele/User.php">
+    <entry file="file://$PROJECT_DIR$/Vue/vueMembres.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" column="105" lean-forward="false" selection-start-line="35" selection-start-column="105" selection-end-line="35" selection-end-column="105" />
+        <state relative-caret-position="165">
+          <caret line="81" column="14" lean-forward="true" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modele/Modele.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="74" lean-forward="true" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modele/Billet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
           <folding>
-            <marker date="1489078963000" expanded="true" signature="249:283" ph="SELECT * FRO... tusers" />
-            <marker date="1489078963000" expanded="true" signature="249:286" ph="SELECT * FRO... tusers" />
-            <marker date="1489078963000" expanded="true" signature="475:527" ph="SELECT * FRO... tusers" />
-            <marker date="1489078963000" expanded="true" signature="948:1031" ph="INSERT INTO tusers... " />
-            <marker date="1489078963000" expanded="true" signature="1294:1324" ph="DELETE FROM " />
-            <marker date="1489078963000" expanded="true" signature="1300:1324" ph="UPDATE tBill... " />
+            <marker date="1489426464000" expanded="true" signature="163:285" ph="SELECT idB, tBillets" />
+            <marker date="1489426464000" expanded="true" signature="509:609" ph="SELECT * FRO... tBillets" />
+            <marker date="1489426464000" expanded="true" signature="808:902" ph="SELECT * FRO... tBillets" />
+            <marker date="1489426464000" expanded="true" signature="1314:1392" ph="INSERT INTO tBillets... " />
+            <marker date="1489426464000" expanded="true" signature="1633:1711" ph="INSERT INTO tBillets... " />
+            <marker date="1489426464000" expanded="true" signature="1977:2115" ph="UPDATE tBill... " />
+            <marker date="1489426464000" expanded="true" signature="2347:2485" ph="UPDATE tBill... " />
+            <marker date="1489426464000" expanded="true" signature="2661:2706" ph="UPDATE tBill... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/gabarit.php">
+    <entry file="file://$PROJECT_DIR$/Modele/Commentaire.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="420">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <marker date="1489426464000" expanded="true" signature="186:310" ph="SELECT * FRO... tCommentaires" />
+            <marker date="1489426464000" expanded="true" signature="562:636" ph="SELECT idCom... T_COMMENTAIRE" />
+            <marker date="1489426464000" expanded="true" signature="562:649" ph="SELECT idC, tCommentaires" />
+            <marker date="1489426464000" expanded="true" signature="562:661" ph="SELECT * FRO... tCommentaires" />
+            <marker date="1489426464000" expanded="true" signature="562:695" ph="SELECT * FRO... tCommentaires" />
+            <marker date="1489426464000" expanded="true" signature="930:1033" ph="SELECT * FRO... tCommentaires" />
+            <marker date="1489426464000" expanded="true" signature="930:1051" ph="SELECT * FRO... tCommentaires" />
+            <marker date="1489426464000" expanded="true" signature="1286:1385" ph="SELECT * FRO... tCommentaires" />
+            <marker date="1489426464000" expanded="true" signature="1822:1885" ph="SELECT COUNT... tCommentaires" />
+            <marker date="1489426464000" expanded="true" signature="2184:2292" ph="INSERT INTO tCommentaires... " />
+            <marker date="1489426464000" expanded="true" signature="2656:2760" ph="INSERT INTO tCommentaires... " />
+            <marker date="1489426464000" expanded="true" signature="3086:3201" ph="UPDATE tComm... " />
+            <marker date="1489426464000" expanded="true" signature="3092:3201" ph="DELETE FROM " />
+            <marker date="1489426464000" expanded="true" signature="3393:3445" ph="UPDATE tcomm... " />
+            <marker date="1489426464000" expanded="true" signature="3622:3674" ph="UPDATE tComm... " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/ControleurBillet.php">
+    <entry file="file://$PROJECT_DIR$/Modele/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/ControleurUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/Routeur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/ControleurAccueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/ControleurSession.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/ControleurAuthentification.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="62" column="14" lean-forward="false" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/menuAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="414">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <marker date="1489426464000" expanded="true" signature="249:343" ph="SELECT * FRO... tusers" />
+            <marker date="1489426464000" expanded="true" signature="249:346" ph="SELECT * FRO... tusers" />
+            <marker date="1489426464000" expanded="true" signature="525:637" ph="SELECT * FRO... tusers" />
+            <marker date="1489426464000" expanded="true" signature="982:1065" ph="INSERT INTO tusers... " />
+            <marker date="1489426464000" expanded="true" signature="1303:1333" ph="DELETE FROM " />
+            <marker date="1489426464000" expanded="true" signature="1309:1333" ph="UPDATE tBill... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vueAdminAccueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1489079994000" expanded="true" signature="218:241" ph="..." />
-            <marker date="1489079994000" expanded="true" signature="594:596" ph="..." />
-            <marker date="1489079994000" expanded="true" signature="1023:1047" ph="..." />
-            <marker date="1489079994000" expanded="true" signature="2489:2524" ph="..." />
-            <marker date="1489079994000" expanded="true" signature="2761:2795" ph="..." />
-            <marker date="1489079994000" expanded="true" signature="3030:3063" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="208:231" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="587:589" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="2463:2498" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="2735:2769" ph="..." />
+            <marker date="1489411126000" expanded="true" signature="3004:3037" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controleur/ControleurCommentaire.php">
+    <entry file="file://$PROJECT_DIR$/Controleur/Routeur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="1650">
+          <caret line="238" column="0" lean-forward="false" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controleur/ControleurAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450">
-          <caret line="83" column="46" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="58" />
+        <state relative-caret-position="2595">
+          <caret line="173" column="29" lean-forward="false" selection-start-line="173" selection-start-column="29" selection-end-line="173" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modele/Commentaire.php">
+    <entry file="file://$PROJECT_DIR$/Controleur/ControleurAccueil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="80" column="62" lean-forward="true" selection-start-line="80" selection-start-column="62" selection-end-line="80" selection-end-column="62" />
+        <state relative-caret-position="225">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controleur/ControleurAuthentification.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="54" column="26" lean-forward="false" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controleur/ControleurBillet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="71" lean-forward="false" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controleur/ControleurCommentaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="49" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controleur/ControleurUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="74" lean-forward="true" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueAjouterBillet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueModifierBillet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueBillet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="13" lean-forward="false" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
           <folding>
-            <marker date="1489080176000" expanded="true" signature="186:249" ph="SELECT * FRO... tCommentaires" />
-            <marker date="1489080176000" expanded="true" signature="501:515" ph="SELECT idCom... T_COMMENTAIRE" />
-            <marker date="1489080176000" expanded="true" signature="501:528" ph="SELECT idC, tCommentaires" />
-            <marker date="1489080176000" expanded="true" signature="501:540" ph="SELECT * FRO... tCommentaires" />
-            <marker date="1489080176000" expanded="true" signature="501:574" ph="SELECT * FRO... tCommentaires" />
-            <marker date="1489080176000" expanded="true" signature="809:852" ph="SELECT * FRO... tCommentaires" />
-            <marker date="1489080176000" expanded="true" signature="809:870" ph="SELECT * FRO... tCommentaires" />
-            <marker date="1489080176000" expanded="true" signature="1105:1144" ph="SELECT * FRO... tCommentaires" />
-            <marker date="1489080176000" expanded="true" signature="1581:1644" ph="SELECT COUNT... tCommentaires" />
-            <marker date="1489080176000" expanded="true" signature="1943:2051" ph="INSERT INTO tCommentaires... " />
-            <marker date="1489080176000" expanded="true" signature="2415:2519" ph="INSERT INTO tCommentaires... " />
-            <marker date="1489080176000" expanded="true" signature="2928:2962" ph="SELECT * FRO... tbillets" />
-            <marker date="1489080176000" expanded="true" signature="2934:2950" ph="INSERT INTO tCommentaires... " />
-            <marker date="1489080176000" expanded="true" signature="3143:3258" ph="UPDATE tComm... " />
-            <marker date="1489080176000" expanded="true" signature="3149:3258" ph="DELETE FROM " />
-            <marker date="1489080176000" expanded="true" signature="3450:3502" ph="UPDATE tcomm... " />
-            <marker date="1489080176000" expanded="true" signature="3679:3731" ph="UPDATE tComm... " />
+            <marker date="1489411126000" expanded="true" signature="989:1029" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/menuAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/gabarit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <marker date="1489412737000" expanded="true" signature="2581:2655" ph="..." />
           </folding>
         </state>
       </provider>

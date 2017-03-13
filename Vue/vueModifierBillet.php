@@ -1,5 +1,16 @@
 <?php $this->titre = "Ajouter un épisode"; ?>
 
+<?php /*
+if(isset($_SESSION['USER'])){
+header('Location: index.php?action=adminAccueil');
+}
+else {
+header('Location: index.php?action=accueil');
+}
+*/ ?>
+
+
+
 <script src="assets/js/tiny_mce/tiny_mce.js" type="text/javascript"></script>
 <script type="text/javascript">
     tinyMCE.init({
@@ -37,16 +48,14 @@
         <section>
             <div class="row">
                 <div class="col-xs-12">
-
                     <hr/>
-
 
                     <form method="post" action="<?= "index.php?action=updateBillet&idB=" . $billet['idB'] ?>">
                         <input id="titreBillet" name="titre" type="text" class="form-control"
-                               placeholder="titre de l'épisode" value="<?= htmlspecialchars($billet['titre']) ?>"
+                               placeholder="titre de l'épisode" value="<?= ($billet['titre']) ?>"
                                required><br/>
                         <textarea id="txtBillet" name="contenu" rows="30" class="form-control" placeholder="Texte"
-                                  required><?= htmlspecialchars($billet['contenu']) ?>" </textarea><br/>
+                                  required><?= ($billet['contenu']) ?>" </textarea><br/>
                         <input type="hidden" name="idBillet" value="<?= $billet['idB'] ?>"/>
                         <input class="btn btn-primary" type="submit" name="action" value="brouillonModif"/>
                         <input class="btn btn-primary" style="margin-left:50px; float: right" type="submit"

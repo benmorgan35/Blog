@@ -13,15 +13,9 @@ class ControleurAuthentification
     private $username;
     private $password;
 
-    // Déclarations des constantes en rapport avec la force.
-
-    const CONNECT = 1;
-    const DECONNECT = 2;
-
-
     public function __construct()
     {
-        $this->user = new User(User::DECONNECT);
+        $this->user = new User();
     }
 
     // Affiche la page d'authentification
@@ -31,38 +25,25 @@ class ControleurAuthentification
         $vue->generer(array());
     }
 
-    public function connexion($username, $password)
+    public function connexion($username)
     {
-
-            $user = $this->user->getUser($username, $password);
-            //$this->getFlash('Bonjour' . $username .  '.Vous êtes maintenant connecté');
-
-
-            /*
-
-            if (isset($_POST['username']) && isset($_POST['password'])) {
-                if ($username == $_POST['username'] AND $password == $_POST['password']) {
-                    session_start();
-                    // Enregistrement des variables en session
-                    $_SESSION['id'] = $_POST['id'];
-                    $_SESSION['prenom'] = $_POST['prenom'];
-                    $_SESSION['nom'] = $_POST['nom'];
-                    $_SESSION['username'] = $_POST['username'];
-                    $_SESSION['password'] = $_POST['password'];
-                    header('Location: index.php?action=adminAccueil');
-                }
-                else {
-                    throw new Exception("Identifiants non valides");
-                }
-
+        $user = $this->user->getUser($username);
+        if (isset($_SESSION['user']))  {
+            $_SESSION['flash'] = htmlspecialchars($_SESSION['user']['prenom']). ' est déjà connecté.';
+            header('Location: index.php?action=adminAccueil');
+        }
+        else {
+            if ($user) {
+               $_SESSION['user']=$user;
+               $_SESSION['flash'] = 'Bonjour ' .htmlspecialchars($_SESSION['user']['prenom']) . '. Vous êtes désormais connecté';
+               header('Location: index.php?action=adminAccueil');
             }
-            else {  // aucune action définie : affichage de l'accueil
+            else
+            {
+                $_SESSION['flash'] = 'Mauvais identifiants de connexion';
                 header('Location: index.php?action=authentification');
             }
-
-            */
-
-        header ('Location: index.php?action=adminAccueil');
+        }
 
 
     }
@@ -70,16 +51,10 @@ class ControleurAuthentification
 
     public function deconnexion()
     {
-        //$this->$Session->setFlash(__('Vous êtes maintenant déconnecté');
-        // On réécrit le tableau
-        $_SESSION = array();
-
-        //ou session_unset ();
-        // On détruit notre session
+        unset($_SESSION['user']);
         session_destroy();
-        // On redirige le visiteur vers la page d'accueil
-        unset($_SESSION);
-        header('location: index.php');
+        header('Location: index.php?action=accueil');
+
     }
 
 

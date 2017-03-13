@@ -22,6 +22,7 @@ class Vue {
                 array('titre' => $this->titre, 'contenu' => $contenu));
         // Renvoi de la vue au navigateur
         echo $vue;
+        unset( $_SESSION['flash']);
     }
 
     // Génère un fichier vue et renvoie le résultat produit

@@ -13,7 +13,7 @@ class ControleurAccueil
         $this->billet = new Billet();
     }
 
-    // Affiche la liste de tous les billets du blog
+    // Affiche la liste des billets publiés
     public function accueil()
     {
         $billets = $this->billet->getBillets();

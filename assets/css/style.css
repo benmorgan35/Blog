@@ -1,16 +1,13 @@
-html {
-
-}
-
-
-
 body {
 background-color: #edf0f2;
+    margin-top: 50px;
 }
 
-h2{
+h2 {
     color: #165634;
-}h3{
+}
+
+h3{
     color: #14914f;
 }
 
@@ -25,14 +22,6 @@ p {
     margin-left: auto;
 }
 
-
-.comment1{
-    margin-left: 5px;
-}.comment2{
-    margin-left: 5px;
-}
-
-
 .titreBillet {
     color: #337ab7;
 }
@@ -44,7 +33,7 @@ p {
 
 .titre{
     padding-left: 5%;
-    padding-top: 5%;
+    padding-top: 30px;
     padding-right: 5%;
 }
 
@@ -87,6 +76,15 @@ p {
 #example_length{
 margin-bottom: 20px;
 margin-top: 20px;}
+
+#flash{
+    padding-top: 40px;
+    color: #14914f;
+    font-size: 18px;
+    margin-left: 5%;
+    text-align:center;
+
+}
 
 #texte {
     margin-left: 2%;
@@ -151,7 +149,7 @@ margin-top: 20px;}
     background-color: white;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom : 60px;
 }
 
@@ -175,17 +173,6 @@ text-align: right;
 
     text-align: center;
     position: relative;
-}
-
-#liste{
-    margin-left: 2%;
-    margin-bottom: 20px;
-}
-
-
-
-.sorting_desc {
-    color: grey;
 }
 
 @media all and (max-width: 1024px)

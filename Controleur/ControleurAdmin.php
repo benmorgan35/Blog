@@ -2,7 +2,6 @@
 
 require_once 'Modele/Billet.php';
 require_once 'Modele/Commentaire.php';
-//require_once 'Modele/user.php';
 
 require_once 'Vue/Vue.php';
 
@@ -13,7 +12,6 @@ class ControleurAdmin
     private $billet;
     private $commentaire;
 
-    //private $user;
 
     public function __construct()
     {
@@ -29,37 +27,66 @@ class ControleurAdmin
     //===================================================================================
 
 
+
+
     // Affiche la page d'accueil Admin avec la liste de tous les billets publiés, brpuillon, supprimés
     public function AdminAccueil()
     {
-        $adminBillets = $this->billet->getAdminBillets();
-        $vue = new Vue("AdminAccueil");
-        $vue->generer(array('adminBillets' => $adminBillets));
+        //if (isset($_SESSION['user'])) {
+            $adminBillets = $this->billet->getAdminBillets();
+            $vue = new Vue("AdminAccueil");
+            $vue->generer(array('adminBillets' => $adminBillets));
+      //  }
+       // else{
+           // $_SESSION['flash'] = 'Vous n\'êtes pas autorisés à effectuer cette commande.';
+          //  header('Location: index.php?action=accueil');
+
+      //  }
     }
+
+
+
 
     // Affiche la page ajouterBillet
     public function ajouterBillet()
     {
-        //$billets = $this->billet->getBillets();
-        $vue = new Vue("ajouterBillet");
-        $vue->generer(array());
+        if (isset($_SESSION['user'])) {
+            $vue = new Vue("AjouterBillet");
+            $vue->generer(array());
+        }
+        else{
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
+        }
     }
 
     // Affiche la page modifierBillet
     public function modifierBillet($idBillet)
     {
-        $billet = $this->billet->getBillet($idBillet);
-        $vue = new Vue("modifierBillet");
-        $vue->generer(array('billet' => $billet));
+        if (isset($_SESSION['user'])) {
+            $billet = $this->billet->getBillet($idBillet);
+            $vue = new Vue("ModifierBillet");
+            $vue->generer(array('billet' => $billet));
+        }
+        else {
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
+        }
     }
 
     // Affiche la liste des commentaires et le nombre de commentaires signalés
     public function adminCommentaires()
     {
-        $nbSignalements = $this->commentaire->getNbSignalements();
-        $adminCommentaires = $this->commentaire->getAdminCommentaires();
-        $vue = new Vue("adminCommentaires");
-        $vue->generer(array('adminCommentaires' => $adminCommentaires, 'nbSignalements' => $nbSignalements));
+        if (isset($_SESSION['user'])) {
+            $nbSignalements = $this->commentaire->getNbSignalements();
+            $adminCommentaires = $this->commentaire->getAdminCommentaires();
+            $vue = new Vue("AdminCommentaires");
+            $vue->generer(array('adminCommentaires' => $adminCommentaires, 'nbSignalements' => $nbSignalements));
+        }
+        else{
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
+        }
     }
 
 
@@ -68,52 +95,65 @@ class ControleurAdmin
     // ACTIONS ADMIN SUR UN BILLET
     //===================================================================================
 
-
-    // Enregistrer un billet en brouillon
-    public function brouillonBillet($titre, $contenu)
+    public function addBillet($titre, $contenu)
     {
-        $this->billet->brouillonBillet($titre, $contenu);
-        header('Location: index.php?action=adminAccueil');
+        if (isset($_SESSION['user'])) {
+            if ($_POST['action'] == 'brouillon') {
+                $this->billet->brouillonBillet($titre, $contenu);
+                $_SESSION['flash'] = 'Votre billet est sauvegardé en brouillon.';
+                header('Location: index.php?action=adminAccueil');
+            }
+            else if ($_POST['action'] == 'publier') {
+                $this->billet->publierBillet($titre, $contenu);
+                $_SESSION['flash'] = 'Votre billet est publié.';
+                header('Location: index.php?action=adminAccueil');
+            }
+        }
+        else {
+                $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+                header('Location: index.php?action=accueil');
+        }
     }
 
-    // Publier un billet
-
-    public function publierBillet($titre, $contenu)
+    public function updateBillet($idBillet, $titre, $contenu)
     {
-        $this->billet->publierBillet($titre, $contenu);
-        header('Location: index.php?action=adminAccueil');
+        if (isset($_SESSION['user'])) {
+            if ($_POST['action'] == 'brouillonModif') {
+                $this->billet->brouillonUpdate($idBillet, $titre, $contenu);
+                $_SESSION['flash'] = 'Vos modifications sont sauvegardées en brouillon.';
+                header('Location: index.php?action=adminAccueil');
+            }
+            else if ($_POST['action'] == 'publierModif') {
+                $this->billet->publierUpdate($idBillet, $titre, $contenu);
+                $_SESSION['flash'] = 'Votre billet modifié est publié.';
+                header('Location: index.php?action=adminAccueil');
+            }
+        }
+        else {
+                $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+                header('Location: index.php?action=accueil');
+        }
     }
 
 
 
-    // Modifier un billet et l'enregistrer en tant que brouillon
-    public function brouillonUpdate($idBillet, $titre, $contenu)
-    {
-        $this->billet->updateBrouillonBillet($idBillet, $titre, $contenu);
-        $adminBillets = $this->billet->getAdminBillets();
-        $vue = new Vue("AdminAccueil");
-        $vue->generer(array('adminBillets' => $adminBillets));
-    }
 
-    // Modifier un billet et le publier
-    public function publierUpdate($idBillet, $titre, $contenu)
-    {
-
-        $this->billet->updatePublierBillet($idBillet, $titre, $contenu);
-        $adminBillets = $this->billet->getAdminBillets();
-        $vue = new Vue("AdminAccueil");
-        $vue->generer(array('adminBillets' => $adminBillets));
-    }
-
-
-
+    // supprimer un billet
     public function deleteBillet($idBillet)
     {
-        $this->billet->deleteBillet($idBillet);
-        $adminBillets = $this->billet->getAdminBillets();
-        $vue = new Vue("AdminAccueil");
-        $vue->generer(array('adminBillets' => $adminBillets));
-    }
+        if (isset($_SESSION['user'])) {
+            $this->billet->deleteBillet($idBillet);
+            $adminBillets = $this->billet->getAdminBillets();
+            $_SESSION['flash'] = 'L\'épisode n\'est plus publié. Vous pouvez néamoins toujours le retrouver sur cette page dans la liste des épisodes.';
+
+            $vue = new Vue("AdminAccueil");
+            $vue->generer(array('adminBillets' => $adminBillets));
+        }
+        else{
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
+        }
+}
 
 
 
@@ -125,41 +165,37 @@ class ControleurAdmin
     // Supprimer un commentaire
     public function deleteCommentaire($idCommentaire)
     {
-        $this->commentaire->deleteCommentaire($idCommentaire);
-        $this->commentaire->annulerSignalement($idCommentaire);
-        $nbSignalements = $this->commentaire->getNbSignalements();
-        $adminCommentaires = $this->commentaire->getAdminCommentaires();
-        $vue = new Vue("adminCommentaires");
-        $vue->generer(array('adminCommentaires' => $adminCommentaires, 'nbSignalements' => $nbSignalements));
+        if (isset($_SESSION['user'])) {
+            $this->commentaire->deleteCommentaire($idCommentaire);
+            $this->commentaire->annulerSignalement($idCommentaire);
+            $nbSignalements = $this->commentaire->getNbSignalements();
+            $adminCommentaires = $this->commentaire->getAdminCommentaires();
+            $_SESSION['flash'] = 'Le commentaire est désormais supprimé.';
+            $vue = new Vue("AdminCommentaires");
+            $vue->generer(array('adminCommentaires' => $adminCommentaires, 'nbSignalements' => $nbSignalements));
+        }
+        else{
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
+        }
     }
 
     // Annuler un signalement
     public function annulerSignalement($idCommentaire)
     {
-        $this->commentaire->annulerSignalement($idCommentaire);
-        $nbSignalements = $this->commentaire->getNbSignalements();
-        $adminCommentaires = $this->commentaire->getAdminCommentaires();
-        $vue = new Vue("adminCommentaires");
-        $vue->generer(array('adminCommentaires' => $adminCommentaires, 'nbSignalements' => $nbSignalements));
+        if (isset($_SESSION['user'])) {
+            $this->commentaire->annulerSignalement($idCommentaire);
+            $nbSignalements = $this->commentaire->getNbSignalements();
+            $adminCommentaires = $this->commentaire->getAdminCommentaires();
+            $_SESSION['flash'] = 'Le commentaire n\'est plus signalé.';
+            $vue = new Vue("AdminCommentaires");
+            $vue->generer(array('adminCommentaires' => $adminCommentaires, 'nbSignalements' => $nbSignalements));
+        }
+        else{
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
+        }
     }
-
-
-
-    //===================================================================================
-    // VOIR AVEC SEB
-    //===================================================================================
-
-
-
-    //Affiche la page du billet d'un commentaire'
-    public function billetCom($idCommentaire, $idBillet)
-    {
-       // $billet = $this->billet->getBilletCom($idCommentaire);
-        //$commentaires = $this->commentaire->getCommentaires($idBillet);
-      //  $vue = new Vue("Billet");
-        //$vue->generer(array('billet' => $billet, 'commentaires' => $commentaires, "commentaireModele" => $this -> commentaire));
-    }
-
 
 
 }

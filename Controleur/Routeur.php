@@ -6,7 +6,7 @@ require_once 'ControleurAuthentification.php';
 require_once 'ControleurCommentaire.php';
 require_once 'ControleurAdmin.php';
 require_once 'ControleurUser.php';
-//require_once 'ControleurSession.php';
+
 
 require_once 'Vue/Vue.php';
 
@@ -20,7 +20,6 @@ class Routeur
     private $ctrlAdmin;
     private $ctrlUser;
 
-    //private $ctrlSession;
 
     public function __construct()
     {
@@ -30,8 +29,6 @@ class Routeur
         $this->ctrlCommentaire = new ControleurCommentaire();
         $this->ctrlAdmin = new ControleurAdmin();
         $this->ctrlUser = new ControleurUser();
-        //$this->ctrlSession = new ControleurSession();
-        // $this->ctrlSession->getSession($idSession);
     }
 
     // Route une requête entrante : exécution l'action associée
@@ -73,7 +70,6 @@ class Routeur
                         $idBillet = intval($this->getParametre($_GET, 'idB'));
                         if ($idBillet != 0) {
                             $this->ctrlBillet->billet($idBillet);
-                            //$this->ctrlCommentaire->commentaire($idCommentaire);
                         } else
                             throw new Exception("Identifiant de billet non valide");
                         break;
@@ -82,14 +78,6 @@ class Routeur
                     case 'authentification' :
                         $this->ctrlAuth->authentification();
                         break;
-
-                    // affiche la page d'un billet de commentaire///////
-                    case 'billetCom' :
-                        // $idCommentaire = intval($this->getParametre($_GET, 'idC'));
-                        // $idBillet = intval($this->getParametre($_GET, 'idB'));
-                        //  $this->ctrlAdmin->billetCom($idCommentaire, $idBillet);
-                        break;
-                    // /////////////////////////////////////////////////
 
 
                     //-------------------------------------------------
@@ -192,8 +180,8 @@ class Routeur
                         $prenom = $this->getParametre($_POST, 'prenom');
                         $nom = $this->getParametre($_POST, 'nom');
                         $username = $this->getParametre($_POST, 'username');
-                        $password_hashe = $this->getParametre($_POST, 'password');
-                        $this->ctrlUser->inscription($prenom, $nom, $username, $password_hashe);
+                        $password = $this->getParametre($_POST, 'password');
+                        $this->ctrlUser->inscription($prenom, $nom, $username, $password);
                         break;
 
                     // Supprimer un membre
@@ -209,25 +197,9 @@ class Routeur
 
                     // Ajouter un billet, avec action au choix : le publier ou l'enregistrer comme brouillon
                     case 'addBillet' :
-
                         $titre = $this->getParametre($_POST, 'titre');
                         $contenu = $this->getParametre($_POST, 'contenu');
-
-                        if (isset($_POST['action'])) {
-                            if ($_POST['action'] == 'brouillon') {
-                                $this->ctrlAdmin->brouillonBillet($titre, $contenu);
-
-                            }
-                            else if ($_POST['action'] == 'publier') {
-                                $this->ctrlAdmin->publierBillet($titre, $contenu);
-                            }
-                            else {  // aucune action définie : retour au formulaire
-                                //$this->ctrlAdmin->modifierBillet(($idBillet));
-                            }
-
-                        }
-                        else {}
-
+                        $this->ctrlAdmin->addBillet($titre, $contenu);
                         break;
 
                     // Modifier un billet, avec action au choix : le publier ou l'enregistrer comme brouillon
@@ -236,21 +208,7 @@ class Routeur
                         $idBillet = intval($this->getParametre($_GET, 'idB'));
                         $titre = $this->getParametre($_POST, 'titre');
                         $contenu = $this->getParametre($_POST, 'contenu');
-
-                        if (isset($_POST['action'])) {
-                            if ($_POST['action'] == 'brouillonModif') {
-                                $this->ctrlAdmin->brouillonUpdate($idBillet, $titre, $contenu);
-
-                            }
-                            else if ($_POST['action'] == 'publierModif') {
-                                $this->ctrlAdmin->publierUpdate($idBillet, $titre, $contenu);
-                            }
-                            else {  // aucune action définie : retour au formulaire
-                                //$this->ctrlAdmin->modifierBillet(($idBillet));
-                            }
-
-                        }
-                        else {}
+                        $this->ctrlAdmin->updateBillet($idBillet, $titre, $contenu);
                         break;
 
                     // Supprimer un billet
@@ -277,10 +235,7 @@ class Routeur
                         throw new Exception("Désolé, action non valide");
 
 
-
-
                 } // fin du switch
-
 
             } // fin du (isset($_GET['action']))
 
@@ -288,9 +243,6 @@ class Routeur
                 $this->ctrlAccueil->accueil();
             }
 
-
-            //if (isset($_GET['user'])) {
-           // }
 
         } catch (Exception $e) {
             $this->erreur($e->getMessage());

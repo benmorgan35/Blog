@@ -33,9 +33,8 @@ class ControleurCommentaire
         // Sauvegarde du commentaire
         $this->commentaire->ajouterCommentaire($auteur, $contenu, $idBillet);
         // Actualisation de l'affichage du billet
-        // ajouter message flash/////////////////////////////////////////////////////////////////////////////////////
         header('Location: index.php?action=billet&idB=' . $idBillet);
-
+        $_SESSION['flash'] = 'Votre commentaire est publié.';
     }
 
 
@@ -45,8 +44,8 @@ class ControleurCommentaire
         // Sauvegarde du commentaire
         $this->commentaire->repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire);
         // Actualisation de l'affichage du billet
-        // ajouter message flash
         header ('Location: index.php?action=billet&idB=' . $idBillet);
+        $_SESSION['flash'] = 'Votre commentaire est publié.';
     }
 
     //Signaler un commentaire
@@ -54,6 +53,7 @@ class ControleurCommentaire
         $this->commentaire->signalerCommentaire($idCommentaire);
         $commentaire = $this->commentaire->getCommentaire($idCommentaire);
         header ('Location: index.php?action=billet&idB=' . $commentaire['idB']);
+        $_SESSION['flash'] = 'Votre signalement a été pris en compte.';
     }
 
 

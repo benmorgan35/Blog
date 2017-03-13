@@ -48,9 +48,9 @@
     <section>
         <div class='row'>
             <div class="col-xs-12">
-                <h3 id="liste_episodes">Liste des épisodes</h3>
+                <h3>Liste des épisodes</h3>
                 <hr/>
-                <table id="example" class="display" cellspacing="0" width="100%">
+                <table class="table table-hover" cellspacing="0" width="100%">
 
                     <thead>
                     <tr>
@@ -63,11 +63,11 @@
                     <?php foreach ($billets as $billet): ?>
                         <tr>
                             <td>
-                                <time style="color:grey; font-size: 0.8em"><i><?= $billet['dateCrea'] ?></i></time>
+                                <time style="color:grey; font-size: 0.8em"><i><?= $billet['date_fr'] ?></i></time>
                             </td>
                             <td>
                                 <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>">
-                                    <p class="titreBillet"><?= htmlspecialchars($billet['titre']) ?>
+                                    <p class="titreBillet"><?= ($billet['titre']) ?>
                                 </a>
                             </td>
                         </tr>

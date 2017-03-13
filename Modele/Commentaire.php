@@ -9,7 +9,7 @@ class Commentaire extends Modele
     // Renvoie la liste de tous les commentaires
     public function getAdminCommentaires()
     {
-        $sql = 'SELECT * FROM tCommentaires ORDER BY signalement DESC, idC DESC';
+        $sql = 'SELECT *, DATE_FORMAT (dateCrea, \'%d/%m/%Y à %H:h%i:%s\') AS date_fr FROM tcommentaires ORDER BY signalement DESC, idC DESC';
         $adminCommentaires = $this->executerRequete($sql);
         return $adminCommentaires;
 
@@ -18,7 +18,7 @@ class Commentaire extends Modele
     // Renvoie la liste des commentaires de profondeur 0 associés à un billet
     public function getCommentaires($idBillet)
     {
-        $sql = 'SELECT * FROM tCommentaires WHERE idB=? AND profondeur=0 ORDER BY idC ASC';
+        $sql = 'SELECT *, DATE_FORMAT (dateCrea, \'%d/%m/%Y à %H:%i:%s\') AS date_fr FROM tcommentaires WHERE idB=? AND profondeur=0 ORDER BY idC ASC';
         $commentaires = $this->executerRequete($sql, array($idBillet));
         return $commentaires;
     }
@@ -26,7 +26,7 @@ class Commentaire extends Modele
     //Renvoie la liste des sous commentaire
     public function getCommentaireChilds($idCommentaire)
     {
-        $sql = 'SELECT * FROM tCommentaires WHERE idParent=? ORDER BY idC ASC';
+        $sql = 'SELECT *, DATE_FORMAT (dateCrea, \'%d/%m/%Y à %H:%i:%s\') AS date_fr FROM tcommentaires WHERE idParent=? ORDER BY idC ASC';
         $reponses = $this->executerRequete($sql, array($idCommentaire));
         return $reponses;
     }
@@ -36,7 +36,7 @@ class Commentaire extends Modele
     // Renvoie les informations sur un commentaire
     public function getCommentaire($idCommentaire)
     {
-        $sql = 'SELECT * FROM tCommentaires WHERE idC=?';
+        $sql = 'SELECT *, DATE_FORMAT (dateCrea, \'%d/%m/%Y à %H:%i:%s\') AS date_fr FROM tcommentaires WHERE idC=?';
         $commentaire = $this->executerRequete($sql, array($idCommentaire));
         if ($commentaire->rowCount() > 0)
             return $commentaire->fetch();  // Accès à la première ligne de résultat
@@ -47,7 +47,7 @@ class Commentaire extends Modele
     // Renvoie le nombres de commentaires signalés
     public function getNbSignalements()
     {
-      $sql = 'SELECT COUNT(*) as total FROM tCommentaires WHERE signalement>0';
+      $sql = 'SELECT COUNT(*) as total FROM tcommentaires WHERE signalement>0';
       $result = $this->executerRequete($sql);
       $nb = $result->fetch();
       $nbSignalements = $nb['total'];
@@ -57,7 +57,7 @@ class Commentaire extends Modele
     // Ajoute un commentaire à un billet dans la base
     public function ajouterCommentaire($auteur, $contenu, $idBillet)
     {
-        $sql = 'INSERT INTO tCommentaires(dateCrea, auteur, contenu, idB, idParent, profondeur) values(?, ?, ?, ?, NULL , 0)';
+        $sql = 'INSERT INTO tcommentaires(dateCrea, auteur, contenu, idB, idParent, profondeur) values(?, ?, ?, ?, NULL , 0)';
         $date = date(DATE_W3C);  // Récupère la date courante
         $this->executerRequete($sql, array($date, $auteur, $contenu, $idBillet));
 
@@ -67,25 +67,15 @@ class Commentaire extends Modele
     public function repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire)
     {
         $commentaireParent = $this->getCommentaire($idCommentaire);
-        $sql = 'INSERT INTO tCommentaires(dateCrea, auteur, contenu, idB, idParent, profondeur) values(?, ?, ?, ?, ?, ?)';
+        $sql = 'INSERT INTO tcommentaires(dateCrea, auteur, contenu, idB, idParent, profondeur) values(?, ?, ?, ?, ?, ?)';
         $date = date(DATE_W3C);  // Récupère la date courante
         $this->executerRequete($sql, array($date, $auteur, $contenu, $idBillet, $commentaireParent['idC'], $commentaireParent['profondeur'] + 1));
     }
 
-
-    //test afficher page d'un billet associé à un commentaire
-    public function getBilletDuCommentaire($idBillet)
-    {
-        //$billet = $this->getBillet($idBillet);
-        //$sql = 'SELECT * FROM tbillets WHERE idB=?';
-        //$this->executerRequete($sql, array($billet['idB']));
-    }
-
-
     // supprime un commentaire
     public function deleteCommentaire($idCommentaire)
     {
-        $sql = 'UPDATE tCommentaires SET auteur = \'Modérateur\', contenu = \'(Commentaire supprimé) \', is_deleted = 1 WHERE idC=?';
+        $sql = 'UPDATE tcommentaires SET auteur = \'Modérateur\', contenu = \'(Commentaire supprimé) \', is_deleted = 1 WHERE idC=?';
         $this->executerRequete($sql, array($idCommentaire));
     }
 
@@ -93,14 +83,14 @@ class Commentaire extends Modele
     // signaler un commentairesignalement
     public function signalerCommentaire($idCommentaire)
     {
-        $sql = 'UPDATE tCommentaires SET signalement = 1 WHERE idC=?';
+        $sql = 'UPDATE tcommentaires SET signalement = 1 WHERE idC=?';
         $this->executerRequete($sql, array($idCommentaire));
     }
 
     // Annule un signalement
     public function annulerSignalement($idCommentaire)
     {
-        $sql = 'UPDATE tCommentaires SET signalement = 0 WHERE idC=?';
+        $sql = 'UPDATE tcommentaires SET signalement = 0 WHERE idC=?';
         $this->executerRequete($sql, array($idCommentaire));
     }
 

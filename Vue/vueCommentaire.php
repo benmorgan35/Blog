@@ -4,7 +4,6 @@
             <div class="col-xs-12">
                 <h2>Répondre à un commentaire</h2>
                 <hr/>
-
             </div>
         </div>
     </div>
@@ -17,7 +16,7 @@
             <h3 id="titreReponse">Commentaire </h3>
 
             <p>
-                <time style="color:grey"><i>Publié le <?= $commentaire['dateCrea'] ?></i></time>
+                <time style="color:grey"><i>Publié le <?= $commentaire['date_fr'] ?></i></time>
                 par <?= htmlspecialchars($commentaire['auteur']) ?>
             <p><?= htmlspecialchars($commentaire['contenu']) ?></p>
 

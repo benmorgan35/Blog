@@ -1,5 +1,15 @@
 <?php $this->titre = "Administrateur"; ?>
 
+<?php /*
+if(isset($_SESSION['USER'])){
+header('Location: index.php?action=adminAccueil');
+}
+else {
+header('Location: index.php?action=accueil');
+}
+*/ ?>
+
+
 <section>
     <header>
 
@@ -27,17 +37,17 @@
                 <div class="col-xs-12">
 
                     <h3>Liste des commentaires</h3>
-<br />
-                    <table class="table table-hover" cellspacing="0" width="100%">
+                    <br />
 
+                    <table class="table table-hover" cellspacing="0" width="100%">
 
                         <thead>
                         <tr>
                             <th>Statut</th>
                             <th>Date de publication</th>
                             <th>contenu</th>
-                            <th></th>
-                            <th></th>
+                            <th>Supprimer le commentaire</th>
+                            <th>Annuler le signalement</th>
                         </tr>
                         </thead>
 
@@ -54,27 +64,21 @@
                                 </td>
 
                                 <td>
-                                    <time style="color:grey; font-size: 0.8em"><i><?= $commentaire['dateCrea'] ?></i>
+                                    <time style="color:grey; font-size: 0.8em"><i><?= $commentaire['date_fr'] ?></i>
                                     </time>
                                 </td>
                                 <td>
-                                    <!--<a href="<?= "index.php?action=billetCom&idB=" . $billet['idB'] . "&idC=" . $billet['idC'] ?>">-->
                                     <p class="contenuCommentaire"><?= htmlspecialchars($commentaire['contenu']) ?><br/>
                                     </p>
-                                    <!--</a>-->
                                 </td>
-
-
-
                                 <td>
                                     <?php if ($commentaire['is_deleted'] != 1) {
-
                                     echo
                                     '<a class="btn btn-primary" style="font-size: 14px;width: 90px;"
                                        href="' . "index.php?action=supprimerCommentaire&idC=" . $commentaire['idC'] . '">Supprimer'; echo '</a>'; } ?>
                                 </td>
                                 <td>
-                                    <?php if ($commentaire['is_deleted'] != 1) {
+                                    <?php if ($commentaire['is_deleted'] != 1 && $commentaire['signalement'] !=0) {
                                     echo
                                     '<a class="btn btn-primary" style="font-size: 14px;width: 90px;"
                                        href="' . "index.php?action=annulerSignalement&idC=" . $commentaire['idC'] . '">Valider'; echo '</a>'; } ?>

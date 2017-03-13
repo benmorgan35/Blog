@@ -1,17 +1,19 @@
-<?php $this->titre = "Administrateur";
+<?php $this->titre = "Administrateur"; ?>
 
-/*if(empty($_SESSION['username']))
-{
-// Si inexistante ou nulle, on redirige vers le formulaire de login
+<?php /*
+if(isset($_SESSION['USER'])){
+header('Location: index.php?action=adminAccueil');
+}
+else {
 header('Location: index.php?action=accueil');
-exit();
-}*/
-?>
+}
+*/ ?>
 
     <header>
         <?php require 'menuAdmin.php'; ?>
-        <br />
-        <p> Bonjour <?php echo ($_SESSION['prenom']); ?> </p>
+
+        <!--<p> Bonjour <?php echo ($_SESSION['user']['prenom']); ?> </p> -->
+
 
     </header>
 
@@ -58,11 +60,11 @@ exit();
                         <?php foreach ($adminBillets as $billet): ?>
                             <tr>
                                 <td>
-                                    <time style="color:grey; font-size: 0.8em"><i><?= $billet['dateCrea'] ?></i></time>
+                                    <time style="color:grey; font-size: 0.8em"><i><?= $billet['date_fr'] ?></i></time>
                                 </td>
                                 <td>
                                     <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>">
-                                        <p class="titreBillet"><?= htmlspecialchars($billet['titre']) ?></p><br/>
+                                        <p class="titreBillet"><?= $billet['titre'] ?></p><br/>
                                     </a>
                                 </td>
                                 <td>

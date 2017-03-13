@@ -9,11 +9,6 @@ class ControleurUser
 
     private $user;
 
-// Déclarations des constantes en rapport avec la force.
-
-    //const CONNECT = 1;
-    //const DECONNECT = 2;
-
     public function __construct()
     {
         $this->user = new User();
@@ -28,23 +23,34 @@ class ControleurUser
     }
 
     //Inscrire un membre
-    public function inscription($prenom, $nom, $username, $password /*$password_hashe*/)
+    public function inscription($prenom, $nom, $username, $password)
     {
-        $this->user->inscription($prenom, $nom, $username, $password /*$password_hashe*/);
-
-        header ('Location: index.php?action=membres');
+        if (isset($_SESSION['user'])) {
+            $this->user->inscription($prenom, $nom, $username, $password);
+            header ('Location: index.php?action=membres');
+            $_SESSION['flash'] = 'Un nouveau membre vient d\'être enregistré.';
+        }
+        else{
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
+        }
     }
-
-
-
 
     // désinscrire un membre
     public function deleteUser($idUser)
     {
-        $this->user->deleteUser($idUser);
-        $users = $this->user->getUsers();
-        $vue = new Vue("Membres");
-        $vue->generer(array('users' => $users));
+        if (isset($_SESSION['user'])) {
+            $this->user->deleteUser($idUser);
+            $users = $this->user->getUsers();
+            $vue = new Vue("Membres");
+            $vue->generer(array('users' => $users));
+            $_SESSION['flash'] = 'Un membre vient d\être supprimé.';
+        }
+        else {
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
+        }
+
     }
 
 
