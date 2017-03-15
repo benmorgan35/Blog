@@ -3,7 +3,7 @@
         <div class="navbar-header">
             <p class="navbar-brand"><b>Interface d'administration</b></p>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
+                    data-target="#bs-example-navbar-collapse-2">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -13,7 +13,7 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
             <ul class="nav navbar-nav">
                 <li><a style="padding-left: 50px; width: 20%;" href=" <?= "index.php?action=adminAccueil" ?>">Episodes</a></li>
                 <li><a style="padding-left: 50px; width: 20%;" href=" <?= "index.php?action=adminCommentaires" ?>">Commentaires</a></li>

@@ -45,6 +45,7 @@ header('Location: index.php?action=accueil');
                         <tr>
                             <th>Statut</th>
                             <th>Date de publication</th>
+                            <th>Auteur</th>
                             <th>contenu</th>
                             <th>Supprimer le commentaire</th>
                             <th>Annuler le signalement</th>
@@ -68,19 +69,22 @@ header('Location: index.php?action=accueil');
                                     </time>
                                 </td>
                                 <td>
+                                    <p class="contenuCommentaire"><?= htmlspecialchars($commentaire['auteur']) ?><br/>
+                                    </p>
+                                </td><td>
                                     <p class="contenuCommentaire"><?= htmlspecialchars($commentaire['contenu']) ?><br/>
                                     </p>
                                 </td>
                                 <td>
                                     <?php if ($commentaire['is_deleted'] != 1) {
                                     echo
-                                    '<a class="btn btn-primary" style="font-size: 14px;width: 90px;"
+                                    '<a class="btn btn-primary" style="font-size: 12px;width: 80px;"
                                        href="' . "index.php?action=supprimerCommentaire&idC=" . $commentaire['idC'] . '">Supprimer'; echo '</a>'; } ?>
                                 </td>
                                 <td>
                                     <?php if ($commentaire['is_deleted'] != 1 && $commentaire['signalement'] !=0) {
                                     echo
-                                    '<a class="btn btn-primary" style="font-size: 14px;width: 90px;"
+                                    '<a class="btn btn-primary" style="font-size: 12px;width: 80px;"
                                        href="' . "index.php?action=annulerSignalement&idC=" . $commentaire['idC'] . '">Valider'; echo '</a>'; } ?>
                                 </td>
                             </tr>

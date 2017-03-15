@@ -39,7 +39,7 @@
                     auctor, sed suscipit mauris gravida. </p>
                 <p>Donec ut diam metus. Vestibulum ut tellus efficitur mauris scelerisque consectetur et eget libero.
                     Duis scelerisque arcu facilisis libero semper, eget molestie ipsum blandit. </p>
-                <p id="signature">Jean Forteroche</p>
+                <p id="episodes">Jean Forteroche</p>
                 <hr/>
             </div>
         </div>
@@ -67,7 +67,7 @@
                             </td>
                             <td>
                                 <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>">
-                                    <p class="titreBillet"><?= ($billet['titre']) ?>
+                                    <p class="titreBillet"><?= htmlspecialchars($billet['titre']) ?>
                                 </a>
                             </td>
                         </tr>

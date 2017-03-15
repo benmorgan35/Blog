@@ -53,10 +53,10 @@ class Routeur
 
                     //Afficher la page d'accueil
                     case 'accueil':
-                        $this->ctrlAccueil->Accueil();
+                        $this->ctrlAccueil->accueil();
                         break;
 
-                    // Afficher la page du formulaire pour écrire un commentaire
+                    // Afficher de la page d'un commentaire avec formulaire
                     case 'commentaire' :
                         $idCommentaire = intval($this->getParametre($_GET, 'idC'));
                         if ($idCommentaire != 0) {
@@ -114,10 +114,9 @@ class Routeur
                         break;
 
 
-
-                    //===================================================================================
-                    // II. ACTIONS DE L'ADMINISTRATEUR
-                    //===================================================================================
+                 //===================================================================================
+                 // II. ACTIONS DE L'ADMINISTRATEUR
+                 //===================================================================================
 
 
                     //-------------------------------------------------
@@ -149,7 +148,7 @@ class Routeur
 
                     // Affiche la page Membres
                     case 'membres' :
-                        $this->ctrlUser->Users();
+                        $this->ctrlUser->users();
                         break;
 
                     // Affiche la page pour ajouter un billet
@@ -195,7 +194,7 @@ class Routeur
                     //-------------------------------------------------
 
 
-                    // Ajouter un billet, avec action au choix : le publier ou l'enregistrer comme brouillon
+                    // Ajouter un billet
                     case 'addBillet' :
                         $titre = $this->getParametre($_POST, 'titre');
                         $contenu = $this->getParametre($_POST, 'contenu');

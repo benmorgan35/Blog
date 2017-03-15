@@ -1,12 +1,6 @@
 <?php
 
-/**
- * Classe abstraite Modèle.
- * Centralise les services d'accès à une base de données.
- * Utilise l'API PDO
- *
- * P3 Blog PHP POO MVC
- */
+
 abstract class Modele {
 
     /** Objet PDO d'accès à la BD */

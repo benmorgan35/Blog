@@ -1,11 +1,11 @@
 <?php
 
-$this->titre = "Mon Blog - " . $billet['titre']; ?>
+$this->titre = "Mon Blog - " . htmlspecialchars($billet['titre']); ?>
 
 
 <section>
     <div class="titre">
-        <h2 class="titreBillet2"><?= ($billet['titre']) ?></h2>
+        <h2 class="titreBillet2"><?= htmlspecialchars($billet['titre']) ?></h2>
         <time style="color:grey"><i>Publié le <?= $billet['date_fr'] ?></i></time>
         <hr/>
     </div>

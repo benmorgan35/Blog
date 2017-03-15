@@ -7,7 +7,6 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css"/>
 
-
     <script src="assets/js/tiny_mce/tiny_mce.js" type="text/javascript"></script>
     <script type="text/javascript">
         tinyMCE.init({
@@ -44,7 +43,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href=" <?= "index.php" ?>">Accueil</a></li>
-                    <li><a href="<?= "index.php#signature" ?>">Liste des épisodes</a></li>
+                    <li><a href="<?= "index.php#episodes" ?>">Liste des épisodes</a></li>
                 </ul>
                 <?php
                 if (isset($_SESSION['user'])) {

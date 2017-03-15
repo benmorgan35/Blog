@@ -36,11 +36,10 @@ header('Location: index.php?action=accueil');
 
                     <thead>
                     <tr>
-                        <th>Date d'inscription</th>
                         <th>Prénom</th>
                         <th>Nom</th>
                         <th>Nom d'utilisateur</th>
-                        <th>Mot de passe</th>
+
                         <th></th>
                     </tr>
                     </thead>
@@ -49,24 +48,16 @@ header('Location: index.php?action=accueil');
                     <?php foreach ($users as $user): ?>
                         <tr>
                             <td>
-                                <time style="color:grey; font-size: 0.8em"><i><?= $user['date_fr'] ?></i></time>
-                            </td>
-                            <td>
                                 <p class=""><?= htmlspecialchars($user['prenom']) ?></p>
-
                             </td>
                             <td>
                                 <p class=""><?= htmlspecialchars($user['nom']) ?></p>
-
                             </td>
                             <td>
                                 <p class=""><?= htmlspecialchars($user['username']) ?></p>
                             </td>
                             <td>
-                                <p class=""><?= htmlspecialchars($user['password']) ?></p>
-                            </td>
-                            <td>
-                                <a class="btn btn-primary" style="font-size: 14px;width: 90px;"
+                                <a class="btn btn-primary" style="font-size: 12px; float: right; width: 80px;"
                                    href="<?= "index.php?action=deleteUser&idU=" . $user['idU'] ?>">Supprimer</a>
                             </td>
                         </tr>
@@ -96,7 +87,7 @@ header('Location: index.php?action=accueil');
                            placeholder="Nom d'utilisateur" required/>
                     <input class="form-control" id="password" name="password" type="password" placeholder="Mot de passe"
                            required/>
-                    <input style="float: right;" type="submit" class="btn btn-primary" value="Enregitsrer"/>
+                    <input style="float: right; font-size: 12px; width: 80px;" type="submit" class="btn btn-primary" value="Enregitsrer"/>
                 </form>
                 <br/>
                 <br/>

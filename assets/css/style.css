@@ -15,6 +15,8 @@ p {
     color: grey;
 }
 
+/* ----------------Classes-------------------- */
+
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
@@ -22,47 +24,12 @@ p {
     margin-left: auto;
 }
 
-.titreBillet {
-    color: #337ab7;
-}
-
-.page{
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.titre{
-    padding-left: 5%;
-    padding-top: 30px;
-    padding-right: 5%;
-}
-
-.titreBillet2 {
-    color: #165634;
-}
 .img-responsive {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.navbar-fixed-top, .navbar-fixed-bottom {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
-
-.repondre{
-    background-color: blue;
-
-}
-
-.signaler{
-    margin-left: 30px;
-
-}
 .indent{
     border: 1px solid #cfd7dd;
     padding: 10px;
@@ -73,9 +40,69 @@ p {
     background-color: rgba(207, 215, 221, 0.2);
 }
 
-#example_length{
-margin-bottom: 20px;
-margin-top: 20px;}
+.mdp{
+    font-size: 10px;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.page{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.repondre{
+    background-color: blue;
+}
+
+.signaler{
+    margin-left: 30px;
+}
+
+.titre{
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-right: 5%;
+}
+
+.titreBillet {
+    color: #337ab7;
+}
+
+.titreBillet2 {
+    color: #165634;
+}
+
+/* ----------------Attributs-------------------- */
+
+#auteur{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+#boutonmembre{
+    font-size: 10px;
+    float: left;
+}
+
+#contenu {
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 30px;
+    margin-bottom : 60px;
+}
+
+#episodes {
+    text-align: right;
+    margin-right: 20px;
+}
 
 #flash{
     padding-top: 40px;
@@ -83,13 +110,21 @@ margin-top: 20px;}
     font-size: 18px;
     margin-left: 5%;
     text-align:center;
-
 }
 
-#texte {
-    margin-left: 2%;
-    color: #0d382f;
-    margin-right: 2%;
+#footer {
+    background-color: lightgrey;
+    padding: 15px;
+
+    text-align: center;
+    position: relative;
+}
+
+#identifiant{
+
+    margin-right : 10px;
+    margin-bottom: 20px;
+    width: 200px;
 }
 
 #Jean{
@@ -99,40 +134,7 @@ margin-top: 20px;}
     width: 110px;
 }
 
-
-#auteur{
-
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 200px;
-}
-#prenom{
-
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 200px;
-}#nom{
-
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 200px;
-}
-#username{
-
-    margin-right: 10px;
-    margin-bottom: 20px;
-    width: 200px;
-}#password{
-    float: left;
-    margin-right : 10px;
-    margin-bottom: 20px;
-    width: 200px;
-}#identifiant{
-
-    margin-right : 10px;
-    margin-bottom: 20px;
-    width: 200px;
-}#mdp{
+#mdp{
 
     margin-right : 10px;
     margin-bottom: 20px;
@@ -145,53 +147,42 @@ margin-top: 20px;}
     width: 200px;
 }
 
-#contenu {
-    background-color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 30px;
-    margin-bottom : 60px;
+#nom{
+
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
 }
 
-#example_info{
-    display: none;
-}
-#example_filter{
-    display: none;
-}
-
-
-#signature {
-text-align: right;
-    margin-right: 20px;
+#password{
+    float: left;
+    margin-right : 10px;
+    margin-bottom: 20px;
+    width: 200px;
 }
 
+#prenom{
 
-#footer {
-    background-color: lightgrey;
-    padding: 15px;
-
-    text-align: center;
-    position: relative;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
 }
 
-@media all and (max-width: 1024px)
-{
-    #contenu {
-        margin-bottom : 40px;
-    }
+#texte {
+    margin-left: 2%;
+    color: #0d382f;
+    margin-right: 2%;
+}
 
-    .page {
-        margin-left: 7%;
-        margin-right: 7%;
-    }
+#username{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
 
-    .indent{
-        margin-left: 3px;
-        margin-right: 3px;
-    }
+/* --------------------------------------------------- */
 
-@media only screen and (max-device-width:980px) {
+@media screen and (max-width: 768px) {
 
     #contenu {
         margin-left: 0;
@@ -210,5 +201,22 @@ text-align: right;
         margin-left: 2px;
         margin-right: 2px;
     }
+
+    .table-hover tr th {
+        display: none;
+    }
+
+    .table-hover tr td {
+        float: left;
+        width: 100%;
+        border: none !important;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .table-hover tr{
+        border-bottom: 2px solid #edf0f2;
+        border-top: 2px solid #edf0f2;
+    }
 }
-}
+

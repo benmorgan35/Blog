@@ -32,7 +32,7 @@ header('Location: index.php?action=accueil');
             <div class="row">
                 <div class="col-xs-12">
                     <h3>Ecrire un nouvel épisode
-                        <a class="btn btn-primary" style="float: right; margin-right: 2%; width:90px;"
+                        <a class="btn btn-primary" style="float: right; margin-right: 2%; width:80px; font-size: 12px;"
                            href="<?= "index.php?action=ajouterBillet" ?>">Valider</a></h3>
                 </div>
             </div>
@@ -64,7 +64,7 @@ header('Location: index.php?action=accueil');
                                 </td>
                                 <td>
                                     <a href="<?= "index.php?action=billet&idB=" . $billet['idB'] ?>">
-                                        <p class="titreBillet"><?= $billet['titre'] ?></p><br/>
+                                        <p class="titreBillet"><?= htmlspecialchars($billet['titre']) ?></p><br/>
                                     </a>
                                 </td>
                                 <td>
@@ -87,14 +87,14 @@ header('Location: index.php?action=accueil');
 
                                 </td>
                                 <td>
-                                    <a class="btn btn-primary" style="font-size: 14px; width: 90px;"
+                                    <a class="btn btn-primary" style="font-size: 12px; width: 80px;"
                                        href="<?= "index.php?action=modifierBillet&idB=" . $billet['idB'] ?>">Modifier</a>
                                 </td>
                                 <td>
                                     <?php if ($billet['publication'] != 2) {
 
                                     echo
-                                    '<a class="btn btn-primary" style="font-size: 14px;width: 90px;"
+                                    '<a class="btn btn-primary" style="font-size: 12px;width: 80px;"
                                        href="' . "index.php?action=deleteBillet&idB=" . $billet['idB'] . '">Supprimer'; echo '</a>'; } ?>
                                 </td>
                             </tr>

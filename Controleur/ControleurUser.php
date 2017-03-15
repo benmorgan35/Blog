@@ -25,15 +25,30 @@ class ControleurUser
     //Inscrire un membre
     public function inscription($prenom, $nom, $username, $password)
     {
-        if (isset($_SESSION['user'])) {
-            $this->user->inscription($prenom, $nom, $username, $password);
-            header ('Location: index.php?action=membres');
-            $_SESSION['flash'] = 'Un nouveau membre vient d\'être enregistré.';
+
+        if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['username']) && !empty($_POST['password'])) {
+            if (isset($_SESSION['user'])) {
+                $pseudoExist = $this->user->getPseudoExist();
+                if ($pseudoExist == 0) {
+                    $this->user->inscription($prenom, $nom, $username, $password);
+                    header('Location: index.php?action=membres');
+                    $_SESSION['flash'] = 'Un nouveau membre vient d\'être enregistré.';
+                } else {
+                    $_SESSION['flash'] = 'Ce pseudo est déjà pris. Veuillez saisir un autre pseudo';
+                    header('Location: index.php?action=membres');
+                }
+            }
+            else {
+                $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+                header('Location: index.php?action=accueil');
+            }
         }
-        else{
-            $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
-            header('Location: index.php?action=accueil');
+        else {
+            $_SESSION['flash'] = 'Veuillez renseigner tous les champs du formulaire.';
+            header('Location: index.php?action=membres');
         }
+
+
     }
 
     // désinscrire un membre
@@ -42,16 +57,14 @@ class ControleurUser
         if (isset($_SESSION['user'])) {
             $this->user->deleteUser($idUser);
             $users = $this->user->getUsers();
+            $_SESSION['flash'] = 'Un membre vient d\'être supprimé.';
             $vue = new Vue("Membres");
             $vue->generer(array('users' => $users));
-            $_SESSION['flash'] = 'Un membre vient d\être supprimé.';
         }
         else {
             $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
             header('Location: index.php?action=accueil');
         }
-
     }
-
 
 }
