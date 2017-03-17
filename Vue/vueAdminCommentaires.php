@@ -69,7 +69,7 @@ header('Location: index.php?action=accueil');
                                     </time>
                                 </td>
                                 <td>
-                                    <p class="contenuCommentaire"><?= htmlspecialchars($commentaire['auteur']) ?><br/>
+                                    <p class="auteurCommentaire"><?= htmlspecialchars($commentaire['auteur']) ?><br/>
                                     </p>
                                 </td><td>
                                     <a href="<?= "index.php?action=billet&idB=" . $commentaire['idB'] ?>">

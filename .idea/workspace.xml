@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="26811735-4fb8-4d9b-97d1-c3525ea51b5e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controleur/ControleurAdmin.php" afterPath="$PROJECT_DIR$/Controleur/ControleurAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Modele/User.php" afterPath="$PROJECT_DIR$/Modele/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue/vueAdminCommentaires.php" afterPath="$PROJECT_DIR$/Vue/vueAdminCommentaires.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,21 +90,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Modele.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modele/Modele.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Vue.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vue/Vue.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,16 +126,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vueAdminCommentaires.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vueAdminCommentaires.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Vue/vueAdminCommentaires.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="67" column="116" lean-forward="true" selection-start-line="67" selection-start-column="116" selection-end-line="67" selection-end-column="116" />
+            <state relative-caret-position="403">
+              <caret line="75" column="119" lean-forward="true" selection-start-line="75" selection-start-column="119" selection-end-line="75" selection-end-column="119" />
               <folding>
-                <marker date="1489744212000" expanded="true" signature="1502:1562" ph="..." />
-                <marker date="1489744212000" expanded="true" signature="1644:1661" ph="..." />
-                <marker date="1489744212000" expanded="true" signature="1784:1797" ph="..." />
-                <marker date="1489744212000" expanded="true" signature="2163:2164" ph="..." />
+                <marker date="1489749057000" expanded="true" signature="1502:1562" ph="..." />
+                <marker date="1489749057000" expanded="true" signature="1644:1661" ph="..." />
+                <marker date="1489749057000" expanded="true" signature="1784:1797" ph="..." />
+                <marker date="1489749057000" expanded="true" signature="2163:2164" ph="..." />
               </folding>
             </state>
           </provider>
@@ -227,14 +226,14 @@
         <option value="$PROJECT_DIR$/Controleur/ControleurCommentaire.php" />
         <option value="$PROJECT_DIR$/Controleur/ControleurUser.php" />
         <option value="$PROJECT_DIR$/Modele/Modele.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/Vue/vueAjouterBillet.php" />
         <option value="$PROJECT_DIR$/Vue/vueModifierBillet.php" />
         <option value="$PROJECT_DIR$/Vue/gabarit.php" />
         <option value="$PROJECT_DIR$/Vue/vueAccueil.php" />
         <option value="$PROJECT_DIR$/Modele/User.php" />
-        <option value="$PROJECT_DIR$/Vue/vueAdminCommentaires.php" />
         <option value="$PROJECT_DIR$/Controleur/ControleurAdmin.php" />
+        <option value="$PROJECT_DIR$/Vue/vueAdminCommentaires.php" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -538,12 +537,12 @@
       <workItem from="1489477008478" duration="25197000" />
       <workItem from="1489564286868" duration="20646000" />
       <workItem from="1489672581001" duration="2618000" />
-      <workItem from="1489742145898" duration="4126000" />
+      <workItem from="1489742145898" duration="4919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="668362000" />
+    <option name="totallyTimeSpent" value="669155000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -784,14 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vue/gabarit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -824,20 +815,6 @@
             <marker date="1489744212000" expanded="true" signature="1225:1308" ph="INSERT INTO tusers... " />
             <marker date="1489744212000" expanded="true" signature="1546:1576" ph="DELETE FROM " />
             <marker date="1489744212000" expanded="true" signature="1552:1576" ph="UPDATE tBill... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vue/vueAdminAccueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="65" column="66" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="101" />
-          <folding>
-            <marker date="1489587083000" expanded="true" signature="208:231" ph="..." />
-            <marker date="1489587083000" expanded="true" signature="587:589" ph="..." />
-            <marker date="1489587083000" expanded="true" signature="2498:2533" ph="..." />
-            <marker date="1489587083000" expanded="true" signature="2770:2804" ph="..." />
-            <marker date="1489587083000" expanded="true" signature="3039:3072" ph="..." />
           </folding>
         </state>
       </provider>
@@ -906,16 +883,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Vue/vueAdminAccueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="65" column="66" lean-forward="true" selection-start-line="65" selection-start-column="36" selection-end-line="65" selection-end-column="101" />
+          <folding>
+            <marker date="1489587083000" expanded="true" signature="208:231" ph="..." />
+            <marker date="1489587083000" expanded="true" signature="587:589" ph="..." />
+            <marker date="1489587083000" expanded="true" signature="2498:2533" ph="..." />
+            <marker date="1489587083000" expanded="true" signature="2770:2804" ph="..." />
+            <marker date="1489587083000" expanded="true" signature="3039:3072" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vue/vueAdminCommentaires.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="67" column="116" lean-forward="true" selection-start-line="67" selection-start-column="116" selection-end-line="67" selection-end-column="116" />
+        <state relative-caret-position="403">
+          <caret line="75" column="119" lean-forward="true" selection-start-line="75" selection-start-column="119" selection-end-line="75" selection-end-column="119" />
           <folding>
-            <marker date="1489744212000" expanded="true" signature="1502:1562" ph="..." />
-            <marker date="1489744212000" expanded="true" signature="1644:1661" ph="..." />
-            <marker date="1489744212000" expanded="true" signature="1784:1797" ph="..." />
-            <marker date="1489744212000" expanded="true" signature="2163:2164" ph="..." />
+            <marker date="1489749057000" expanded="true" signature="1502:1562" ph="..." />
+            <marker date="1489749057000" expanded="true" signature="1644:1661" ph="..." />
+            <marker date="1489749057000" expanded="true" signature="1784:1797" ph="..." />
+            <marker date="1489749057000" expanded="true" signature="2163:2164" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

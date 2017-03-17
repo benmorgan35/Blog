@@ -17,6 +17,10 @@ p {
 
 /* ----------------Classes-------------------- */
 
+.contenuCommentaire {
+    color: #337ab7;
+}
+
 .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
