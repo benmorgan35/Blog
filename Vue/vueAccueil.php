@@ -4,6 +4,7 @@
 <header>
 
     <img src="assets/image/header2.jpg" alt="image header" class="img-responsive" id="header"/>
+    <div id="presentation"></div>
     <br/>
 </header>
 
@@ -12,8 +13,8 @@
     <div class="titre">
         <div class="row">
             <div class="col-xs-12">
-                <h2 id="accueil">Accueil</h2>
-                <p><b>Bienvenue sur le blog de Jean Forteroche.</b></p>
+                <h2 id="accueil1">Billet simple pour l'Alaska, roman en ligne</h2>
+                <p>Bienvenue sur le blog de Jean Forteroche. <br />Découvrez son dernier roman.</p>
                 <hr/>
                 <br/>
             </div>

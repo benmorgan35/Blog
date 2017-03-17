@@ -29,7 +29,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <p class="navbar-brand"><b>Billet simple pour l'Alaska</b></p>
+                <a class="navbar-brand" href=" <?= "index.php#presentation" ?>"><b>Billet simple pour l'Alaska</b></a>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -74,11 +74,11 @@
 
     <p>Copyright © 2017 Jean Forteroche | Tous droits réservés |
         <a href="<?= "index.php?action=authentification" ?>">Espace Administrateur</a></p>
-    <!--<a href="<?= "index.php?action=adminAccueil" ?>">Admintemporaire</a></p> -->
+
 
 </footer>
 
-<!-- #global -->
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
