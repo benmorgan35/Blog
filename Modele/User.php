@@ -3,12 +3,6 @@
 require_once 'Modele.php';
 
 Class User extends  Modele {
-    protected $_prenom;
-    protected $_nom;
-    protected $_username;
-    protected $_password;
-
-
 
     // Renvoie la liste des membres
     public function getUsers() {

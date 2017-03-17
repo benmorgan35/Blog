@@ -72,8 +72,9 @@ header('Location: index.php?action=accueil');
                                     <p class="contenuCommentaire"><?= htmlspecialchars($commentaire['auteur']) ?><br/>
                                     </p>
                                 </td><td>
+                                    <a href="<?= "index.php?action=billet&idB=" . $commentaire['idB'] ?>">
                                     <p class="contenuCommentaire"><?= htmlspecialchars($commentaire['contenu']) ?><br/>
-                                    </p>
+                                    </p></a>
                                 </td>
                                 <td>
                                     <?php if ($commentaire['is_deleted'] != 1) {

@@ -29,16 +29,16 @@ class ControleurAdmin
     // Affiche la page d'accueil Admin avec la liste de tous les billets publiés, brpuillon, supprimés
     public function adminAccueil()
     {
-        //if (isset($_SESSION['user'])) {
+        if (isset($_SESSION['user'])) {
             $adminBillets = $this->billet->getAdminBillets();
             $vue = new Vue("AdminAccueil");
             $vue->generer(array('adminBillets' => $adminBillets));
-      //  }
-       // else{
-           // $_SESSION['flash'] = 'Vous n\'êtes pas autorisés à effectuer cette commande.';
-          //  header('Location: index.php?action=accueil');
+        }
+       else{
+            $_SESSION['flash'] = 'Vous n\'êtes pas autorisés à effectuer cette commande.';
+            header('Location: index.php?action=accueil');
 
-      //  }
+      }
     }
 
 
