@@ -19,6 +19,9 @@ class ControleurCommentaire
     }
 
     // Affiche les détails d'un commentaire sur une nouvelle page
+    /**
+     * @param int $idCommentaire
+     */
     public function commentaire($idCommentaire)
     {
         $commentaire = $this->commentaire->getCommentaire($idCommentaire);
@@ -27,10 +30,15 @@ class ControleurCommentaire
     }
 
     // Ajoute un commentaire à un billet
+    /**
+     * @param string $auteur
+     * @param string $contenu
+     * @param int $idBillet
+     */
     public function commenter($auteur, $contenu, $idBillet)
     {
 
-        if (isset($_POST['auteur']) && isset($_POST['contenu']) && !empty($_POST['auteur']) && !empty($_POST['contenu'])) {
+        if (!empty($auteur) && !empty($contenu)) {
             // Sauvegarde du commentaire
             $this->commentaire->ajouterCommentaire($auteur, $contenu, $idBillet);
             // Actualisation de l'affichage du billet
@@ -44,9 +52,15 @@ class ControleurCommentaire
     }
 
     //répondre à un commentaire
+    /**
+     * @param string $auteur
+     * @param string $contenu
+     * @param int $idBillet
+     * @param int $idCommentaire
+     */
     public function repondre($auteur, $contenu, $idBillet, $idCommentaire)
     {
-        if (isset($_POST['auteur']) && isset($_POST['contenu']) && !empty($_POST['auteur']) && !empty($_POST['contenu'])) {
+        if (!empty($auteur) && !empty($contenu)) {
             // Sauvegarde du commentaire
             $this->commentaire->repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire);
             // Actualisation de l'affichage du billet
@@ -60,6 +74,9 @@ class ControleurCommentaire
     }
 
     //Signaler un commentaire
+    /**
+     * @param int $idCommentaire
+     */
     public function signalerCommentaire($idCommentaire){
         $this->commentaire->signalerCommentaire($idCommentaire);
         $commentaire = $this->commentaire->getCommentaire($idCommentaire);

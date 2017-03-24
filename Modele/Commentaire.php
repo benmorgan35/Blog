@@ -7,6 +7,11 @@ class Commentaire extends Modele
 {
 
     // Renvoie les informations sur un commentaire
+    /**
+     * @param int $idCommentaire
+     * @return mixed
+     * @throws Exception
+     */
     public function getCommentaire($idCommentaire)
     {
         $sql = 'SELECT *, DATE_FORMAT (dateCrea, \'%d/%m/%Y à %H:%i:%s\') AS date_fr FROM tcommentaires WHERE idC=?';
@@ -18,6 +23,10 @@ class Commentaire extends Modele
     }
 
     // Renvoie la liste des commentaires de profondeur 0 associés à un billet
+    /**
+     * @param int $idBillet
+     * @return PDOStatement
+     */
     public function getCommentaires($idBillet)
     {
         $sql = 'SELECT *, DATE_FORMAT (dateCrea, \'%d/%m/%Y à %H:%i:%s\') AS date_fr FROM tcommentaires WHERE idB=? AND profondeur=0 ORDER BY idC ASC';
@@ -26,6 +35,10 @@ class Commentaire extends Modele
     }
 
     //Renvoie la liste des sous commentaire
+    /**
+     * @param int $idCommentaire
+     * @return PDOStatement
+     */
     public function getCommentaireChilds($idCommentaire)
     {
         $sql = 'SELECT *, DATE_FORMAT (dateCrea, \'%d/%m/%Y à %H:%i:%s\') AS date_fr FROM tcommentaires WHERE idParent=? ORDER BY idC ASC';
@@ -34,6 +47,11 @@ class Commentaire extends Modele
     }
 
     // Ajoute un commentaire à un billet dans la base
+    /**
+     * @param string $auteur
+     * @param string $contenu
+     * @param int $idBillet
+     */
     public function ajouterCommentaire($auteur, $contenu, $idBillet)
     {
         $sql = 'INSERT INTO tcommentaires(dateCrea, auteur, contenu, idB, idParent, profondeur) values(?, ?, ?, ?, NULL , 0)';
@@ -42,6 +60,12 @@ class Commentaire extends Modele
     }
 
     // Repondre à un commentaire
+    /**
+     * @param string $auteur
+     * @param string $contenu
+     * @param int $idBillet
+     * @param int $idCommentaire
+     */
     public function repondreCommentaire($auteur, $contenu, $idBillet, $idCommentaire)
     {
         $commentaireParent = $this->getCommentaire($idCommentaire);
@@ -51,6 +75,9 @@ class Commentaire extends Modele
     }
 
     // signaler un commentairesignalement
+    /**
+     * @param int $idCommentaire
+     */
     public function signalerCommentaire($idCommentaire)
     {
         $sql = 'UPDATE tcommentaires SET signalement = 1 WHERE idC=?';
@@ -60,6 +87,9 @@ class Commentaire extends Modele
 
 
     // Renvoie la liste de tous les commentaires
+    /**
+     * @return PDOStatement
+     */
     public function getAdminCommentaires()
     {
         $sql = 'SELECT *, DATE_FORMAT (dateCrea, \'%d/%m/%Y à %H:h%i:%s\') AS date_fr FROM tcommentaires ORDER BY signalement DESC, idC DESC';
@@ -68,6 +98,9 @@ class Commentaire extends Modele
     }
 
     // Renvoie le nombres de commentaires signalés
+    /**
+     * @return mixed
+     */
     public function getNbSignalements()
     {
       $sql = 'SELECT COUNT(*) as total FROM tcommentaires WHERE signalement>0';
@@ -78,6 +111,9 @@ class Commentaire extends Modele
     }
 
     // supprime un commentaire
+    /**
+     * @param int $idCommentaire
+     */
     public function deleteCommentaire($idCommentaire)
     {
         $sql = 'UPDATE tcommentaires SET auteur = \'Modérateur\', contenu = \'(Commentaire supprimé) \', is_deleted = 1 WHERE idC=?';
@@ -85,6 +121,9 @@ class Commentaire extends Modele
     }
 
     // Annule un signalement
+    /**
+     * @param int $idCommentaire
+     */
     public function annulerSignalement($idCommentaire)
     {
         $sql = 'UPDATE tcommentaires SET signalement = 0 WHERE idC=?';

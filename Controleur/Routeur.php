@@ -198,7 +198,8 @@ class Routeur
                     case 'addBillet' :
                         $titre = $this->getParametre($_POST, 'titre');
                         $contenu = $this->getParametre($_POST, 'contenu');
-                        $this->ctrlAdmin->addBillet($titre, $contenu);
+                        $action = $this->getParametre($_POST, 'action');
+                        $this->ctrlAdmin->addBillet($titre, $contenu, $action);
                         break;
 
                     // Modifier un billet, avec action au choix : le publier ou l'enregistrer comme brouillon
@@ -207,7 +208,8 @@ class Routeur
                         $idBillet = intval($this->getParametre($_GET, 'idB'));
                         $titre = $this->getParametre($_POST, 'titre');
                         $contenu = $this->getParametre($_POST, 'contenu');
-                        $this->ctrlAdmin->updateBillet($idBillet, $titre, $contenu);
+                        $action = $this->getParametre($_POST, 'action');
+                        $this->ctrlAdmin->updateBillet($idBillet, $titre, $contenu, $action);
                         break;
 
                     // Supprimer un billet

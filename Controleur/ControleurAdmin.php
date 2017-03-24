@@ -11,13 +11,14 @@ class ControleurAdmin
 
     private $billet;
     private $commentaire;
+    private $user;
 
 
     public function __construct()
     {
         $this->billet = new Billet();
-        $this->commentaire = new commentaire();
-        $this->user = new user();
+        $this->commentaire = new Commentaire();
+        $this->user = new User();
     }
 
 
@@ -34,11 +35,10 @@ class ControleurAdmin
             $vue = new Vue("AdminAccueil");
             $vue->generer(array('adminBillets' => $adminBillets));
         }
-       else{
+        else {
             $_SESSION['flash'] = 'Vous n\'êtes pas autorisés à effectuer cette commande.';
             header('Location: index.php?action=accueil');
-
-      }
+        }
     }
 
 
@@ -57,6 +57,9 @@ class ControleurAdmin
 
 
     // Affiche la page modifierBillet
+    /**
+     * @param int $idBillet
+     */
     public function modifierBillet($idBillet)
     {
         if (isset($_SESSION['user'])) {
@@ -80,7 +83,7 @@ class ControleurAdmin
             $vue = new Vue("AdminCommentaires");
             $vue->generer(array('adminCommentaires' => $adminCommentaires, 'nbSignalements' => $nbSignalements));
         }
-        else{
+        else {
             $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
             header('Location: index.php?action=accueil');
         }
@@ -91,72 +94,78 @@ class ControleurAdmin
     // ACTIONS ADMIN SUR UN BILLET
     //===================================================================================
 
-
-    public function addBillet($titre, $contenu)
+    // Ajouter un billet
+    /**
+     * @param string $titre
+     * @param string $ontenu
+     * @param string $action
+     */
+    public function addBillet($titre, $contenu, $action)
     {
-        if (isset($_POST['action'])) {
-            if (isset($_POST['titre']) && isset($_POST['contenu']) && !empty($_POST['titre']) && !empty($_POST['contenu'])) {
-                if (isset($_SESSION['user'])) {
-                    if ($_POST['action'] == 'brouillon') {
-                        $this->billet->brouillonBillet($titre, $contenu);
-                        $_SESSION['flash'] = 'Votre billet est sauvegardé en brouillon.';
-                        header('Location: index.php?action=adminAccueil');
-                    }
-                    else if ($_POST['action'] == 'publier') {
-                        $this->billet->publierBillet($titre, $contenu);
-                        $_SESSION['flash'] = 'Votre billet est publié.';
-                        header('Location: index.php?action=adminAccueil');
-                    }
-                }
-                else {
-                    $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
-                    header('Location: index.php?action=accueil');
+
+        if (!empty($titre) && !empty($contenu)) {
+            if (isset($_SESSION['user'])) {
+                if ($action == 'brouillon') {
+                    $this->billet->brouillonBillet($titre, $contenu);
+                    $_SESSION['flash'] = 'Votre billet est sauvegardé en brouillon.';
+                    header('Location: index.php?action=adminAccueil');
+                } else if ($action == 'publier') {
+                    $this->billet->publierBillet($titre, $contenu);
+                    $_SESSION['flash'] = 'Votre billet est publié.';
+                    header('Location: index.php?action=adminAccueil');
                 }
             }
             else {
-                $_SESSION['flash'] = 'Veuillez renseigner tous les champs du formulaire.';
-                header('Location: index.php?action=ajouterBillet');
+                $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+                header('Location: index.php?action=accueil');
             }
         }
-        else {  // aucune action définie : retour à la page adminAccueil
-            header('Location: index.php?action=adminAccueil');
+        else {
+            $_SESSION['flash'] = 'Veuillez renseigner tous les champs du formulaire.';
+            header('Location: index.php?action=ajouterBillet');
         }
+
+
     }
 
-
-    public function updateBillet($idBillet, $titre, $contenu)
+    // Modifier un billet
+    /**
+     * @param int $idBillet
+     * @param string $titre
+     * @param string $contenu
+     * @param string $action
+     */
+    public function updateBillet($idBillet, $titre, $contenu, $action)
     {
-        if (isset($_POST['action'])) {
-            if (isset($_POST['titre']) && isset($_POST['contenu']) && !empty($_POST['titre']) && !empty($_POST['contenu'])) {
-                if (isset($_SESSION['user'])) {
-                    if ($_POST['action'] == 'brouillonModif') {
-                        $this->billet->brouillonUpdate($idBillet, $titre, $contenu);
-                        $_SESSION['flash'] = 'Vos modifications sont sauvegardées en brouillon.';
-                        header('Location: index.php?action=adminAccueil');
-                    }
-                    else if ($_POST['action'] == 'publierModif') {
-                        $this->billet->publierUpdate($idBillet, $titre, $contenu);
-                        $_SESSION['flash'] = 'Votre billet modifié est publié.';
-                        header('Location: index.php?action=adminAccueil');
-                    }
+
+        if (!empty($titre) && !empty($contenu)) {
+            if (isset($_SESSION['user'])) {
+                if ($action == 'brouillonModif') {
+                    $this->billet->brouillonUpdate($idBillet, $titre, $contenu);
+                    $_SESSION['flash'] = 'Vos modifications sont sauvegardées en brouillon.';
+                    header('Location: index.php?action=adminAccueil');
+                } else if ($action == 'publierModif') {
+                    $this->billet->publierUpdate($idBillet, $titre, $contenu);
+                    $_SESSION['flash'] = 'Votre billet modifié est publié.';
+                    header('Location: index.php?action=adminAccueil');
                 }
-                else {
-                    $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
-                    header('Location: index.php?action=accueil');
-                }
-            }
-            else {
-                $_SESSION['flash'] = 'Veuillez renseigner tous les champs du formulaire.';
-                header('Location: index.php?action=modifierBillet&idB=' . $idBillet);
+            } else {
+                $_SESSION['flash'] = 'Vous n\'êtes pas autorisé à effectuer cette commande.';
+                header('Location: index.php?action=accueil');
             }
         }
-        else {  // aucune action définie : retour à la page adminAccueil
-            header('Location: index.php?action=adminAccueil');
+        else {
+            $_SESSION['flash'] = 'Veuillez renseigner tous les champs du formulaire.';
+            header('Location: index.php?action=modifierBillet&idB=' . $idBillet);
         }
+
     }
 
 
     // supprimer un billet
+    /**
+     * @param int $idBillet
+     */
     public function deleteBillet($idBillet)
     {
         if (isset($_SESSION['user'])) {
@@ -179,6 +188,9 @@ class ControleurAdmin
 
 
     // Supprimer un commentaire
+    /**
+     * @param int $idCommentaire
+     */
     public function deleteCommentaire($idCommentaire)
     {
         if (isset($_SESSION['user'])) {
@@ -198,6 +210,9 @@ class ControleurAdmin
 
 
     // Annuler un signalement
+    /**
+     * @param int $idCommentaire
+     */
     public function annulerSignalement($idCommentaire)
     {
         if (isset($_SESSION['user'])) {

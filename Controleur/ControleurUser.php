@@ -23,17 +23,24 @@ class ControleurUser
     }
 
     //Inscrire un membre
+    /**
+     * @param string $prenom
+     * @param string $nom
+     * @param string $username
+     * @param string $password
+     */
     public function inscription($prenom, $nom, $username, $password)
     {
 
-        if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['username']) && !empty($_POST['password'])) {
+        if (!empty($username) && !empty($password)) {
             if (isset($_SESSION['user'])) {
-                $pseudoExist = $this->user->getPseudoExist();
+                $pseudoExist = $this->user->getPseudoExist($username);
                 if ($pseudoExist == 0) {
                     $this->user->inscription($prenom, $nom, $username, $password);
                     header('Location: index.php?action=membres');
                     $_SESSION['flash'] = 'Un nouveau membre vient d\'être enregistré.';
-                } else {
+                }
+                else {
                     $_SESSION['flash'] = 'Ce pseudo est déjà pris. Veuillez saisir un autre pseudo';
                     header('Location: index.php?action=membres');
                 }
@@ -52,6 +59,9 @@ class ControleurUser
     }
 
     // désinscrire un membre
+    /**
+     * @param int $idUser
+     */
     public function deleteUser($idUser)
     {
         if (isset($_SESSION['user'])) {

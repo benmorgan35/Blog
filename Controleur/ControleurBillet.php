@@ -19,6 +19,9 @@ class ControleurBillet
     }
 
     // Affiche les détails sur un billet
+    /**
+     * @param int $idBillet
+     */
     public function billet($idBillet)
     {
         $billet = $this->billet->getBillet($idBillet);

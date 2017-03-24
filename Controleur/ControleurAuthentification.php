@@ -9,11 +9,14 @@ require_once 'Vue/Vue.php';
 class ControleurAuthentification
 {
 
+    private $user;
+
 
     public function __construct()
     {
         $this->user = new User();
     }
+
 
     // Affiche la page d'authentification
     public function authentification()
@@ -22,31 +25,40 @@ class ControleurAuthentification
         $vue->generer(array());
     }
 
+
     // Connecte un membre
+    /**
+     * @param string $username
+     * @param string $password
+     */
     public function connexion($username, $password)
     {
         $user = $this->user->getUser($username, $password);
 
-        if (isset($_POST['username']) && isset($_POST['password']) && !empty($_POST['username']) && !empty($_POST['password'])) {
+        if (!empty($username) && !empty($password)) {
             if ($user) {
                 if (isset($_SESSION['user'])) {
-                    if (htmlspecialchars($_POST['username']) !== $_SESSION['user']['username']) {
+                    if (htmlspecialchars($username) !== $_SESSION['user']['username']) {
                         $_SESSION['flash'] = 'Attention. Vous êtes sur la session de ' . htmlspecialchars($_SESSION['user']['prenom']) . '. Vous devez déconnecter Jean pour pouvoir vous connecter';
                         header('Location: index.php?action=accueil');
-                    } else {
+                    }
+                    else {
                         $_SESSION['flash'] = 'Rebonjour ' . htmlspecialchars($_SESSION['user']['prenom']) . '. Vous êtes déjà connecté.';
                         header('Location: index.php?action=adminAccueil');
                     }
-                } else {
+                }
+                else {
                     $_SESSION['user'] = $user;
                     $_SESSION['flash'] = 'Bonjour ' . htmlspecialchars($_SESSION['user']['prenom']) . '. Vous êtes désormais connecté';
                     header('Location: index.php?action=adminAccueil');
                 }
-            } else {
+            }
+            else {
                 $_SESSION['flash'] = 'Mauvais identifiants de connexion';
                 header('Location: index.php?action=authentification');
             }
-        } else {
+        }
+        else {
             $_SESSION['flash'] = 'Veuillez renseigner tous les champs du formulaire.';
             header('Location: index.php?action=authentification');
         }
