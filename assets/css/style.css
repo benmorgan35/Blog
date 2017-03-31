@@ -17,13 +17,30 @@ p {
 
 /* ----------------Classes-------------------- */
 
+.commentaireBoutonReponse{
+    font-size: 10px;
+}
+.commentaireBoutonSignaler{
+    font-size: 10px;
+    background: darkgrey;
+    border-color: grey;
+    width: 70px;
+    margin-left: 20px;
+}
+
+.commentaireMessageSignalement{
+    color: dodgerblue;
+    font-style : italic;
+}
+
+
 .contenuCommentaire {
     color: #337ab7;
 }
 
 .container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
     margin-right: auto;
     margin-left: auto;
 }
